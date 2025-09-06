@@ -1,7 +1,11 @@
 @ECHO OFF
 SET tooling_jar=tooling-cli-3.9.1.jar
 SET input_cache_path=%~dp0input-cache
-SET mat_bundle=input\tests\measure\CMS2FHIRPCSDepressionScreenAndFollowUp
+IF -%1-==-- (
+	SET mat_bundle=input\tests\measure\CMS2FHIRPCSDepressionScreenAndFollowUp
+) ELSE (
+	SET mat_bundle=%1
+)
 
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
