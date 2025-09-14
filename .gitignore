@@ -8,3 +8,4 @@
 /input-cache/validator_cli.jar
 /input-cache/*.jar
 /bundles/mat-tests
+/input/tests/results
