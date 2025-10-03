@@ -2,219 +2,219 @@ measure_name,guid,display_name,count
 CMS165FHIRControllingHighBP,045f7e0b-bfb3-4ee0-a06d-83c853f6a81e,Denominator,0
 CMS165FHIRControllingHighBP,045f7e0b-bfb3-4ee0-a06d-83c853f6a81e,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,045f7e0b-bfb3-4ee0-a06d-83c853f6a81e,Initial Population,0
-CMS165FHIRControllingHighBP,045f7e0b-bfb3-4ee0-a06d-83c853f6a81e,Numerator,null
+CMS165FHIRControllingHighBP,045f7e0b-bfb3-4ee0-a06d-83c853f6a81e,Numerator,0
 CMS165FHIRControllingHighBP,048a7212-c19c-4f9d-89e2-13727b23e585,Denominator,0
 CMS165FHIRControllingHighBP,048a7212-c19c-4f9d-89e2-13727b23e585,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,048a7212-c19c-4f9d-89e2-13727b23e585,Initial Population,0
-CMS165FHIRControllingHighBP,048a7212-c19c-4f9d-89e2-13727b23e585,Numerator,null
+CMS165FHIRControllingHighBP,048a7212-c19c-4f9d-89e2-13727b23e585,Numerator,0
 CMS165FHIRControllingHighBP,0b9cb569-149a-4b47-a535-66b59a77bceb,Denominator,0
 CMS165FHIRControllingHighBP,0b9cb569-149a-4b47-a535-66b59a77bceb,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,0b9cb569-149a-4b47-a535-66b59a77bceb,Initial Population,0
-CMS165FHIRControllingHighBP,0b9cb569-149a-4b47-a535-66b59a77bceb,Numerator,null
+CMS165FHIRControllingHighBP,0b9cb569-149a-4b47-a535-66b59a77bceb,Numerator,0
 CMS165FHIRControllingHighBP,0e045de9-dd14-461d-b7b9-aac287fb8e70,Denominator,0
 CMS165FHIRControllingHighBP,0e045de9-dd14-461d-b7b9-aac287fb8e70,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,0e045de9-dd14-461d-b7b9-aac287fb8e70,Initial Population,0
-CMS165FHIRControllingHighBP,0e045de9-dd14-461d-b7b9-aac287fb8e70,Numerator,null
+CMS165FHIRControllingHighBP,0e045de9-dd14-461d-b7b9-aac287fb8e70,Numerator,0
 CMS165FHIRControllingHighBP,0e867903-400d-4d71-a7fd-dc9b96d94a17,Denominator,0
 CMS165FHIRControllingHighBP,0e867903-400d-4d71-a7fd-dc9b96d94a17,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,0e867903-400d-4d71-a7fd-dc9b96d94a17,Initial Population,0
-CMS165FHIRControllingHighBP,0e867903-400d-4d71-a7fd-dc9b96d94a17,Numerator,null
+CMS165FHIRControllingHighBP,0e867903-400d-4d71-a7fd-dc9b96d94a17,Numerator,0
 CMS165FHIRControllingHighBP,1905549a-1783-4195-95b9-b0879cb81d96,Denominator,0
 CMS165FHIRControllingHighBP,1905549a-1783-4195-95b9-b0879cb81d96,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,1905549a-1783-4195-95b9-b0879cb81d96,Initial Population,0
-CMS165FHIRControllingHighBP,1905549a-1783-4195-95b9-b0879cb81d96,Numerator,null
+CMS165FHIRControllingHighBP,1905549a-1783-4195-95b9-b0879cb81d96,Numerator,0
 CMS165FHIRControllingHighBP,23004f44-4848-4e62-8813-2a56d900613c,Denominator,0
 CMS165FHIRControllingHighBP,23004f44-4848-4e62-8813-2a56d900613c,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,23004f44-4848-4e62-8813-2a56d900613c,Initial Population,0
-CMS165FHIRControllingHighBP,23004f44-4848-4e62-8813-2a56d900613c,Numerator,null
+CMS165FHIRControllingHighBP,23004f44-4848-4e62-8813-2a56d900613c,Numerator,0
 CMS165FHIRControllingHighBP,29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4,Denominator,0
 CMS165FHIRControllingHighBP,29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4,Initial Population,0
-CMS165FHIRControllingHighBP,29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4,Numerator,null
+CMS165FHIRControllingHighBP,29d930b1-1bb6-4089-9ed6-aa2b7b77d5a4,Numerator,0
 CMS165FHIRControllingHighBP,2c55811b-1571-43e5-919c-f90bf763b3d4,Denominator,0
 CMS165FHIRControllingHighBP,2c55811b-1571-43e5-919c-f90bf763b3d4,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,2c55811b-1571-43e5-919c-f90bf763b3d4,Initial Population,0
-CMS165FHIRControllingHighBP,2c55811b-1571-43e5-919c-f90bf763b3d4,Numerator,null
+CMS165FHIRControllingHighBP,2c55811b-1571-43e5-919c-f90bf763b3d4,Numerator,0
 CMS165FHIRControllingHighBP,30086fb9-0aea-4e5e-86cc-46f4d1aa8dd4,Denominator,0
 CMS165FHIRControllingHighBP,30086fb9-0aea-4e5e-86cc-46f4d1aa8dd4,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,30086fb9-0aea-4e5e-86cc-46f4d1aa8dd4,Initial Population,0
-CMS165FHIRControllingHighBP,30086fb9-0aea-4e5e-86cc-46f4d1aa8dd4,Numerator,null
+CMS165FHIRControllingHighBP,30086fb9-0aea-4e5e-86cc-46f4d1aa8dd4,Numerator,0
 CMS165FHIRControllingHighBP,32edbb16-2029-425a-85e0-6ea9182d1d91,Denominator,0
 CMS165FHIRControllingHighBP,32edbb16-2029-425a-85e0-6ea9182d1d91,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,32edbb16-2029-425a-85e0-6ea9182d1d91,Initial Population,0
-CMS165FHIRControllingHighBP,32edbb16-2029-425a-85e0-6ea9182d1d91,Numerator,null
+CMS165FHIRControllingHighBP,32edbb16-2029-425a-85e0-6ea9182d1d91,Numerator,0
 CMS165FHIRControllingHighBP,352a05d3-750c-45bd-a170-a8a8822b7697,Denominator,0
 CMS165FHIRControllingHighBP,352a05d3-750c-45bd-a170-a8a8822b7697,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,352a05d3-750c-45bd-a170-a8a8822b7697,Initial Population,0
-CMS165FHIRControllingHighBP,352a05d3-750c-45bd-a170-a8a8822b7697,Numerator,null
+CMS165FHIRControllingHighBP,352a05d3-750c-45bd-a170-a8a8822b7697,Numerator,0
 CMS165FHIRControllingHighBP,398e8703-6704-4c75-9887-41117761d2c7,Denominator,0
 CMS165FHIRControllingHighBP,398e8703-6704-4c75-9887-41117761d2c7,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,398e8703-6704-4c75-9887-41117761d2c7,Initial Population,0
-CMS165FHIRControllingHighBP,398e8703-6704-4c75-9887-41117761d2c7,Numerator,null
+CMS165FHIRControllingHighBP,398e8703-6704-4c75-9887-41117761d2c7,Numerator,0
 CMS165FHIRControllingHighBP,3e214018-7420-4e1f-a24d-e9426ace2bd8,Denominator,0
 CMS165FHIRControllingHighBP,3e214018-7420-4e1f-a24d-e9426ace2bd8,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,3e214018-7420-4e1f-a24d-e9426ace2bd8,Initial Population,0
-CMS165FHIRControllingHighBP,3e214018-7420-4e1f-a24d-e9426ace2bd8,Numerator,null
+CMS165FHIRControllingHighBP,3e214018-7420-4e1f-a24d-e9426ace2bd8,Numerator,0
 CMS165FHIRControllingHighBP,474b2964-23a1-4c77-ad16-8a21543b2ed3,Denominator,0
 CMS165FHIRControllingHighBP,474b2964-23a1-4c77-ad16-8a21543b2ed3,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,474b2964-23a1-4c77-ad16-8a21543b2ed3,Initial Population,0
-CMS165FHIRControllingHighBP,474b2964-23a1-4c77-ad16-8a21543b2ed3,Numerator,null
+CMS165FHIRControllingHighBP,474b2964-23a1-4c77-ad16-8a21543b2ed3,Numerator,0
 CMS165FHIRControllingHighBP,481692c7-2cf7-48fc-8269-967f5d7753bc,Denominator,0
 CMS165FHIRControllingHighBP,481692c7-2cf7-48fc-8269-967f5d7753bc,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,481692c7-2cf7-48fc-8269-967f5d7753bc,Initial Population,0
-CMS165FHIRControllingHighBP,481692c7-2cf7-48fc-8269-967f5d7753bc,Numerator,null
+CMS165FHIRControllingHighBP,481692c7-2cf7-48fc-8269-967f5d7753bc,Numerator,0
 CMS165FHIRControllingHighBP,4ade2900-b5fd-4bed-bacb-1e048c83366f,Denominator,0
 CMS165FHIRControllingHighBP,4ade2900-b5fd-4bed-bacb-1e048c83366f,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,4ade2900-b5fd-4bed-bacb-1e048c83366f,Initial Population,0
-CMS165FHIRControllingHighBP,4ade2900-b5fd-4bed-bacb-1e048c83366f,Numerator,null
+CMS165FHIRControllingHighBP,4ade2900-b5fd-4bed-bacb-1e048c83366f,Numerator,0
 CMS165FHIRControllingHighBP,4b31dc2b-7867-4766-8a8c-e1971d1e570a,Denominator,0
 CMS165FHIRControllingHighBP,4b31dc2b-7867-4766-8a8c-e1971d1e570a,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,4b31dc2b-7867-4766-8a8c-e1971d1e570a,Initial Population,0
-CMS165FHIRControllingHighBP,4b31dc2b-7867-4766-8a8c-e1971d1e570a,Numerator,null
+CMS165FHIRControllingHighBP,4b31dc2b-7867-4766-8a8c-e1971d1e570a,Numerator,0
 CMS165FHIRControllingHighBP,4c814ca9-da50-43e3-9e31-dbe755ee5c5e,Denominator,0
 CMS165FHIRControllingHighBP,4c814ca9-da50-43e3-9e31-dbe755ee5c5e,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,4c814ca9-da50-43e3-9e31-dbe755ee5c5e,Initial Population,0
-CMS165FHIRControllingHighBP,4c814ca9-da50-43e3-9e31-dbe755ee5c5e,Numerator,null
+CMS165FHIRControllingHighBP,4c814ca9-da50-43e3-9e31-dbe755ee5c5e,Numerator,0
 CMS165FHIRControllingHighBP,4d50f3eb-f56f-4f13-8fcf-4d26e05b9a6a,Denominator,0
 CMS165FHIRControllingHighBP,4d50f3eb-f56f-4f13-8fcf-4d26e05b9a6a,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,4d50f3eb-f56f-4f13-8fcf-4d26e05b9a6a,Initial Population,0
-CMS165FHIRControllingHighBP,4d50f3eb-f56f-4f13-8fcf-4d26e05b9a6a,Numerator,null
+CMS165FHIRControllingHighBP,4d50f3eb-f56f-4f13-8fcf-4d26e05b9a6a,Numerator,0
 CMS165FHIRControllingHighBP,4f168366-f0a7-4aad-ab9e-b0bcbecda886,Denominator,0
 CMS165FHIRControllingHighBP,4f168366-f0a7-4aad-ab9e-b0bcbecda886,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,4f168366-f0a7-4aad-ab9e-b0bcbecda886,Initial Population,0
-CMS165FHIRControllingHighBP,4f168366-f0a7-4aad-ab9e-b0bcbecda886,Numerator,null
+CMS165FHIRControllingHighBP,4f168366-f0a7-4aad-ab9e-b0bcbecda886,Numerator,0
 CMS165FHIRControllingHighBP,50d7cf81-dff4-45eb-b43d-0e40b08c3a75,Denominator,0
 CMS165FHIRControllingHighBP,50d7cf81-dff4-45eb-b43d-0e40b08c3a75,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,50d7cf81-dff4-45eb-b43d-0e40b08c3a75,Initial Population,0
-CMS165FHIRControllingHighBP,50d7cf81-dff4-45eb-b43d-0e40b08c3a75,Numerator,null
+CMS165FHIRControllingHighBP,50d7cf81-dff4-45eb-b43d-0e40b08c3a75,Numerator,0
 CMS165FHIRControllingHighBP,53abc166-8cd7-46c2-8159-8ed6fc5bcba0,Denominator,0
 CMS165FHIRControllingHighBP,53abc166-8cd7-46c2-8159-8ed6fc5bcba0,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,53abc166-8cd7-46c2-8159-8ed6fc5bcba0,Initial Population,0
-CMS165FHIRControllingHighBP,53abc166-8cd7-46c2-8159-8ed6fc5bcba0,Numerator,null
+CMS165FHIRControllingHighBP,53abc166-8cd7-46c2-8159-8ed6fc5bcba0,Numerator,0
 CMS165FHIRControllingHighBP,5421e420-8d42-4628-ba47-9abaf9ebfaa8,Denominator,0
 CMS165FHIRControllingHighBP,5421e420-8d42-4628-ba47-9abaf9ebfaa8,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,5421e420-8d42-4628-ba47-9abaf9ebfaa8,Initial Population,0
-CMS165FHIRControllingHighBP,5421e420-8d42-4628-ba47-9abaf9ebfaa8,Numerator,null
+CMS165FHIRControllingHighBP,5421e420-8d42-4628-ba47-9abaf9ebfaa8,Numerator,0
 CMS165FHIRControllingHighBP,546de5d8-f614-41c7-938f-671d14e4f540,Denominator,0
 CMS165FHIRControllingHighBP,546de5d8-f614-41c7-938f-671d14e4f540,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,546de5d8-f614-41c7-938f-671d14e4f540,Initial Population,0
-CMS165FHIRControllingHighBP,546de5d8-f614-41c7-938f-671d14e4f540,Numerator,null
+CMS165FHIRControllingHighBP,546de5d8-f614-41c7-938f-671d14e4f540,Numerator,0
 CMS165FHIRControllingHighBP,598f05e7-83b4-4609-9795-e9ac75f57f36,Denominator,0
 CMS165FHIRControllingHighBP,598f05e7-83b4-4609-9795-e9ac75f57f36,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,598f05e7-83b4-4609-9795-e9ac75f57f36,Initial Population,0
-CMS165FHIRControllingHighBP,598f05e7-83b4-4609-9795-e9ac75f57f36,Numerator,null
+CMS165FHIRControllingHighBP,598f05e7-83b4-4609-9795-e9ac75f57f36,Numerator,0
 CMS165FHIRControllingHighBP,59d7f239-7614-4e6e-a973-fe107aee5749,Denominator,0
 CMS165FHIRControllingHighBP,59d7f239-7614-4e6e-a973-fe107aee5749,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,59d7f239-7614-4e6e-a973-fe107aee5749,Initial Population,0
-CMS165FHIRControllingHighBP,59d7f239-7614-4e6e-a973-fe107aee5749,Numerator,null
+CMS165FHIRControllingHighBP,59d7f239-7614-4e6e-a973-fe107aee5749,Numerator,0
 CMS165FHIRControllingHighBP,642ef7f9-f9c2-45dc-ab7d-41a000b56d9c,Denominator,0
 CMS165FHIRControllingHighBP,642ef7f9-f9c2-45dc-ab7d-41a000b56d9c,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,642ef7f9-f9c2-45dc-ab7d-41a000b56d9c,Initial Population,0
-CMS165FHIRControllingHighBP,642ef7f9-f9c2-45dc-ab7d-41a000b56d9c,Numerator,null
+CMS165FHIRControllingHighBP,642ef7f9-f9c2-45dc-ab7d-41a000b56d9c,Numerator,0
 CMS165FHIRControllingHighBP,6769ebe0-1b45-472a-ba7b-8f9a014d94a6,Denominator,0
 CMS165FHIRControllingHighBP,6769ebe0-1b45-472a-ba7b-8f9a014d94a6,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,6769ebe0-1b45-472a-ba7b-8f9a014d94a6,Initial Population,0
-CMS165FHIRControllingHighBP,6769ebe0-1b45-472a-ba7b-8f9a014d94a6,Numerator,null
+CMS165FHIRControllingHighBP,6769ebe0-1b45-472a-ba7b-8f9a014d94a6,Numerator,0
 CMS165FHIRControllingHighBP,6795a52e-1f83-480b-a2a7-b0d0922c0e5b,Denominator,0
 CMS165FHIRControllingHighBP,6795a52e-1f83-480b-a2a7-b0d0922c0e5b,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,6795a52e-1f83-480b-a2a7-b0d0922c0e5b,Initial Population,0
-CMS165FHIRControllingHighBP,6795a52e-1f83-480b-a2a7-b0d0922c0e5b,Numerator,null
+CMS165FHIRControllingHighBP,6795a52e-1f83-480b-a2a7-b0d0922c0e5b,Numerator,0
 CMS165FHIRControllingHighBP,67ee2f03-89c1-4edb-b0fa-7e07effb4477,Denominator,0
 CMS165FHIRControllingHighBP,67ee2f03-89c1-4edb-b0fa-7e07effb4477,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,67ee2f03-89c1-4edb-b0fa-7e07effb4477,Initial Population,0
-CMS165FHIRControllingHighBP,67ee2f03-89c1-4edb-b0fa-7e07effb4477,Numerator,null
+CMS165FHIRControllingHighBP,67ee2f03-89c1-4edb-b0fa-7e07effb4477,Numerator,0
 CMS165FHIRControllingHighBP,686e2c47-b08f-465c-ab31-1712dd72028b,Denominator,0
 CMS165FHIRControllingHighBP,686e2c47-b08f-465c-ab31-1712dd72028b,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,686e2c47-b08f-465c-ab31-1712dd72028b,Initial Population,0
-CMS165FHIRControllingHighBP,686e2c47-b08f-465c-ab31-1712dd72028b,Numerator,null
+CMS165FHIRControllingHighBP,686e2c47-b08f-465c-ab31-1712dd72028b,Numerator,0
 CMS165FHIRControllingHighBP,6885264d-efbf-4e48-99a2-2e8ce29d61ba,Denominator,0
 CMS165FHIRControllingHighBP,6885264d-efbf-4e48-99a2-2e8ce29d61ba,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,6885264d-efbf-4e48-99a2-2e8ce29d61ba,Initial Population,0
-CMS165FHIRControllingHighBP,6885264d-efbf-4e48-99a2-2e8ce29d61ba,Numerator,null
+CMS165FHIRControllingHighBP,6885264d-efbf-4e48-99a2-2e8ce29d61ba,Numerator,0
 CMS165FHIRControllingHighBP,698b2574-1170-4438-8400-f3e1992a4807,Denominator,0
 CMS165FHIRControllingHighBP,698b2574-1170-4438-8400-f3e1992a4807,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,698b2574-1170-4438-8400-f3e1992a4807,Initial Population,0
-CMS165FHIRControllingHighBP,698b2574-1170-4438-8400-f3e1992a4807,Numerator,null
+CMS165FHIRControllingHighBP,698b2574-1170-4438-8400-f3e1992a4807,Numerator,0
 CMS165FHIRControllingHighBP,6d97c086-8776-45f4-898f-cece9e80990a,Denominator,0
 CMS165FHIRControllingHighBP,6d97c086-8776-45f4-898f-cece9e80990a,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,6d97c086-8776-45f4-898f-cece9e80990a,Initial Population,0
-CMS165FHIRControllingHighBP,6d97c086-8776-45f4-898f-cece9e80990a,Numerator,null
+CMS165FHIRControllingHighBP,6d97c086-8776-45f4-898f-cece9e80990a,Numerator,0
 CMS165FHIRControllingHighBP,6f37e357-7575-4b40-a63e-4b882532250f,Denominator,0
 CMS165FHIRControllingHighBP,6f37e357-7575-4b40-a63e-4b882532250f,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,6f37e357-7575-4b40-a63e-4b882532250f,Initial Population,0
-CMS165FHIRControllingHighBP,6f37e357-7575-4b40-a63e-4b882532250f,Numerator,1
+CMS165FHIRControllingHighBP,6f37e357-7575-4b40-a63e-4b882532250f,Numerator,0
 CMS165FHIRControllingHighBP,75d880c8-4220-4907-b29a-f595dc0df2fb,Denominator,0
 CMS165FHIRControllingHighBP,75d880c8-4220-4907-b29a-f595dc0df2fb,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,75d880c8-4220-4907-b29a-f595dc0df2fb,Initial Population,0
-CMS165FHIRControllingHighBP,75d880c8-4220-4907-b29a-f595dc0df2fb,Numerator,null
+CMS165FHIRControllingHighBP,75d880c8-4220-4907-b29a-f595dc0df2fb,Numerator,0
 CMS165FHIRControllingHighBP,78fc0433-a72a-45a3-b2c4-995e614674cb,Denominator,0
 CMS165FHIRControllingHighBP,78fc0433-a72a-45a3-b2c4-995e614674cb,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,78fc0433-a72a-45a3-b2c4-995e614674cb,Initial Population,0
-CMS165FHIRControllingHighBP,78fc0433-a72a-45a3-b2c4-995e614674cb,Numerator,null
+CMS165FHIRControllingHighBP,78fc0433-a72a-45a3-b2c4-995e614674cb,Numerator,0
 CMS165FHIRControllingHighBP,7c59efb5-56ab-4a25-af83-bd81daeee026,Denominator,0
 CMS165FHIRControllingHighBP,7c59efb5-56ab-4a25-af83-bd81daeee026,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,7c59efb5-56ab-4a25-af83-bd81daeee026,Initial Population,0
-CMS165FHIRControllingHighBP,7c59efb5-56ab-4a25-af83-bd81daeee026,Numerator,null
+CMS165FHIRControllingHighBP,7c59efb5-56ab-4a25-af83-bd81daeee026,Numerator,0
 CMS165FHIRControllingHighBP,7de4b027-eb4c-4a2e-958f-e6b7a3eb6309,Denominator,0
 CMS165FHIRControllingHighBP,7de4b027-eb4c-4a2e-958f-e6b7a3eb6309,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,7de4b027-eb4c-4a2e-958f-e6b7a3eb6309,Initial Population,0
-CMS165FHIRControllingHighBP,7de4b027-eb4c-4a2e-958f-e6b7a3eb6309,Numerator,null
+CMS165FHIRControllingHighBP,7de4b027-eb4c-4a2e-958f-e6b7a3eb6309,Numerator,0
 CMS165FHIRControllingHighBP,821185af-e5b2-4552-a63c-36b64a9200a9,Denominator,0
 CMS165FHIRControllingHighBP,821185af-e5b2-4552-a63c-36b64a9200a9,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,821185af-e5b2-4552-a63c-36b64a9200a9,Initial Population,0
-CMS165FHIRControllingHighBP,821185af-e5b2-4552-a63c-36b64a9200a9,Numerator,null
+CMS165FHIRControllingHighBP,821185af-e5b2-4552-a63c-36b64a9200a9,Numerator,0
 CMS165FHIRControllingHighBP,85ae5a03-576b-4a32-93af-d1a241987a77,Denominator,0
 CMS165FHIRControllingHighBP,85ae5a03-576b-4a32-93af-d1a241987a77,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,85ae5a03-576b-4a32-93af-d1a241987a77,Initial Population,0
-CMS165FHIRControllingHighBP,85ae5a03-576b-4a32-93af-d1a241987a77,Numerator,null
+CMS165FHIRControllingHighBP,85ae5a03-576b-4a32-93af-d1a241987a77,Numerator,0
 CMS165FHIRControllingHighBP,8e477157-81e8-4b7b-ba79-4a441a2a1109,Denominator,0
 CMS165FHIRControllingHighBP,8e477157-81e8-4b7b-ba79-4a441a2a1109,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,8e477157-81e8-4b7b-ba79-4a441a2a1109,Initial Population,0
-CMS165FHIRControllingHighBP,8e477157-81e8-4b7b-ba79-4a441a2a1109,Numerator,null
+CMS165FHIRControllingHighBP,8e477157-81e8-4b7b-ba79-4a441a2a1109,Numerator,0
 CMS165FHIRControllingHighBP,926b705a-b222-4c64-9d3f-ad64ead74295,Denominator,0
 CMS165FHIRControllingHighBP,926b705a-b222-4c64-9d3f-ad64ead74295,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,926b705a-b222-4c64-9d3f-ad64ead74295,Initial Population,0
-CMS165FHIRControllingHighBP,926b705a-b222-4c64-9d3f-ad64ead74295,Numerator,null
+CMS165FHIRControllingHighBP,926b705a-b222-4c64-9d3f-ad64ead74295,Numerator,0
 CMS165FHIRControllingHighBP,94d2a25e-9eec-44ce-bc34-711452549be8,Denominator,0
 CMS165FHIRControllingHighBP,94d2a25e-9eec-44ce-bc34-711452549be8,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,94d2a25e-9eec-44ce-bc34-711452549be8,Initial Population,0
-CMS165FHIRControllingHighBP,94d2a25e-9eec-44ce-bc34-711452549be8,Numerator,null
+CMS165FHIRControllingHighBP,94d2a25e-9eec-44ce-bc34-711452549be8,Numerator,0
 CMS165FHIRControllingHighBP,972c7128-f3c2-401d-89f3-a0752dd02620,Denominator,0
 CMS165FHIRControllingHighBP,972c7128-f3c2-401d-89f3-a0752dd02620,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,972c7128-f3c2-401d-89f3-a0752dd02620,Initial Population,0
-CMS165FHIRControllingHighBP,972c7128-f3c2-401d-89f3-a0752dd02620,Numerator,null
+CMS165FHIRControllingHighBP,972c7128-f3c2-401d-89f3-a0752dd02620,Numerator,0
 CMS165FHIRControllingHighBP,9f063f76-a97a-4bba-9f6a-35e7a429a72c,Denominator,0
 CMS165FHIRControllingHighBP,9f063f76-a97a-4bba-9f6a-35e7a429a72c,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,9f063f76-a97a-4bba-9f6a-35e7a429a72c,Initial Population,0
-CMS165FHIRControllingHighBP,9f063f76-a97a-4bba-9f6a-35e7a429a72c,Numerator,null
+CMS165FHIRControllingHighBP,9f063f76-a97a-4bba-9f6a-35e7a429a72c,Numerator,0
 CMS165FHIRControllingHighBP,a3deee90-5966-4309-b52f-c0a76046f680,Denominator,0
 CMS165FHIRControllingHighBP,a3deee90-5966-4309-b52f-c0a76046f680,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,a3deee90-5966-4309-b52f-c0a76046f680,Initial Population,0
-CMS165FHIRControllingHighBP,a3deee90-5966-4309-b52f-c0a76046f680,Numerator,null
+CMS165FHIRControllingHighBP,a3deee90-5966-4309-b52f-c0a76046f680,Numerator,0
 CMS165FHIRControllingHighBP,a7ec972f-f0c1-428d-aba5-ba76cba5cd73,Denominator,0
 CMS165FHIRControllingHighBP,a7ec972f-f0c1-428d-aba5-ba76cba5cd73,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,a7ec972f-f0c1-428d-aba5-ba76cba5cd73,Initial Population,0
-CMS165FHIRControllingHighBP,a7ec972f-f0c1-428d-aba5-ba76cba5cd73,Numerator,null
+CMS165FHIRControllingHighBP,a7ec972f-f0c1-428d-aba5-ba76cba5cd73,Numerator,0
 CMS165FHIRControllingHighBP,aa1f02c0-ded0-4b30-9f0d-c8be54aa436b,Denominator,0
 CMS165FHIRControllingHighBP,aa1f02c0-ded0-4b30-9f0d-c8be54aa436b,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,aa1f02c0-ded0-4b30-9f0d-c8be54aa436b,Initial Population,0
-CMS165FHIRControllingHighBP,aa1f02c0-ded0-4b30-9f0d-c8be54aa436b,Numerator,null
+CMS165FHIRControllingHighBP,aa1f02c0-ded0-4b30-9f0d-c8be54aa436b,Numerator,0
 CMS165FHIRControllingHighBP,aa87ac34-227b-4424-84d2-62aaba57c232,Denominator,0
 CMS165FHIRControllingHighBP,aa87ac34-227b-4424-84d2-62aaba57c232,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,aa87ac34-227b-4424-84d2-62aaba57c232,Initial Population,0
-CMS165FHIRControllingHighBP,aa87ac34-227b-4424-84d2-62aaba57c232,Numerator,null
+CMS165FHIRControllingHighBP,aa87ac34-227b-4424-84d2-62aaba57c232,Numerator,0
 CMS165FHIRControllingHighBP,b378c30b-ebc2-4378-9a75-8a97711cac81,Denominator,0
 CMS165FHIRControllingHighBP,b378c30b-ebc2-4378-9a75-8a97711cac81,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,b378c30b-ebc2-4378-9a75-8a97711cac81,Initial Population,0
-CMS165FHIRControllingHighBP,b378c30b-ebc2-4378-9a75-8a97711cac81,Numerator,null
+CMS165FHIRControllingHighBP,b378c30b-ebc2-4378-9a75-8a97711cac81,Numerator,0
 CMS165FHIRControllingHighBP,b84bdc08-62ae-4bce-857d-d2492e0c82fd,Denominator,0
 CMS165FHIRControllingHighBP,b84bdc08-62ae-4bce-857d-d2492e0c82fd,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,b84bdc08-62ae-4bce-857d-d2492e0c82fd,Initial Population,0
-CMS165FHIRControllingHighBP,b84bdc08-62ae-4bce-857d-d2492e0c82fd,Numerator,null
+CMS165FHIRControllingHighBP,b84bdc08-62ae-4bce-857d-d2492e0c82fd,Numerator,0
 CMS165FHIRControllingHighBP,bfdc37c9-105c-4765-a2ba-d7da92ec9a47,Denominator,0
 CMS165FHIRControllingHighBP,bfdc37c9-105c-4765-a2ba-d7da92ec9a47,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,bfdc37c9-105c-4765-a2ba-d7da92ec9a47,Initial Population,0
-CMS165FHIRControllingHighBP,bfdc37c9-105c-4765-a2ba-d7da92ec9a47,Numerator,null
+CMS165FHIRControllingHighBP,bfdc37c9-105c-4765-a2ba-d7da92ec9a47,Numerator,0
 CMS165FHIRControllingHighBP,bff7264b-35fc-402b-8a15-22c78e227064,Denominator,0
 CMS165FHIRControllingHighBP,bff7264b-35fc-402b-8a15-22c78e227064,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,bff7264b-35fc-402b-8a15-22c78e227064,Initial Population,0
@@ -222,47 +222,47 @@ CMS165FHIRControllingHighBP,bff7264b-35fc-402b-8a15-22c78e227064,Numerator,0
 CMS165FHIRControllingHighBP,c57b8e40-b3be-484f-8874-8ccafa3d5a38,Denominator,0
 CMS165FHIRControllingHighBP,c57b8e40-b3be-484f-8874-8ccafa3d5a38,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,c57b8e40-b3be-484f-8874-8ccafa3d5a38,Initial Population,0
-CMS165FHIRControllingHighBP,c57b8e40-b3be-484f-8874-8ccafa3d5a38,Numerator,null
+CMS165FHIRControllingHighBP,c57b8e40-b3be-484f-8874-8ccafa3d5a38,Numerator,0
 CMS165FHIRControllingHighBP,cdfb5385-a466-4d41-9dce-cc50f88d0666,Denominator,0
 CMS165FHIRControllingHighBP,cdfb5385-a466-4d41-9dce-cc50f88d0666,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,cdfb5385-a466-4d41-9dce-cc50f88d0666,Initial Population,0
-CMS165FHIRControllingHighBP,cdfb5385-a466-4d41-9dce-cc50f88d0666,Numerator,null
+CMS165FHIRControllingHighBP,cdfb5385-a466-4d41-9dce-cc50f88d0666,Numerator,0
 CMS165FHIRControllingHighBP,d150409f-0616-4565-ba60-7ca732a87288,Denominator,0
 CMS165FHIRControllingHighBP,d150409f-0616-4565-ba60-7ca732a87288,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,d150409f-0616-4565-ba60-7ca732a87288,Initial Population,0
-CMS165FHIRControllingHighBP,d150409f-0616-4565-ba60-7ca732a87288,Numerator,null
+CMS165FHIRControllingHighBP,d150409f-0616-4565-ba60-7ca732a87288,Numerator,0
 CMS165FHIRControllingHighBP,d513ed00-6ea1-4522-ae7c-c3bc29082e92,Denominator,0
 CMS165FHIRControllingHighBP,d513ed00-6ea1-4522-ae7c-c3bc29082e92,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,d513ed00-6ea1-4522-ae7c-c3bc29082e92,Initial Population,0
-CMS165FHIRControllingHighBP,d513ed00-6ea1-4522-ae7c-c3bc29082e92,Numerator,null
+CMS165FHIRControllingHighBP,d513ed00-6ea1-4522-ae7c-c3bc29082e92,Numerator,0
 CMS165FHIRControllingHighBP,d6be5093-9772-4e0f-83e1-b56b26d55529,Denominator,0
 CMS165FHIRControllingHighBP,d6be5093-9772-4e0f-83e1-b56b26d55529,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,d6be5093-9772-4e0f-83e1-b56b26d55529,Initial Population,0
-CMS165FHIRControllingHighBP,d6be5093-9772-4e0f-83e1-b56b26d55529,Numerator,null
+CMS165FHIRControllingHighBP,d6be5093-9772-4e0f-83e1-b56b26d55529,Numerator,0
 CMS165FHIRControllingHighBP,dbc8c8f1-3f10-4352-adbe-e0d4c12ade72,Denominator,0
 CMS165FHIRControllingHighBP,dbc8c8f1-3f10-4352-adbe-e0d4c12ade72,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,dbc8c8f1-3f10-4352-adbe-e0d4c12ade72,Initial Population,0
-CMS165FHIRControllingHighBP,dbc8c8f1-3f10-4352-adbe-e0d4c12ade72,Numerator,null
+CMS165FHIRControllingHighBP,dbc8c8f1-3f10-4352-adbe-e0d4c12ade72,Numerator,0
 CMS165FHIRControllingHighBP,e56c60ca-d0d0-4910-af2e-1d8a074d129a,Denominator,0
 CMS165FHIRControllingHighBP,e56c60ca-d0d0-4910-af2e-1d8a074d129a,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,e56c60ca-d0d0-4910-af2e-1d8a074d129a,Initial Population,0
-CMS165FHIRControllingHighBP,e56c60ca-d0d0-4910-af2e-1d8a074d129a,Numerator,null
+CMS165FHIRControllingHighBP,e56c60ca-d0d0-4910-af2e-1d8a074d129a,Numerator,0
 CMS165FHIRControllingHighBP,e94daaa3-ffff-4ca5-b971-7fd4407c3580,Denominator,0
 CMS165FHIRControllingHighBP,e94daaa3-ffff-4ca5-b971-7fd4407c3580,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,e94daaa3-ffff-4ca5-b971-7fd4407c3580,Initial Population,0
-CMS165FHIRControllingHighBP,e94daaa3-ffff-4ca5-b971-7fd4407c3580,Numerator,null
+CMS165FHIRControllingHighBP,e94daaa3-ffff-4ca5-b971-7fd4407c3580,Numerator,0
 CMS165FHIRControllingHighBP,f2d1fd7e-35ae-45cd-86e6-8b874c3e3fb9,Denominator,0
 CMS165FHIRControllingHighBP,f2d1fd7e-35ae-45cd-86e6-8b874c3e3fb9,Denominator Exclusions,0
 CMS165FHIRControllingHighBP,f2d1fd7e-35ae-45cd-86e6-8b874c3e3fb9,Initial Population,0
-CMS165FHIRControllingHighBP,f2d1fd7e-35ae-45cd-86e6-8b874c3e3fb9,Numerator,1
+CMS165FHIRControllingHighBP,f2d1fd7e-35ae-45cd-86e6-8b874c3e3fb9,Numerator,0
 CMS165FHIRControllingHighBP,f5b461d7-e382-4616-a763-d745867735d0,Denominator,0
 CMS165FHIRControllingHighBP,f5b461d7-e382-4616-a763-d745867735d0,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,f5b461d7-e382-4616-a763-d745867735d0,Initial Population,0
-CMS165FHIRControllingHighBP,f5b461d7-e382-4616-a763-d745867735d0,Numerator,null
+CMS165FHIRControllingHighBP,f5b461d7-e382-4616-a763-d745867735d0,Numerator,0
 CMS165FHIRControllingHighBP,f9bf76c5-7b85-4fd7-b883-b7c14e8b1801,Denominator,0
 CMS165FHIRControllingHighBP,f9bf76c5-7b85-4fd7-b883-b7c14e8b1801,Denominator Exclusions,1
 CMS165FHIRControllingHighBP,f9bf76c5-7b85-4fd7-b883-b7c14e8b1801,Initial Population,0
-CMS165FHIRControllingHighBP,f9bf76c5-7b85-4fd7-b883-b7c14e8b1801,Numerator,null
+CMS165FHIRControllingHighBP,f9bf76c5-7b85-4fd7-b883-b7c14e8b1801,Numerator,0
 CMS149FHIRDementiaCognitiveAssess,03069b40-7a8b-4dbe-9fa0-9cb01acf13d2,Denominator,0
 CMS149FHIRDementiaCognitiveAssess,03069b40-7a8b-4dbe-9fa0-9cb01acf13d2,Denominator Exceptions,0
 CMS149FHIRDementiaCognitiveAssess,03069b40-7a8b-4dbe-9fa0-9cb01acf13d2,Initial Population,0
@@ -1640,7 +1640,7 @@ CMS1188FHIRHIVSTITesting,164b7628-fecf-440c-b138-3f7a43adcd7e,Initial Population
 CMS1188FHIRHIVSTITesting,164b7628-fecf-440c-b138-3f7a43adcd7e,Numerator,0
 CMS1188FHIRHIVSTITesting,1734084f-7e87-43cb-9376-2261e94d3f09,Denominator,0
 CMS1188FHIRHIVSTITesting,1734084f-7e87-43cb-9376-2261e94d3f09,Initial Population,0
-CMS1188FHIRHIVSTITesting,1734084f-7e87-43cb-9376-2261e94d3f09,Numerator,1
+CMS1188FHIRHIVSTITesting,1734084f-7e87-43cb-9376-2261e94d3f09,Numerator,0
 CMS1188FHIRHIVSTITesting,1b318b63-7b54-4410-9e9c-6107d5eb97ca,Denominator,0
 CMS1188FHIRHIVSTITesting,1b318b63-7b54-4410-9e9c-6107d5eb97ca,Initial Population,0
 CMS1188FHIRHIVSTITesting,1b318b63-7b54-4410-9e9c-6107d5eb97ca,Numerator,0
@@ -1658,7 +1658,7 @@ CMS1188FHIRHIVSTITesting,23a881d2-1897-4674-8857-c438bdb8bd7d,Initial Population
 CMS1188FHIRHIVSTITesting,23a881d2-1897-4674-8857-c438bdb8bd7d,Numerator,0
 CMS1188FHIRHIVSTITesting,3aa2678e-0a9c-4233-9634-daae7e0e31e9,Denominator,0
 CMS1188FHIRHIVSTITesting,3aa2678e-0a9c-4233-9634-daae7e0e31e9,Initial Population,0
-CMS1188FHIRHIVSTITesting,3aa2678e-0a9c-4233-9634-daae7e0e31e9,Numerator,1
+CMS1188FHIRHIVSTITesting,3aa2678e-0a9c-4233-9634-daae7e0e31e9,Numerator,0
 CMS1188FHIRHIVSTITesting,3d16a3a5-a2e7-49f8-8335-1b908a646ff4,Denominator,0
 CMS1188FHIRHIVSTITesting,3d16a3a5-a2e7-49f8-8335-1b908a646ff4,Initial Population,0
 CMS1188FHIRHIVSTITesting,3d16a3a5-a2e7-49f8-8335-1b908a646ff4,Numerator,0
@@ -1667,7 +1667,7 @@ CMS1188FHIRHIVSTITesting,65404068-ae4f-43e1-ac90-11a293315aa1,Initial Population
 CMS1188FHIRHIVSTITesting,65404068-ae4f-43e1-ac90-11a293315aa1,Numerator,0
 CMS1188FHIRHIVSTITesting,6c08efb1-922f-4e66-98bc-0de25182e723,Denominator,0
 CMS1188FHIRHIVSTITesting,6c08efb1-922f-4e66-98bc-0de25182e723,Initial Population,0
-CMS1188FHIRHIVSTITesting,6c08efb1-922f-4e66-98bc-0de25182e723,Numerator,1
+CMS1188FHIRHIVSTITesting,6c08efb1-922f-4e66-98bc-0de25182e723,Numerator,0
 CMS1188FHIRHIVSTITesting,6e5d5e93-aaf8-440f-9f99-7fbb105dce3c,Denominator,0
 CMS1188FHIRHIVSTITesting,6e5d5e93-aaf8-440f-9f99-7fbb105dce3c,Initial Population,0
 CMS1188FHIRHIVSTITesting,6e5d5e93-aaf8-440f-9f99-7fbb105dce3c,Numerator,0
@@ -1682,19 +1682,19 @@ CMS1188FHIRHIVSTITesting,73085704-0980-4bc2-bae1-b79e75a6be99,Initial Population
 CMS1188FHIRHIVSTITesting,73085704-0980-4bc2-bae1-b79e75a6be99,Numerator,0
 CMS1188FHIRHIVSTITesting,74ac3135-a328-4695-93aa-17368142976f,Denominator,0
 CMS1188FHIRHIVSTITesting,74ac3135-a328-4695-93aa-17368142976f,Initial Population,0
-CMS1188FHIRHIVSTITesting,74ac3135-a328-4695-93aa-17368142976f,Numerator,1
+CMS1188FHIRHIVSTITesting,74ac3135-a328-4695-93aa-17368142976f,Numerator,0
 CMS1188FHIRHIVSTITesting,75fec959-d869-4377-a181-73985bd33787,Denominator,0
 CMS1188FHIRHIVSTITesting,75fec959-d869-4377-a181-73985bd33787,Initial Population,0
 CMS1188FHIRHIVSTITesting,75fec959-d869-4377-a181-73985bd33787,Numerator,0
 CMS1188FHIRHIVSTITesting,770c7dc8-5c0b-4987-8f60-27e90f251dae,Denominator,0
 CMS1188FHIRHIVSTITesting,770c7dc8-5c0b-4987-8f60-27e90f251dae,Initial Population,0
-CMS1188FHIRHIVSTITesting,770c7dc8-5c0b-4987-8f60-27e90f251dae,Numerator,1
+CMS1188FHIRHIVSTITesting,770c7dc8-5c0b-4987-8f60-27e90f251dae,Numerator,0
 CMS1188FHIRHIVSTITesting,77973e2d-625a-4c4f-aa69-2c716af0ad3c,Denominator,0
 CMS1188FHIRHIVSTITesting,77973e2d-625a-4c4f-aa69-2c716af0ad3c,Initial Population,0
-CMS1188FHIRHIVSTITesting,77973e2d-625a-4c4f-aa69-2c716af0ad3c,Numerator,1
+CMS1188FHIRHIVSTITesting,77973e2d-625a-4c4f-aa69-2c716af0ad3c,Numerator,0
 CMS1188FHIRHIVSTITesting,7fafc4ad-74d9-48e7-b12e-d51a11030a14,Denominator,0
 CMS1188FHIRHIVSTITesting,7fafc4ad-74d9-48e7-b12e-d51a11030a14,Initial Population,0
-CMS1188FHIRHIVSTITesting,7fafc4ad-74d9-48e7-b12e-d51a11030a14,Numerator,1
+CMS1188FHIRHIVSTITesting,7fafc4ad-74d9-48e7-b12e-d51a11030a14,Numerator,0
 CMS1188FHIRHIVSTITesting,8002d0cb-c4c0-4f54-96b0-c0e701947c07,Denominator,0
 CMS1188FHIRHIVSTITesting,8002d0cb-c4c0-4f54-96b0-c0e701947c07,Initial Population,0
 CMS1188FHIRHIVSTITesting,8002d0cb-c4c0-4f54-96b0-c0e701947c07,Numerator,0
@@ -1703,7 +1703,7 @@ CMS1188FHIRHIVSTITesting,876ad4f9-f0aa-431e-b76d-c0ef5b9425e0,Initial Population
 CMS1188FHIRHIVSTITesting,876ad4f9-f0aa-431e-b76d-c0ef5b9425e0,Numerator,0
 CMS1188FHIRHIVSTITesting,9947d6a4-aff5-49ab-8a01-c3c438a7faa2,Denominator,0
 CMS1188FHIRHIVSTITesting,9947d6a4-aff5-49ab-8a01-c3c438a7faa2,Initial Population,0
-CMS1188FHIRHIVSTITesting,9947d6a4-aff5-49ab-8a01-c3c438a7faa2,Numerator,1
+CMS1188FHIRHIVSTITesting,9947d6a4-aff5-49ab-8a01-c3c438a7faa2,Numerator,0
 CMS1188FHIRHIVSTITesting,b08c7da7-5871-499c-b266-c745ba23a426,Denominator,0
 CMS1188FHIRHIVSTITesting,b08c7da7-5871-499c-b266-c745ba23a426,Initial Population,0
 CMS1188FHIRHIVSTITesting,b08c7da7-5871-499c-b266-c745ba23a426,Numerator,0
@@ -1724,10 +1724,10 @@ CMS1188FHIRHIVSTITesting,c51459e4-0636-452f-9cbc-d73b599ad7c5,Initial Population
 CMS1188FHIRHIVSTITesting,c51459e4-0636-452f-9cbc-d73b599ad7c5,Numerator,0
 CMS1188FHIRHIVSTITesting,d66ec0c1-1b48-4337-afbb-c2abd3fae91e,Denominator,0
 CMS1188FHIRHIVSTITesting,d66ec0c1-1b48-4337-afbb-c2abd3fae91e,Initial Population,0
-CMS1188FHIRHIVSTITesting,d66ec0c1-1b48-4337-afbb-c2abd3fae91e,Numerator,1
+CMS1188FHIRHIVSTITesting,d66ec0c1-1b48-4337-afbb-c2abd3fae91e,Numerator,0
 CMS1188FHIRHIVSTITesting,de5e2460-196e-4a0f-bb6a-988c39edadd6,Denominator,0
 CMS1188FHIRHIVSTITesting,de5e2460-196e-4a0f-bb6a-988c39edadd6,Initial Population,0
-CMS1188FHIRHIVSTITesting,de5e2460-196e-4a0f-bb6a-988c39edadd6,Numerator,1
+CMS1188FHIRHIVSTITesting,de5e2460-196e-4a0f-bb6a-988c39edadd6,Numerator,0
 CMS1188FHIRHIVSTITesting,efa9696e-1451-4f5e-895a-552485e5c2b9,Denominator,0
 CMS1188FHIRHIVSTITesting,efa9696e-1451-4f5e-895a-552485e5c2b9,Initial Population,0
 CMS1188FHIRHIVSTITesting,efa9696e-1451-4f5e-895a-552485e5c2b9,Numerator,0
@@ -2552,7 +2552,7 @@ CMS128FHIRAntidepressantMgmt,fcfaba77-8917-48de-993e-438eb8d5b77b,Initial Popula
 CMS153FHIRChlamydiaScreening,070ea94d-3bc2-4174-92b0-2c640c785928,Denominator,0
 CMS153FHIRChlamydiaScreening,070ea94d-3bc2-4174-92b0-2c640c785928,Denominator Exclusions,0
 CMS153FHIRChlamydiaScreening,070ea94d-3bc2-4174-92b0-2c640c785928,Initial Population,0
-CMS153FHIRChlamydiaScreening,070ea94d-3bc2-4174-92b0-2c640c785928,Numerator,1
+CMS153FHIRChlamydiaScreening,070ea94d-3bc2-4174-92b0-2c640c785928,Numerator,0
 CMS153FHIRChlamydiaScreening,1705efe6-4216-4263-9e26-07d7a334801c,Denominator,1
 CMS153FHIRChlamydiaScreening,1705efe6-4216-4263-9e26-07d7a334801c,Denominator Exclusions,0
 CMS153FHIRChlamydiaScreening,1705efe6-4216-4263-9e26-07d7a334801c,Initial Population,1
@@ -3282,7 +3282,7 @@ CMS122FHIRDiabetesAssessGT9Pct,1e954801-6437-4abc-8fb8-d36b5b5b97d8,Numerator,1
 CMS122FHIRDiabetesAssessGT9Pct,1fa14a28-3be6-4299-ac4f-68772805748a,Denominator,0
 CMS122FHIRDiabetesAssessGT9Pct,1fa14a28-3be6-4299-ac4f-68772805748a,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,1fa14a28-3be6-4299-ac4f-68772805748a,Initial Population,0
-CMS122FHIRDiabetesAssessGT9Pct,1fa14a28-3be6-4299-ac4f-68772805748a,Numerator,1
+CMS122FHIRDiabetesAssessGT9Pct,1fa14a28-3be6-4299-ac4f-68772805748a,Numerator,0
 CMS122FHIRDiabetesAssessGT9Pct,21695544-0997-4b9a-989c-a535da22d033,Denominator,1
 CMS122FHIRDiabetesAssessGT9Pct,21695544-0997-4b9a-989c-a535da22d033,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,21695544-0997-4b9a-989c-a535da22d033,Initial Population,1
@@ -3334,7 +3334,7 @@ CMS122FHIRDiabetesAssessGT9Pct,6b6a5f96-c2a8-43f1-a353-7b5700ecb031,Numerator,1
 CMS122FHIRDiabetesAssessGT9Pct,6d3523ab-25c4-4e98-9ed4-342d7e7f5091,Denominator,0
 CMS122FHIRDiabetesAssessGT9Pct,6d3523ab-25c4-4e98-9ed4-342d7e7f5091,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,6d3523ab-25c4-4e98-9ed4-342d7e7f5091,Initial Population,0
-CMS122FHIRDiabetesAssessGT9Pct,6d3523ab-25c4-4e98-9ed4-342d7e7f5091,Numerator,1
+CMS122FHIRDiabetesAssessGT9Pct,6d3523ab-25c4-4e98-9ed4-342d7e7f5091,Numerator,0
 CMS122FHIRDiabetesAssessGT9Pct,6d9426d1-5554-4d6b-9ed0-e3736dd17482,Denominator,1
 CMS122FHIRDiabetesAssessGT9Pct,6d9426d1-5554-4d6b-9ed0-e3736dd17482,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,6d9426d1-5554-4d6b-9ed0-e3736dd17482,Initial Population,1
@@ -3346,7 +3346,7 @@ CMS122FHIRDiabetesAssessGT9Pct,6f0553ac-e12a-4af5-ad27-05339f4b4ec0,Numerator,1
 CMS122FHIRDiabetesAssessGT9Pct,7312a078-5757-4fab-82a4-1f70c8f107bc,Denominator,0
 CMS122FHIRDiabetesAssessGT9Pct,7312a078-5757-4fab-82a4-1f70c8f107bc,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,7312a078-5757-4fab-82a4-1f70c8f107bc,Initial Population,0
-CMS122FHIRDiabetesAssessGT9Pct,7312a078-5757-4fab-82a4-1f70c8f107bc,Numerator,1
+CMS122FHIRDiabetesAssessGT9Pct,7312a078-5757-4fab-82a4-1f70c8f107bc,Numerator,0
 CMS122FHIRDiabetesAssessGT9Pct,7706188a-f37c-483d-96c2-4d7eab833605,Denominator,1
 CMS122FHIRDiabetesAssessGT9Pct,7706188a-f37c-483d-96c2-4d7eab833605,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,7706188a-f37c-483d-96c2-4d7eab833605,Initial Population,1
@@ -3434,7 +3434,7 @@ CMS122FHIRDiabetesAssessGT9Pct,ac4d7076-d1cb-44c6-a94f-c2c86266d53b,Numerator,1
 CMS122FHIRDiabetesAssessGT9Pct,ad9a8d0c-7d40-49ee-9088-6676f5916c1f,Denominator,0
 CMS122FHIRDiabetesAssessGT9Pct,ad9a8d0c-7d40-49ee-9088-6676f5916c1f,Denominator Exclusions,0
 CMS122FHIRDiabetesAssessGT9Pct,ad9a8d0c-7d40-49ee-9088-6676f5916c1f,Initial Population,0
-CMS122FHIRDiabetesAssessGT9Pct,ad9a8d0c-7d40-49ee-9088-6676f5916c1f,Numerator,1
+CMS122FHIRDiabetesAssessGT9Pct,ad9a8d0c-7d40-49ee-9088-6676f5916c1f,Numerator,0
 CMS122FHIRDiabetesAssessGT9Pct,b6a4b9f8-21c1-44f2-a834-72f0906b4f88,Denominator,1
 CMS122FHIRDiabetesAssessGT9Pct,b6a4b9f8-21c1-44f2-a834-72f0906b4f88,Denominator Exclusions,1
 CMS122FHIRDiabetesAssessGT9Pct,b6a4b9f8-21c1-44f2-a834-72f0906b4f88,Initial Population,1
@@ -4097,7 +4097,7 @@ CMS1074FHIRCTIQR,07f3be61-8e8b-4f95-94a3-4ca0b7969f79,Denominator,0
 CMS1074FHIRCTIQR,07f3be61-8e8b-4f95-94a3-4ca0b7969f79,Denominator Exclusion,0
 CMS1074FHIRCTIQR,07f3be61-8e8b-4f95-94a3-4ca0b7969f79,Initial Population,1
 CMS1074FHIRCTIQR,07f3be61-8e8b-4f95-94a3-4ca0b7969f79,Numerator,0
-CMS1074FHIRCTIQR,2990a82a-f129-47e0-8ffe-6fd96132b9d8,Denominator,1
+CMS1074FHIRCTIQR,2990a82a-f129-47e0-8ffe-6fd96132b9d8,Denominator,0
 CMS1074FHIRCTIQR,2990a82a-f129-47e0-8ffe-6fd96132b9d8,Denominator Exclusion,1
 CMS1074FHIRCTIQR,2990a82a-f129-47e0-8ffe-6fd96132b9d8,Initial Population,1
 CMS1074FHIRCTIQR,2990a82a-f129-47e0-8ffe-6fd96132b9d8,Numerator,0
@@ -5860,7 +5860,7 @@ CMS506FHIRSafeUseofOpioids,029865cf-b060-4024-be84-bb902726c25e,Denominator,1
 CMS506FHIRSafeUseofOpioids,029865cf-b060-4024-be84-bb902726c25e,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,029865cf-b060-4024-be84-bb902726c25e,Initial Population,1
 CMS506FHIRSafeUseofOpioids,029865cf-b060-4024-be84-bb902726c25e,Numerator,0
-CMS506FHIRSafeUseofOpioids,031889e2-0353-4c2e-82c0-f422e15aacaa,Denominator,1
+CMS506FHIRSafeUseofOpioids,031889e2-0353-4c2e-82c0-f422e15aacaa,Denominator,0
 CMS506FHIRSafeUseofOpioids,031889e2-0353-4c2e-82c0-f422e15aacaa,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,031889e2-0353-4c2e-82c0-f422e15aacaa,Initial Population,1
 CMS506FHIRSafeUseofOpioids,031889e2-0353-4c2e-82c0-f422e15aacaa,Numerator,0
@@ -5868,7 +5868,7 @@ CMS506FHIRSafeUseofOpioids,0a9ce53d-32ec-45be-b981-0fae3d3e91f5,Denominator,0
 CMS506FHIRSafeUseofOpioids,0a9ce53d-32ec-45be-b981-0fae3d3e91f5,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,0a9ce53d-32ec-45be-b981-0fae3d3e91f5,Initial Population,0
 CMS506FHIRSafeUseofOpioids,0a9ce53d-32ec-45be-b981-0fae3d3e91f5,Numerator,0
-CMS506FHIRSafeUseofOpioids,0e3be52f-723e-4df4-a584-337daa19e259,Denominator,1
+CMS506FHIRSafeUseofOpioids,0e3be52f-723e-4df4-a584-337daa19e259,Denominator,0
 CMS506FHIRSafeUseofOpioids,0e3be52f-723e-4df4-a584-337daa19e259,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,0e3be52f-723e-4df4-a584-337daa19e259,Initial Population,1
 CMS506FHIRSafeUseofOpioids,0e3be52f-723e-4df4-a584-337daa19e259,Numerator,0
@@ -5912,19 +5912,19 @@ CMS506FHIRSafeUseofOpioids,47d0b311-ce53-42ec-a846-d22231bc1003,Denominator,1
 CMS506FHIRSafeUseofOpioids,47d0b311-ce53-42ec-a846-d22231bc1003,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,47d0b311-ce53-42ec-a846-d22231bc1003,Initial Population,1
 CMS506FHIRSafeUseofOpioids,47d0b311-ce53-42ec-a846-d22231bc1003,Numerator,0
-CMS506FHIRSafeUseofOpioids,552a6dbe-5e55-4388-b7c0-234c5d712e0a,Denominator,1
+CMS506FHIRSafeUseofOpioids,552a6dbe-5e55-4388-b7c0-234c5d712e0a,Denominator,0
 CMS506FHIRSafeUseofOpioids,552a6dbe-5e55-4388-b7c0-234c5d712e0a,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,552a6dbe-5e55-4388-b7c0-234c5d712e0a,Initial Population,1
-CMS506FHIRSafeUseofOpioids,552a6dbe-5e55-4388-b7c0-234c5d712e0a,Numerator,1
+CMS506FHIRSafeUseofOpioids,552a6dbe-5e55-4388-b7c0-234c5d712e0a,Numerator,0
 CMS506FHIRSafeUseofOpioids,55a556cf-2cfa-4bc1-99cf-b3faa7a554ba,Denominator,1
 CMS506FHIRSafeUseofOpioids,55a556cf-2cfa-4bc1-99cf-b3faa7a554ba,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,55a556cf-2cfa-4bc1-99cf-b3faa7a554ba,Initial Population,1
 CMS506FHIRSafeUseofOpioids,55a556cf-2cfa-4bc1-99cf-b3faa7a554ba,Numerator,0
-CMS506FHIRSafeUseofOpioids,57da77da-de92-4ef5-9311-1d86e67c9de4,Denominator,1
+CMS506FHIRSafeUseofOpioids,57da77da-de92-4ef5-9311-1d86e67c9de4,Denominator,0
 CMS506FHIRSafeUseofOpioids,57da77da-de92-4ef5-9311-1d86e67c9de4,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,57da77da-de92-4ef5-9311-1d86e67c9de4,Initial Population,1
 CMS506FHIRSafeUseofOpioids,57da77da-de92-4ef5-9311-1d86e67c9de4,Numerator,0
-CMS506FHIRSafeUseofOpioids,59c3a231-ef45-424a-89f7-8e9e8b037633,Denominator,1
+CMS506FHIRSafeUseofOpioids,59c3a231-ef45-424a-89f7-8e9e8b037633,Denominator,0
 CMS506FHIRSafeUseofOpioids,59c3a231-ef45-424a-89f7-8e9e8b037633,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,59c3a231-ef45-424a-89f7-8e9e8b037633,Initial Population,1
 CMS506FHIRSafeUseofOpioids,59c3a231-ef45-424a-89f7-8e9e8b037633,Numerator,0
@@ -5932,11 +5932,11 @@ CMS506FHIRSafeUseofOpioids,5c316557-a562-48e4-94fd-76c02ddc388f,Denominator,1
 CMS506FHIRSafeUseofOpioids,5c316557-a562-48e4-94fd-76c02ddc388f,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,5c316557-a562-48e4-94fd-76c02ddc388f,Initial Population,1
 CMS506FHIRSafeUseofOpioids,5c316557-a562-48e4-94fd-76c02ddc388f,Numerator,1
-CMS506FHIRSafeUseofOpioids,5e76e39a-8a30-4035-8d44-3362f4826aa7,Denominator,1
+CMS506FHIRSafeUseofOpioids,5e76e39a-8a30-4035-8d44-3362f4826aa7,Denominator,0
 CMS506FHIRSafeUseofOpioids,5e76e39a-8a30-4035-8d44-3362f4826aa7,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,5e76e39a-8a30-4035-8d44-3362f4826aa7,Initial Population,1
 CMS506FHIRSafeUseofOpioids,5e76e39a-8a30-4035-8d44-3362f4826aa7,Numerator,0
-CMS506FHIRSafeUseofOpioids,6b3b4271-63af-4a6b-a724-7009935b8820,Denominator,1
+CMS506FHIRSafeUseofOpioids,6b3b4271-63af-4a6b-a724-7009935b8820,Denominator,0
 CMS506FHIRSafeUseofOpioids,6b3b4271-63af-4a6b-a724-7009935b8820,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,6b3b4271-63af-4a6b-a724-7009935b8820,Initial Population,1
 CMS506FHIRSafeUseofOpioids,6b3b4271-63af-4a6b-a724-7009935b8820,Numerator,0
@@ -5944,7 +5944,7 @@ CMS506FHIRSafeUseofOpioids,6bbda026-cf4e-4843-91cd-30e8e052fc43,Denominator,1
 CMS506FHIRSafeUseofOpioids,6bbda026-cf4e-4843-91cd-30e8e052fc43,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,6bbda026-cf4e-4843-91cd-30e8e052fc43,Initial Population,1
 CMS506FHIRSafeUseofOpioids,6bbda026-cf4e-4843-91cd-30e8e052fc43,Numerator,1
-CMS506FHIRSafeUseofOpioids,6bf6194c-6151-4cbe-8860-52d5566863f3,Denominator,1
+CMS506FHIRSafeUseofOpioids,6bf6194c-6151-4cbe-8860-52d5566863f3,Denominator,0
 CMS506FHIRSafeUseofOpioids,6bf6194c-6151-4cbe-8860-52d5566863f3,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,6bf6194c-6151-4cbe-8860-52d5566863f3,Initial Population,1
 CMS506FHIRSafeUseofOpioids,6bf6194c-6151-4cbe-8860-52d5566863f3,Numerator,0
@@ -5952,7 +5952,7 @@ CMS506FHIRSafeUseofOpioids,6bf88e99-23a4-4c64-82f9-78947836d64a,Denominator,2
 CMS506FHIRSafeUseofOpioids,6bf88e99-23a4-4c64-82f9-78947836d64a,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,6bf88e99-23a4-4c64-82f9-78947836d64a,Initial Population,2
 CMS506FHIRSafeUseofOpioids,6bf88e99-23a4-4c64-82f9-78947836d64a,Numerator,0
-CMS506FHIRSafeUseofOpioids,81dc5bb4-3273-492a-beff-2f7b0394f3c8,Denominator,1
+CMS506FHIRSafeUseofOpioids,81dc5bb4-3273-492a-beff-2f7b0394f3c8,Denominator,0
 CMS506FHIRSafeUseofOpioids,81dc5bb4-3273-492a-beff-2f7b0394f3c8,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,81dc5bb4-3273-492a-beff-2f7b0394f3c8,Initial Population,1
 CMS506FHIRSafeUseofOpioids,81dc5bb4-3273-492a-beff-2f7b0394f3c8,Numerator,0
@@ -5964,7 +5964,7 @@ CMS506FHIRSafeUseofOpioids,8bb4046c-a78e-4c71-8a2a-4b9dfac3e825,Denominator,1
 CMS506FHIRSafeUseofOpioids,8bb4046c-a78e-4c71-8a2a-4b9dfac3e825,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,8bb4046c-a78e-4c71-8a2a-4b9dfac3e825,Initial Population,1
 CMS506FHIRSafeUseofOpioids,8bb4046c-a78e-4c71-8a2a-4b9dfac3e825,Numerator,0
-CMS506FHIRSafeUseofOpioids,8e2e72d9-194d-4031-83a3-51dbd703de36,Denominator,1
+CMS506FHIRSafeUseofOpioids,8e2e72d9-194d-4031-83a3-51dbd703de36,Denominator,0
 CMS506FHIRSafeUseofOpioids,8e2e72d9-194d-4031-83a3-51dbd703de36,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,8e2e72d9-194d-4031-83a3-51dbd703de36,Initial Population,1
 CMS506FHIRSafeUseofOpioids,8e2e72d9-194d-4031-83a3-51dbd703de36,Numerator,0
@@ -5972,7 +5972,7 @@ CMS506FHIRSafeUseofOpioids,90d1df13-46fe-4dbf-b934-6eff4f884a72,Denominator,1
 CMS506FHIRSafeUseofOpioids,90d1df13-46fe-4dbf-b934-6eff4f884a72,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,90d1df13-46fe-4dbf-b934-6eff4f884a72,Initial Population,1
 CMS506FHIRSafeUseofOpioids,90d1df13-46fe-4dbf-b934-6eff4f884a72,Numerator,0
-CMS506FHIRSafeUseofOpioids,a867ae5f-879a-4b8b-9215-dc83b55b442f,Denominator,1
+CMS506FHIRSafeUseofOpioids,a867ae5f-879a-4b8b-9215-dc83b55b442f,Denominator,0
 CMS506FHIRSafeUseofOpioids,a867ae5f-879a-4b8b-9215-dc83b55b442f,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,a867ae5f-879a-4b8b-9215-dc83b55b442f,Initial Population,1
 CMS506FHIRSafeUseofOpioids,a867ae5f-879a-4b8b-9215-dc83b55b442f,Numerator,0
@@ -5996,7 +5996,7 @@ CMS506FHIRSafeUseofOpioids,b792f3b9-b8f5-4d5c-ad66-f580b47ebffd,Denominator,1
 CMS506FHIRSafeUseofOpioids,b792f3b9-b8f5-4d5c-ad66-f580b47ebffd,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,b792f3b9-b8f5-4d5c-ad66-f580b47ebffd,Initial Population,1
 CMS506FHIRSafeUseofOpioids,b792f3b9-b8f5-4d5c-ad66-f580b47ebffd,Numerator,0
-CMS506FHIRSafeUseofOpioids,b92d0b5a-a019-4023-9e0b-50a0e5248d07,Denominator,1
+CMS506FHIRSafeUseofOpioids,b92d0b5a-a019-4023-9e0b-50a0e5248d07,Denominator,0
 CMS506FHIRSafeUseofOpioids,b92d0b5a-a019-4023-9e0b-50a0e5248d07,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,b92d0b5a-a019-4023-9e0b-50a0e5248d07,Initial Population,1
 CMS506FHIRSafeUseofOpioids,b92d0b5a-a019-4023-9e0b-50a0e5248d07,Numerator,0
@@ -6020,7 +6020,7 @@ CMS506FHIRSafeUseofOpioids,cbf21555-f64b-427a-b274-111b94523cf7,Denominator,1
 CMS506FHIRSafeUseofOpioids,cbf21555-f64b-427a-b274-111b94523cf7,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,cbf21555-f64b-427a-b274-111b94523cf7,Initial Population,1
 CMS506FHIRSafeUseofOpioids,cbf21555-f64b-427a-b274-111b94523cf7,Numerator,0
-CMS506FHIRSafeUseofOpioids,cdb80ca8-b110-436d-83e8-b339ebc09a44,Denominator,1
+CMS506FHIRSafeUseofOpioids,cdb80ca8-b110-436d-83e8-b339ebc09a44,Denominator,0
 CMS506FHIRSafeUseofOpioids,cdb80ca8-b110-436d-83e8-b339ebc09a44,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,cdb80ca8-b110-436d-83e8-b339ebc09a44,Initial Population,1
 CMS506FHIRSafeUseofOpioids,cdb80ca8-b110-436d-83e8-b339ebc09a44,Numerator,0
@@ -6036,7 +6036,7 @@ CMS506FHIRSafeUseofOpioids,dde136d4-fa51-4b59-9bef-21dc51caf3d5,Denominator,1
 CMS506FHIRSafeUseofOpioids,dde136d4-fa51-4b59-9bef-21dc51caf3d5,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,dde136d4-fa51-4b59-9bef-21dc51caf3d5,Initial Population,1
 CMS506FHIRSafeUseofOpioids,dde136d4-fa51-4b59-9bef-21dc51caf3d5,Numerator,0
-CMS506FHIRSafeUseofOpioids,e24d8c71-61dc-4e0d-bfc1-a5ebc186706d,Denominator,1
+CMS506FHIRSafeUseofOpioids,e24d8c71-61dc-4e0d-bfc1-a5ebc186706d,Denominator,0
 CMS506FHIRSafeUseofOpioids,e24d8c71-61dc-4e0d-bfc1-a5ebc186706d,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,e24d8c71-61dc-4e0d-bfc1-a5ebc186706d,Initial Population,1
 CMS506FHIRSafeUseofOpioids,e24d8c71-61dc-4e0d-bfc1-a5ebc186706d,Numerator,0
@@ -6048,7 +6048,7 @@ CMS506FHIRSafeUseofOpioids,e93adc7d-9d31-4279-9f76-644668f4d3c9,Denominator,1
 CMS506FHIRSafeUseofOpioids,e93adc7d-9d31-4279-9f76-644668f4d3c9,Denominator Exclusion,0
 CMS506FHIRSafeUseofOpioids,e93adc7d-9d31-4279-9f76-644668f4d3c9,Initial Population,1
 CMS506FHIRSafeUseofOpioids,e93adc7d-9d31-4279-9f76-644668f4d3c9,Numerator,0
-CMS506FHIRSafeUseofOpioids,f049e76a-aef1-4e8f-a8bd-dfdb419de551,Denominator,1
+CMS506FHIRSafeUseofOpioids,f049e76a-aef1-4e8f-a8bd-dfdb419de551,Denominator,0
 CMS506FHIRSafeUseofOpioids,f049e76a-aef1-4e8f-a8bd-dfdb419de551,Denominator Exclusion,1
 CMS506FHIRSafeUseofOpioids,f049e76a-aef1-4e8f-a8bd-dfdb419de551,Initial Population,1
 CMS506FHIRSafeUseofOpioids,f049e76a-aef1-4e8f-a8bd-dfdb419de551,Numerator,0
@@ -6670,7 +6670,7 @@ CMS154FHIRAppropriateTxforURI,e3b3b45a-925b-499d-a824-88589235bd04,Numerator,0
 CMS154FHIRAppropriateTxforURI,f0fb8f46-3185-4b14-ac9c-227d67cedc3e,Denominator,0
 CMS154FHIRAppropriateTxforURI,f0fb8f46-3185-4b14-ac9c-227d67cedc3e,Denominator Exclusions,0
 CMS154FHIRAppropriateTxforURI,f0fb8f46-3185-4b14-ac9c-227d67cedc3e,Initial Population,0
-CMS154FHIRAppropriateTxforURI,f0fb8f46-3185-4b14-ac9c-227d67cedc3e,Numerator,1
+CMS154FHIRAppropriateTxforURI,f0fb8f46-3185-4b14-ac9c-227d67cedc3e,Numerator,0
 CMS154FHIRAppropriateTxforURI,f36ebb57-2822-42cc-87de-5bcf897e3db7,Denominator,1
 CMS154FHIRAppropriateTxforURI,f36ebb57-2822-42cc-87de-5bcf897e3db7,Denominator Exclusions,0
 CMS154FHIRAppropriateTxforURI,f36ebb57-2822-42cc-87de-5bcf897e3db7,Initial Population,1
@@ -6908,7 +6908,7 @@ CMS347FHIRStatinPreventionTxCVD,0045ec92-0b70-4961-8a7c-41b5c43d53a1,Denominator
 CMS347FHIRStatinPreventionTxCVD,0045ec92-0b70-4961-8a7c-41b5c43d53a1,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,019bf4e8-68b3-476d-ac64-a4ba0aa368c5,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,019bf4e8-68b3-476d-ac64-a4ba0aa368c5,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,019bf4e8-68b3-476d-ac64-a4ba0aa368c5,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,019bf4e8-68b3-476d-ac64-a4ba0aa368c5,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,022c05d8-8337-4f1a-9d69-abb6500b1be5,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,022c05d8-8337-4f1a-9d69-abb6500b1be5,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,022c05d8-8337-4f1a-9d69-abb6500b1be5,Numerator,0
@@ -6923,25 +6923,25 @@ CMS347FHIRStatinPreventionTxCVD,06f036ce-62f0-4807-88d2-f3f8e70d2f31,Denominator
 CMS347FHIRStatinPreventionTxCVD,06f036ce-62f0-4807-88d2-f3f8e70d2f31,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,0774a58a-2910-4da7-a48a-6613d418b5d1,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,0774a58a-2910-4da7-a48a-6613d418b5d1,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,0774a58a-2910-4da7-a48a-6613d418b5d1,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,0774a58a-2910-4da7-a48a-6613d418b5d1,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,0784160c-98b6-43a2-baa1-77ea9f3fe884,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,0784160c-98b6-43a2-baa1-77ea9f3fe884,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,0784160c-98b6-43a2-baa1-77ea9f3fe884,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,078ef6a8-509f-4f36-98f3-977174636356,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,078ef6a8-509f-4f36-98f3-977174636356,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,078ef6a8-509f-4f36-98f3-977174636356,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,078ef6a8-509f-4f36-98f3-977174636356,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,08882e8d-afd1-4a5e-a30b-a5a0ed9e1010,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,08882e8d-afd1-4a5e-a30b-a5a0ed9e1010,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,08882e8d-afd1-4a5e-a30b-a5a0ed9e1010,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,08a2c605-1316-4d3c-b26e-2b40a28a2e44,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,08a2c605-1316-4d3c-b26e-2b40a28a2e44,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,08a2c605-1316-4d3c-b26e-2b40a28a2e44,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,08a2c605-1316-4d3c-b26e-2b40a28a2e44,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,08dfc736-3cb5-467c-93cf-99146604a8f4,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,08f8343e-9a9e-4ff5-b21c-1fb44e29aa9a,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,0aaae01e-d3b0-4b76-abf8-a044fd4f5d80,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,0aaae01e-d3b0-4b76-abf8-a044fd4f5d80,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,0aaae01e-d3b0-4b76-abf8-a044fd4f5d80,Numerator,0
@@ -6953,7 +6953,7 @@ CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Denominator
 CMS347FHIRStatinPreventionTxCVD,0ce81150-5908-49a1-bef9-21406359af63,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,0e334f85-c298-401d-95ab-bad7ae13ced8,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,0e334f85-c298-401d-95ab-bad7ae13ced8,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,0e334f85-c298-401d-95ab-bad7ae13ced8,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,0e334f85-c298-401d-95ab-bad7ae13ced8,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,0f204e98-0782-43a3-ae53-b516cc8d5797,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,0f204e98-0782-43a3-ae53-b516cc8d5797,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,0f204e98-0782-43a3-ae53-b516cc8d5797,Numerator,0
@@ -6977,7 +6977,7 @@ CMS347FHIRStatinPreventionTxCVD,117785fd-791b-4d9b-a5e7-436e39a62a6b,Denominator
 CMS347FHIRStatinPreventionTxCVD,117785fd-791b-4d9b-a5e7-436e39a62a6b,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,13d790be-84c6-438c-b571-842698654db7,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,13d790be-84c6-438c-b571-842698654db7,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,13d790be-84c6-438c-b571-842698654db7,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,13d790be-84c6-438c-b571-842698654db7,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,15d7fcaa-773f-4888-8b13-bc077cbfdf4a,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,15d7fcaa-773f-4888-8b13-bc077cbfdf4a,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,15d7fcaa-773f-4888-8b13-bc077cbfdf4a,Numerator,0
@@ -6995,22 +6995,22 @@ CMS347FHIRStatinPreventionTxCVD,1ba7b147-b701-424c-bade-4e8270547030,Denominator
 CMS347FHIRStatinPreventionTxCVD,1ba7b147-b701-424c-bade-4e8270547030,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,1ccceb3f-9a44-4dd3-88c6-f492965b87d5,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,1ccceb3f-9a44-4dd3-88c6-f492965b87d5,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,1ccceb3f-9a44-4dd3-88c6-f492965b87d5,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,1ccceb3f-9a44-4dd3-88c6-f492965b87d5,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,1d3021bb-b593-4efc-af5b-320243bbe9b7,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,1d8a33ba-baaa-4b30-8c1a-ebace8d2d64e,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,1d8a33ba-baaa-4b30-8c1a-ebace8d2d64e,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,1d8a33ba-baaa-4b30-8c1a-ebace8d2d64e,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,1d8a33ba-baaa-4b30-8c1a-ebace8d2d64e,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,20922873-db29-4914-a413-eed415e4504b,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,231a16e4-7d60-4e2c-943b-2f4c98994808,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,231a16e4-7d60-4e2c-943b-2f4c98994808,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,231a16e4-7d60-4e2c-943b-2f4c98994808,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,231a16e4-7d60-4e2c-943b-2f4c98994808,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,24acf4a1-d67f-4584-9b6b-6c8025ffcc0a,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,24acf4a1-d67f-4584-9b6b-6c8025ffcc0a,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,24acf4a1-d67f-4584-9b6b-6c8025ffcc0a,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,24acf4a1-d67f-4584-9b6b-6c8025ffcc0a,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,26101306-010f-48c5-aa83-8a94f280f755,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,26101306-010f-48c5-aa83-8a94f280f755,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,26101306-010f-48c5-aa83-8a94f280f755,Numerator,0
@@ -7019,7 +7019,7 @@ CMS347FHIRStatinPreventionTxCVD,2727681a-5857-4de1-a892-0cd4e531541c,Denominator
 CMS347FHIRStatinPreventionTxCVD,2727681a-5857-4de1-a892-0cd4e531541c,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,285c85db-f879-4938-867f-daba78f08494,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,285c85db-f879-4938-867f-daba78f08494,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,285c85db-f879-4938-867f-daba78f08494,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,285c85db-f879-4938-867f-daba78f08494,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,2c5a09d4-18c9-4128-86fb-bd49871f9231,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,2c5a09d4-18c9-4128-86fb-bd49871f9231,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,2c5a09d4-18c9-4128-86fb-bd49871f9231,Numerator,0
@@ -7028,19 +7028,19 @@ CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Denominator
 CMS347FHIRStatinPreventionTxCVD,2cff757c-4470-46a2-a685-6e23cf82c045,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,30b8f03a-668f-400e-b824-a74e6b6dd1dc,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,30b8f03a-668f-400e-b824-a74e6b6dd1dc,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,30b8f03a-668f-400e-b824-a74e6b6dd1dc,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,30b8f03a-668f-400e-b824-a74e6b6dd1dc,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,3137d292-5094-49ef-82da-d9809b599030,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,3137d292-5094-49ef-82da-d9809b599030,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,3137d292-5094-49ef-82da-d9809b599030,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,31841a30-decc-4b6b-80a8-1cb18275cb6b,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,31841a30-decc-4b6b-80a8-1cb18275cb6b,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,31841a30-decc-4b6b-80a8-1cb18275cb6b,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,31841a30-decc-4b6b-80a8-1cb18275cb6b,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,35999af4-f52b-4e73-8f05-4bfca8dee7ec,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,35999af4-f52b-4e73-8f05-4bfca8dee7ec,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,35999af4-f52b-4e73-8f05-4bfca8dee7ec,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,35d9e119-50ef-4df1-b303-f348596657ad,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,35d9e119-50ef-4df1-b303-f348596657ad,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,35d9e119-50ef-4df1-b303-f348596657ad,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,35d9e119-50ef-4df1-b303-f348596657ad,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,36408f0f-58eb-47fe-8e64-1b98e47e5c36,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,36408f0f-58eb-47fe-8e64-1b98e47e5c36,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,36408f0f-58eb-47fe-8e64-1b98e47e5c36,Numerator,0
@@ -7049,7 +7049,7 @@ CMS347FHIRStatinPreventionTxCVD,38aac591-8983-4d7c-b29e-c8d145e7ffaa,Denominator
 CMS347FHIRStatinPreventionTxCVD,38aac591-8983-4d7c-b29e-c8d145e7ffaa,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,39d8c5d6-d3ed-4cfe-b62c-c8e57a45508f,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,39d8c5d6-d3ed-4cfe-b62c-c8e57a45508f,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,39d8c5d6-d3ed-4cfe-b62c-c8e57a45508f,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,39d8c5d6-d3ed-4cfe-b62c-c8e57a45508f,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,3b5da2bf-0fb9-4efc-bc54-4bd329ed31af,Numerator,0
@@ -7103,7 +7103,7 @@ CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Denominator
 CMS347FHIRStatinPreventionTxCVD,52b48d35-f47c-4013-9cdc-700baad0fc0f,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,5355d1bc-f8b4-4063-945a-0717e9530281,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,5355d1bc-f8b4-4063-945a-0717e9530281,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,5355d1bc-f8b4-4063-945a-0717e9530281,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,5355d1bc-f8b4-4063-945a-0717e9530281,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,537d14db-6ced-4cd2-9553-e88bd6551771,Numerator,0
@@ -7121,7 +7121,7 @@ CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Denominator
 CMS347FHIRStatinPreventionTxCVD,59d6bb14-b82e-4295-baf1-d96be73e1e38,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,5a086712-eccf-4041-9eb7-b25c0dcf2317,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,5a086712-eccf-4041-9eb7-b25c0dcf2317,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,5a086712-eccf-4041-9eb7-b25c0dcf2317,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,5a086712-eccf-4041-9eb7-b25c0dcf2317,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,5b37b5a5-0e28-4b28-9889-8878d41ff9cf,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,5b37b5a5-0e28-4b28-9889-8878d41ff9cf,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,5b37b5a5-0e28-4b28-9889-8878d41ff9cf,Numerator,0
@@ -7151,13 +7151,13 @@ CMS347FHIRStatinPreventionTxCVD,65c0a8c4-c562-4f73-a534-d7f7a976e42f,Denominator
 CMS347FHIRStatinPreventionTxCVD,65c0a8c4-c562-4f73-a534-d7f7a976e42f,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,6840a0da-456f-40f7-b939-aac2cdf5620d,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,68d4cf43-ea72-4eaf-8021-8775bc449f66,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,68d4cf43-ea72-4eaf-8021-8775bc449f66,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,68d4cf43-ea72-4eaf-8021-8775bc449f66,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,694248de-4f73-4557-816b-f6a932f15793,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,694248de-4f73-4557-816b-f6a932f15793,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,694248de-4f73-4557-816b-f6a932f15793,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,694248de-4f73-4557-816b-f6a932f15793,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,695b64d8-8102-4109-89c2-9ca128d43f4d,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,695b64d8-8102-4109-89c2-9ca128d43f4d,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,695b64d8-8102-4109-89c2-9ca128d43f4d,Numerator,0
@@ -7190,7 +7190,7 @@ CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Denominator
 CMS347FHIRStatinPreventionTxCVD,759a89b4-51ed-4622-adae-6b0930701ebb,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,76ccc2ea-1cb2-4151-80bf-be8b14b1a074,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,76ccc2ea-1cb2-4151-80bf-be8b14b1a074,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,76ccc2ea-1cb2-4151-80bf-be8b14b1a074,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,76ccc2ea-1cb2-4151-80bf-be8b14b1a074,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,775ce199-950f-42ca-b040-f2f0c0c355da,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,775ce199-950f-42ca-b040-f2f0c0c355da,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,775ce199-950f-42ca-b040-f2f0c0c355da,Numerator,0
@@ -7202,7 +7202,7 @@ CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Denominator
 CMS347FHIRStatinPreventionTxCVD,7b8b48b3-76d4-4492-81a1-93fdea67b0c1,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,7b9268b7-2d3d-4a2b-822a-e1f470593fdf,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,7bc28f33-e1e6-4122-8a38-e9c36685a6ba,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,7bc28f33-e1e6-4122-8a38-e9c36685a6ba,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,7bc28f33-e1e6-4122-8a38-e9c36685a6ba,Numerator,0
@@ -7283,7 +7283,7 @@ CMS347FHIRStatinPreventionTxCVD,afd6fd51-72ff-41fa-9cec-7591ab6f5a51,Denominator
 CMS347FHIRStatinPreventionTxCVD,afd6fd51-72ff-41fa-9cec-7591ab6f5a51,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,b2705cfc-a0d5-4fb4-908b-89d00a51cc06,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,b2705cfc-a0d5-4fb4-908b-89d00a51cc06,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,b2705cfc-a0d5-4fb4-908b-89d00a51cc06,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,b2705cfc-a0d5-4fb4-908b-89d00a51cc06,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,b35ba523-abea-4848-8dac-256c1727447c,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,b35ba523-abea-4848-8dac-256c1727447c,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,b35ba523-abea-4848-8dac-256c1727447c,Numerator,0
@@ -7313,7 +7313,7 @@ CMS347FHIRStatinPreventionTxCVD,bfb8c317-cc95-41cc-9d3d-e1e66dd5b168,Denominator
 CMS347FHIRStatinPreventionTxCVD,bfb8c317-cc95-41cc-9d3d-e1e66dd5b168,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,c00d7354-2160-48f4-a251-1fcf892d1b42,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,c686053c-d4b7-45b7-9ebb-19080a24f031,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,c686053c-d4b7-45b7-9ebb-19080a24f031,Denominator Exclusions,1
 CMS347FHIRStatinPreventionTxCVD,c686053c-d4b7-45b7-9ebb-19080a24f031,Numerator,0
@@ -7376,7 +7376,7 @@ CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Denominator
 CMS347FHIRStatinPreventionTxCVD,df05b853-3e6d-4a12-b1db-fd9d0ec790a2,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,e0813324-b2e0-4138-99f4-696f03c3db30,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,e0813324-b2e0-4138-99f4-696f03c3db30,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,e0813324-b2e0-4138-99f4-696f03c3db30,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,e0813324-b2e0-4138-99f4-696f03c3db30,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,e1c47dc2-2705-4c32-8000-415987028df9,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,e1c47dc2-2705-4c32-8000-415987028df9,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,e1c47dc2-2705-4c32-8000-415987028df9,Numerator,0
@@ -7391,7 +7391,7 @@ CMS347FHIRStatinPreventionTxCVD,e4547b2c-ce1c-4ffb-b5d4-c99687424bf0,Denominator
 CMS347FHIRStatinPreventionTxCVD,e4547b2c-ce1c-4ffb-b5d4-c99687424bf0,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,e55d9fc4-44e6-4f00-bf53-b82a5b646222,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,e55d9fc4-44e6-4f00-bf53-b82a5b646222,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,e55d9fc4-44e6-4f00-bf53-b82a5b646222,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,e55d9fc4-44e6-4f00-bf53-b82a5b646222,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,e656adac-2016-40a4-833f-0c5a02952ba3,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,e656adac-2016-40a4-833f-0c5a02952ba3,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,e656adac-2016-40a4-833f-0c5a02952ba3,Numerator,0
@@ -7412,7 +7412,7 @@ CMS347FHIRStatinPreventionTxCVD,eea87300-5d3f-4c9f-8835-9245b4e19059,Denominator
 CMS347FHIRStatinPreventionTxCVD,eea87300-5d3f-4c9f-8835-9245b4e19059,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,ef3f90d1-4954-40bd-b230-e44ffa98ed29,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,ef3f90d1-4954-40bd-b230-e44ffa98ed29,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,ef3f90d1-4954-40bd-b230-e44ffa98ed29,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,ef3f90d1-4954-40bd-b230-e44ffa98ed29,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,f101bf69-38b2-4c86-9978-727c665dfb31,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,f101bf69-38b2-4c86-9978-727c665dfb31,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,f101bf69-38b2-4c86-9978-727c665dfb31,Numerator,0
@@ -7442,13 +7442,13 @@ CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Denominator
 CMS347FHIRStatinPreventionTxCVD,f8563fcf-4e09-4309-841b-bcce373bc4b2,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,f925afe3-4a77-404d-ba92-e78740f37d15,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,f925afe3-4a77-404d-ba92-e78740f37d15,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,f925afe3-4a77-404d-ba92-e78740f37d15,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,f925afe3-4a77-404d-ba92-e78740f37d15,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,f944825a-367c-46c5-b753-d59f088038d2,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,f944825a-367c-46c5-b753-d59f088038d2,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,f944825a-367c-46c5-b753-d59f088038d2,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,f9a03175-0a16-4c4a-97d5-f7b38e359526,Denominator Exceptions,0
 CMS347FHIRStatinPreventionTxCVD,f9a03175-0a16-4c4a-97d5-f7b38e359526,Denominator Exclusions,0
-CMS347FHIRStatinPreventionTxCVD,f9a03175-0a16-4c4a-97d5-f7b38e359526,Numerator,1
+CMS347FHIRStatinPreventionTxCVD,f9a03175-0a16-4c4a-97d5-f7b38e359526,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,fa446b35-031d-4eb5-b7f1-5782580e5209,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,fa446b35-031d-4eb5-b7f1-5782580e5209,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,fa446b35-031d-4eb5-b7f1-5782580e5209,Numerator,0
@@ -7479,7 +7479,7 @@ CMS1173FHIRDiagnosticDelayVTE,08473857-1c97-48cf-8ac3-4d70823cac80,Numerator,1
 CMS1173FHIRDiagnosticDelayVTE,0acae6f0-e619-416a-98a9-3075c019a2b0,Denominator,0
 CMS1173FHIRDiagnosticDelayVTE,0acae6f0-e619-416a-98a9-3075c019a2b0,Denominator Exclusions,0
 CMS1173FHIRDiagnosticDelayVTE,0acae6f0-e619-416a-98a9-3075c019a2b0,Initial Population,0
-CMS1173FHIRDiagnosticDelayVTE,0acae6f0-e619-416a-98a9-3075c019a2b0,Numerator,1
+CMS1173FHIRDiagnosticDelayVTE,0acae6f0-e619-416a-98a9-3075c019a2b0,Numerator,0
 CMS1173FHIRDiagnosticDelayVTE,0f9df40c-6f85-49cb-bb90-43a6246ac36a,Denominator,0
 CMS1173FHIRDiagnosticDelayVTE,0f9df40c-6f85-49cb-bb90-43a6246ac36a,Denominator Exclusions,0
 CMS1173FHIRDiagnosticDelayVTE,0f9df40c-6f85-49cb-bb90-43a6246ac36a,Initial Population,0
@@ -7731,11 +7731,11 @@ CMS90FHIRFSAforHeartFailure,06a4b5b5-a175-4134-98d6-a028aa071c42,Numerator,0
 CMS90FHIRFSAforHeartFailure,1633d9cf-11d4-497f-9924-95b10f9dc11b,Denominator,0
 CMS90FHIRFSAforHeartFailure,1633d9cf-11d4-497f-9924-95b10f9dc11b,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,1633d9cf-11d4-497f-9924-95b10f9dc11b,Initial Population,0
-CMS90FHIRFSAforHeartFailure,1633d9cf-11d4-497f-9924-95b10f9dc11b,Numerator,1
+CMS90FHIRFSAforHeartFailure,1633d9cf-11d4-497f-9924-95b10f9dc11b,Numerator,0
 CMS90FHIRFSAforHeartFailure,17be91ec-117d-4767-8271-f0403f0c8f84,Denominator,0
 CMS90FHIRFSAforHeartFailure,17be91ec-117d-4767-8271-f0403f0c8f84,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,17be91ec-117d-4767-8271-f0403f0c8f84,Initial Population,0
-CMS90FHIRFSAforHeartFailure,17be91ec-117d-4767-8271-f0403f0c8f84,Numerator,1
+CMS90FHIRFSAforHeartFailure,17be91ec-117d-4767-8271-f0403f0c8f84,Numerator,0
 CMS90FHIRFSAforHeartFailure,17de6744-31d5-479f-a677-a0f4a87f0515,Denominator,0
 CMS90FHIRFSAforHeartFailure,17de6744-31d5-479f-a677-a0f4a87f0515,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,17de6744-31d5-479f-a677-a0f4a87f0515,Initial Population,0
@@ -7783,11 +7783,11 @@ CMS90FHIRFSAforHeartFailure,4e4f5a2a-46f4-4dce-89cd-89079b72cde5,Numerator,0
 CMS90FHIRFSAforHeartFailure,519d1935-5a15-4179-833f-ae10d5732753,Denominator,0
 CMS90FHIRFSAforHeartFailure,519d1935-5a15-4179-833f-ae10d5732753,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,519d1935-5a15-4179-833f-ae10d5732753,Initial Population,0
-CMS90FHIRFSAforHeartFailure,519d1935-5a15-4179-833f-ae10d5732753,Numerator,1
+CMS90FHIRFSAforHeartFailure,519d1935-5a15-4179-833f-ae10d5732753,Numerator,0
 CMS90FHIRFSAforHeartFailure,57db5524-8599-4e70-a8b1-be637ec5310e,Denominator,0
 CMS90FHIRFSAforHeartFailure,57db5524-8599-4e70-a8b1-be637ec5310e,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,57db5524-8599-4e70-a8b1-be637ec5310e,Initial Population,0
-CMS90FHIRFSAforHeartFailure,57db5524-8599-4e70-a8b1-be637ec5310e,Numerator,1
+CMS90FHIRFSAforHeartFailure,57db5524-8599-4e70-a8b1-be637ec5310e,Numerator,0
 CMS90FHIRFSAforHeartFailure,5bd02383-3b17-42ed-8337-9db6c96b64eb,Denominator,0
 CMS90FHIRFSAforHeartFailure,5bd02383-3b17-42ed-8337-9db6c96b64eb,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,5bd02383-3b17-42ed-8337-9db6c96b64eb,Initial Population,0
@@ -7803,7 +7803,7 @@ CMS90FHIRFSAforHeartFailure,6e5db6e5-8c56-4b08-9491-1a2877933f0d,Numerator,0
 CMS90FHIRFSAforHeartFailure,7657b1f6-b12d-4c9d-86e9-f48e9423601d,Denominator,0
 CMS90FHIRFSAforHeartFailure,7657b1f6-b12d-4c9d-86e9-f48e9423601d,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,7657b1f6-b12d-4c9d-86e9-f48e9423601d,Initial Population,0
-CMS90FHIRFSAforHeartFailure,7657b1f6-b12d-4c9d-86e9-f48e9423601d,Numerator,1
+CMS90FHIRFSAforHeartFailure,7657b1f6-b12d-4c9d-86e9-f48e9423601d,Numerator,0
 CMS90FHIRFSAforHeartFailure,976848fc-ad4c-44fa-b732-644b919d225d,Denominator,0
 CMS90FHIRFSAforHeartFailure,976848fc-ad4c-44fa-b732-644b919d225d,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,976848fc-ad4c-44fa-b732-644b919d225d,Initial Population,0
@@ -7811,11 +7811,11 @@ CMS90FHIRFSAforHeartFailure,976848fc-ad4c-44fa-b732-644b919d225d,Numerator,0
 CMS90FHIRFSAforHeartFailure,98754eb2-882b-4d6f-afe8-8e7c9979bf18,Denominator,0
 CMS90FHIRFSAforHeartFailure,98754eb2-882b-4d6f-afe8-8e7c9979bf18,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,98754eb2-882b-4d6f-afe8-8e7c9979bf18,Initial Population,0
-CMS90FHIRFSAforHeartFailure,98754eb2-882b-4d6f-afe8-8e7c9979bf18,Numerator,1
+CMS90FHIRFSAforHeartFailure,98754eb2-882b-4d6f-afe8-8e7c9979bf18,Numerator,0
 CMS90FHIRFSAforHeartFailure,9ecd0990-8b0b-493d-b381-194935753a50,Denominator,0
 CMS90FHIRFSAforHeartFailure,9ecd0990-8b0b-493d-b381-194935753a50,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,9ecd0990-8b0b-493d-b381-194935753a50,Initial Population,0
-CMS90FHIRFSAforHeartFailure,9ecd0990-8b0b-493d-b381-194935753a50,Numerator,1
+CMS90FHIRFSAforHeartFailure,9ecd0990-8b0b-493d-b381-194935753a50,Numerator,0
 CMS90FHIRFSAforHeartFailure,b52aa5c4-acaf-40cb-b50a-ff72f7730991,Denominator,0
 CMS90FHIRFSAforHeartFailure,b52aa5c4-acaf-40cb-b50a-ff72f7730991,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,b52aa5c4-acaf-40cb-b50a-ff72f7730991,Initial Population,0
@@ -7831,7 +7831,7 @@ CMS90FHIRFSAforHeartFailure,b95fdf73-89d7-4ce0-972e-8a555327264a,Numerator,0
 CMS90FHIRFSAforHeartFailure,ba81ece9-e0dc-42fe-9489-451f28b6f223,Denominator,0
 CMS90FHIRFSAforHeartFailure,ba81ece9-e0dc-42fe-9489-451f28b6f223,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,ba81ece9-e0dc-42fe-9489-451f28b6f223,Initial Population,0
-CMS90FHIRFSAforHeartFailure,ba81ece9-e0dc-42fe-9489-451f28b6f223,Numerator,1
+CMS90FHIRFSAforHeartFailure,ba81ece9-e0dc-42fe-9489-451f28b6f223,Numerator,0
 CMS90FHIRFSAforHeartFailure,bc42a4e7-3a06-4056-bb38-14f1e3ea3894,Denominator,0
 CMS90FHIRFSAforHeartFailure,bc42a4e7-3a06-4056-bb38-14f1e3ea3894,Denominator Exclusions,1
 CMS90FHIRFSAforHeartFailure,bc42a4e7-3a06-4056-bb38-14f1e3ea3894,Initial Population,0
@@ -7859,20 +7859,20 @@ CMS90FHIRFSAforHeartFailure,f5edf819-8ccf-4661-af91-95ac2cd10f21,Numerator,0
 CMS90FHIRFSAforHeartFailure,fbc2546d-c004-493c-b38b-8d088c6514d4,Denominator,0
 CMS90FHIRFSAforHeartFailure,fbc2546d-c004-493c-b38b-8d088c6514d4,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,fbc2546d-c004-493c-b38b-8d088c6514d4,Initial Population,0
-CMS90FHIRFSAforHeartFailure,fbc2546d-c004-493c-b38b-8d088c6514d4,Numerator,1
+CMS90FHIRFSAforHeartFailure,fbc2546d-c004-493c-b38b-8d088c6514d4,Numerator,0
 CMS90FHIRFSAforHeartFailure,fcbdce18-95d7-4d2d-b493-e4c68e2adbc4,Denominator,0
 CMS90FHIRFSAforHeartFailure,fcbdce18-95d7-4d2d-b493-e4c68e2adbc4,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,fcbdce18-95d7-4d2d-b493-e4c68e2adbc4,Initial Population,0
-CMS90FHIRFSAforHeartFailure,fcbdce18-95d7-4d2d-b493-e4c68e2adbc4,Numerator,1
+CMS90FHIRFSAforHeartFailure,fcbdce18-95d7-4d2d-b493-e4c68e2adbc4,Numerator,0
 CMS90FHIRFSAforHeartFailure,fdeaa2dc-1f80-4d0f-a51c-c8fc17abe651,Denominator,0
 CMS90FHIRFSAforHeartFailure,fdeaa2dc-1f80-4d0f-a51c-c8fc17abe651,Denominator Exclusions,0
 CMS90FHIRFSAforHeartFailure,fdeaa2dc-1f80-4d0f-a51c-c8fc17abe651,Initial Population,0
-CMS90FHIRFSAforHeartFailure,fdeaa2dc-1f80-4d0f-a51c-c8fc17abe651,Numerator,1
+CMS90FHIRFSAforHeartFailure,fdeaa2dc-1f80-4d0f-a51c-c8fc17abe651,Numerator,0
 CMS90FHIRFSAforHeartFailure,ffad6c76-4ffb-4cf1-bee2-df190571f3e1,Denominator,0
 CMS90FHIRFSAforHeartFailure,ffad6c76-4ffb-4cf1-bee2-df190571f3e1,Denominator Exclusions,1
 CMS90FHIRFSAforHeartFailure,ffad6c76-4ffb-4cf1-bee2-df190571f3e1,Initial Population,0
 CMS90FHIRFSAforHeartFailure,ffad6c76-4ffb-4cf1-bee2-df190571f3e1,Numerator,0
-CMS832FHIRHHAKI,01690915-1402-4a49-80a0-24d094512c0a,Denominator,1
+CMS832FHIRHHAKI,01690915-1402-4a49-80a0-24d094512c0a,Denominator,0
 CMS832FHIRHHAKI,01690915-1402-4a49-80a0-24d094512c0a,Denominator Exclusion,1
 CMS832FHIRHHAKI,01690915-1402-4a49-80a0-24d094512c0a,Initial Population,1
 CMS832FHIRHHAKI,01690915-1402-4a49-80a0-24d094512c0a,Numerator,0
@@ -7888,7 +7888,7 @@ CMS832FHIRHHAKI,0a7ad178-92a6-4a49-ab5d-e70958cf783c,Denominator,1
 CMS832FHIRHHAKI,0a7ad178-92a6-4a49-ab5d-e70958cf783c,Denominator Exclusion,0
 CMS832FHIRHHAKI,0a7ad178-92a6-4a49-ab5d-e70958cf783c,Initial Population,1
 CMS832FHIRHHAKI,0a7ad178-92a6-4a49-ab5d-e70958cf783c,Numerator,0
-CMS832FHIRHHAKI,0dea3c95-bee3-479a-bd9e-22397d17fa1a,Denominator,1
+CMS832FHIRHHAKI,0dea3c95-bee3-479a-bd9e-22397d17fa1a,Denominator,0
 CMS832FHIRHHAKI,0dea3c95-bee3-479a-bd9e-22397d17fa1a,Denominator Exclusion,1
 CMS832FHIRHHAKI,0dea3c95-bee3-479a-bd9e-22397d17fa1a,Initial Population,1
 CMS832FHIRHHAKI,0dea3c95-bee3-479a-bd9e-22397d17fa1a,Numerator,0
@@ -7908,11 +7908,11 @@ CMS832FHIRHHAKI,2c96df6e-89f2-4cf6-8390-650767f59512,Denominator,1
 CMS832FHIRHHAKI,2c96df6e-89f2-4cf6-8390-650767f59512,Denominator Exclusion,0
 CMS832FHIRHHAKI,2c96df6e-89f2-4cf6-8390-650767f59512,Initial Population,1
 CMS832FHIRHHAKI,2c96df6e-89f2-4cf6-8390-650767f59512,Numerator,1
-CMS832FHIRHHAKI,3731688f-4261-42cc-943a-202b69beab97,Denominator,2
+CMS832FHIRHHAKI,3731688f-4261-42cc-943a-202b69beab97,Denominator,0
 CMS832FHIRHHAKI,3731688f-4261-42cc-943a-202b69beab97,Denominator Exclusion,1
 CMS832FHIRHHAKI,3731688f-4261-42cc-943a-202b69beab97,Initial Population,2
 CMS832FHIRHHAKI,3731688f-4261-42cc-943a-202b69beab97,Numerator,0
-CMS832FHIRHHAKI,37360067-1cca-4dd2-8bd8-c5afe63816ed,Denominator,1
+CMS832FHIRHHAKI,37360067-1cca-4dd2-8bd8-c5afe63816ed,Denominator,0
 CMS832FHIRHHAKI,37360067-1cca-4dd2-8bd8-c5afe63816ed,Denominator Exclusion,1
 CMS832FHIRHHAKI,37360067-1cca-4dd2-8bd8-c5afe63816ed,Initial Population,1
 CMS832FHIRHHAKI,37360067-1cca-4dd2-8bd8-c5afe63816ed,Numerator,0
@@ -7924,11 +7924,11 @@ CMS832FHIRHHAKI,479e4df9-132f-401d-be4c-583b1bc961e2,Denominator,0
 CMS832FHIRHHAKI,479e4df9-132f-401d-be4c-583b1bc961e2,Denominator Exclusion,0
 CMS832FHIRHHAKI,479e4df9-132f-401d-be4c-583b1bc961e2,Initial Population,0
 CMS832FHIRHHAKI,479e4df9-132f-401d-be4c-583b1bc961e2,Numerator,0
-CMS832FHIRHHAKI,4e0c6578-8b8d-4c10-98d6-7c0a7c2ea385,Denominator,1
+CMS832FHIRHHAKI,4e0c6578-8b8d-4c10-98d6-7c0a7c2ea385,Denominator,0
 CMS832FHIRHHAKI,4e0c6578-8b8d-4c10-98d6-7c0a7c2ea385,Denominator Exclusion,1
 CMS832FHIRHHAKI,4e0c6578-8b8d-4c10-98d6-7c0a7c2ea385,Initial Population,1
 CMS832FHIRHHAKI,4e0c6578-8b8d-4c10-98d6-7c0a7c2ea385,Numerator,0
-CMS832FHIRHHAKI,4ecdf561-5bdb-4a32-8cad-beb0dc1d1367,Denominator,1
+CMS832FHIRHHAKI,4ecdf561-5bdb-4a32-8cad-beb0dc1d1367,Denominator,0
 CMS832FHIRHHAKI,4ecdf561-5bdb-4a32-8cad-beb0dc1d1367,Denominator Exclusion,1
 CMS832FHIRHHAKI,4ecdf561-5bdb-4a32-8cad-beb0dc1d1367,Initial Population,1
 CMS832FHIRHHAKI,4ecdf561-5bdb-4a32-8cad-beb0dc1d1367,Numerator,0
@@ -7936,7 +7936,7 @@ CMS832FHIRHHAKI,658dcd87-1f28-4732-a464-bcfa5681f12f,Denominator,1
 CMS832FHIRHHAKI,658dcd87-1f28-4732-a464-bcfa5681f12f,Denominator Exclusion,0
 CMS832FHIRHHAKI,658dcd87-1f28-4732-a464-bcfa5681f12f,Initial Population,1
 CMS832FHIRHHAKI,658dcd87-1f28-4732-a464-bcfa5681f12f,Numerator,0
-CMS832FHIRHHAKI,75cf10f8-a7a4-4ac5-b60f-f73bfc9ae92e,Denominator,1
+CMS832FHIRHHAKI,75cf10f8-a7a4-4ac5-b60f-f73bfc9ae92e,Denominator,0
 CMS832FHIRHHAKI,75cf10f8-a7a4-4ac5-b60f-f73bfc9ae92e,Denominator Exclusion,1
 CMS832FHIRHHAKI,75cf10f8-a7a4-4ac5-b60f-f73bfc9ae92e,Initial Population,1
 CMS832FHIRHHAKI,75cf10f8-a7a4-4ac5-b60f-f73bfc9ae92e,Numerator,0
@@ -7944,7 +7944,7 @@ CMS832FHIRHHAKI,7d065cf3-b345-4761-a9cb-1246372b933f,Denominator,1
 CMS832FHIRHHAKI,7d065cf3-b345-4761-a9cb-1246372b933f,Denominator Exclusion,0
 CMS832FHIRHHAKI,7d065cf3-b345-4761-a9cb-1246372b933f,Initial Population,1
 CMS832FHIRHHAKI,7d065cf3-b345-4761-a9cb-1246372b933f,Numerator,1
-CMS832FHIRHHAKI,832c0d97-0f13-4994-a542-ad2230dc7735,Denominator,1
+CMS832FHIRHHAKI,832c0d97-0f13-4994-a542-ad2230dc7735,Denominator,0
 CMS832FHIRHHAKI,832c0d97-0f13-4994-a542-ad2230dc7735,Denominator Exclusion,1
 CMS832FHIRHHAKI,832c0d97-0f13-4994-a542-ad2230dc7735,Initial Population,1
 CMS832FHIRHHAKI,832c0d97-0f13-4994-a542-ad2230dc7735,Numerator,0
@@ -7976,7 +7976,7 @@ CMS832FHIRHHAKI,9e0ef8df-189b-40f1-9eac-724254bd86e2,Denominator,1
 CMS832FHIRHHAKI,9e0ef8df-189b-40f1-9eac-724254bd86e2,Denominator Exclusion,0
 CMS832FHIRHHAKI,9e0ef8df-189b-40f1-9eac-724254bd86e2,Initial Population,1
 CMS832FHIRHHAKI,9e0ef8df-189b-40f1-9eac-724254bd86e2,Numerator,0
-CMS832FHIRHHAKI,a62eecb7-4b38-42dd-b451-7810f6bb5abe,Denominator,1
+CMS832FHIRHHAKI,a62eecb7-4b38-42dd-b451-7810f6bb5abe,Denominator,0
 CMS832FHIRHHAKI,a62eecb7-4b38-42dd-b451-7810f6bb5abe,Denominator Exclusion,1
 CMS832FHIRHHAKI,a62eecb7-4b38-42dd-b451-7810f6bb5abe,Initial Population,1
 CMS832FHIRHHAKI,a62eecb7-4b38-42dd-b451-7810f6bb5abe,Numerator,0
@@ -7984,7 +7984,7 @@ CMS832FHIRHHAKI,a959f507-685c-4d5e-b8e4-dc02063dba36,Denominator,0
 CMS832FHIRHHAKI,a959f507-685c-4d5e-b8e4-dc02063dba36,Denominator Exclusion,0
 CMS832FHIRHHAKI,a959f507-685c-4d5e-b8e4-dc02063dba36,Initial Population,0
 CMS832FHIRHHAKI,a959f507-685c-4d5e-b8e4-dc02063dba36,Numerator,0
-CMS832FHIRHHAKI,b85c0ae2-2a8c-4c27-9a31-efc62576b203,Denominator,1
+CMS832FHIRHHAKI,b85c0ae2-2a8c-4c27-9a31-efc62576b203,Denominator,0
 CMS832FHIRHHAKI,b85c0ae2-2a8c-4c27-9a31-efc62576b203,Denominator Exclusion,1
 CMS832FHIRHHAKI,b85c0ae2-2a8c-4c27-9a31-efc62576b203,Initial Population,1
 CMS832FHIRHHAKI,b85c0ae2-2a8c-4c27-9a31-efc62576b203,Numerator,0
@@ -8012,14 +8012,14 @@ CMS832FHIRHHAKI,f3a73c0a-9569-40ad-887e-e2402f8ca6b6,Denominator,1
 CMS832FHIRHHAKI,f3a73c0a-9569-40ad-887e-e2402f8ca6b6,Denominator Exclusion,0
 CMS832FHIRHHAKI,f3a73c0a-9569-40ad-887e-e2402f8ca6b6,Initial Population,1
 CMS832FHIRHHAKI,f3a73c0a-9569-40ad-887e-e2402f8ca6b6,Numerator,0
-CMS832FHIRHHAKI,fcb1c94b-4276-4409-9449-87c469ffa7d6,Denominator,1
+CMS832FHIRHHAKI,fcb1c94b-4276-4409-9449-87c469ffa7d6,Denominator,0
 CMS832FHIRHHAKI,fcb1c94b-4276-4409-9449-87c469ffa7d6,Denominator Exclusion,1
 CMS832FHIRHHAKI,fcb1c94b-4276-4409-9449-87c469ffa7d6,Initial Population,1
 CMS832FHIRHHAKI,fcb1c94b-4276-4409-9449-87c469ffa7d6,Numerator,0
-CMS832FHIRHHAKI,fd3b9a4e-9dcf-4eda-bd0e-0f9ababe6233,Denominator,1
+CMS832FHIRHHAKI,fd3b9a4e-9dcf-4eda-bd0e-0f9ababe6233,Denominator,0
 CMS832FHIRHHAKI,fd3b9a4e-9dcf-4eda-bd0e-0f9ababe6233,Denominator Exclusion,1
 CMS832FHIRHHAKI,fd3b9a4e-9dcf-4eda-bd0e-0f9ababe6233,Initial Population,1
-CMS832FHIRHHAKI,fd3b9a4e-9dcf-4eda-bd0e-0f9ababe6233,Numerator,1
+CMS832FHIRHHAKI,fd3b9a4e-9dcf-4eda-bd0e-0f9ababe6233,Numerator,0
 CMSFHIR844HybridHospitalWideMortality,443783af-53ae-46ed-a129-690aa58433d8,Initial Population,1
 CMSFHIR844HybridHospitalWideMortality,569ebc6b-4bc4-4b1e-9e40-c3942190d446,Initial Population,1
 CMSFHIR844HybridHospitalWideMortality,56d14d39-e1d9-4bfa-8c97-0578669f75a8,Initial Population,1
@@ -8041,7 +8041,7 @@ CMS1154ScreeningPrediabetesFHIR,32157922-39aa-412c-876b-dd3c7a62a155,Numerator,0
 CMS1154ScreeningPrediabetesFHIR,34207c0d-b3bf-4a7d-b83a-f1131881efbe,Denominator,0
 CMS1154ScreeningPrediabetesFHIR,34207c0d-b3bf-4a7d-b83a-f1131881efbe,Denominator Exclusions,0
 CMS1154ScreeningPrediabetesFHIR,34207c0d-b3bf-4a7d-b83a-f1131881efbe,Initial Population,0
-CMS1154ScreeningPrediabetesFHIR,34207c0d-b3bf-4a7d-b83a-f1131881efbe,Numerator,1
+CMS1154ScreeningPrediabetesFHIR,34207c0d-b3bf-4a7d-b83a-f1131881efbe,Numerator,0
 CMS1154ScreeningPrediabetesFHIR,38255f11-9b45-497d-b798-6f0a54f02f37,Denominator,1
 CMS1154ScreeningPrediabetesFHIR,38255f11-9b45-497d-b798-6f0a54f02f37,Denominator Exclusions,0
 CMS1154ScreeningPrediabetesFHIR,38255f11-9b45-497d-b798-6f0a54f02f37,Initial Population,1
@@ -8089,7 +8089,7 @@ CMS951FHIRKidneyHealthEval,1127bc95-bf52-4921-b02a-de0902780191,Numerator,0
 CMS951FHIRKidneyHealthEval,1d012d11-4b38-4bdc-bd27-e7d8bcc88c89,Denominator,0
 CMS951FHIRKidneyHealthEval,1d012d11-4b38-4bdc-bd27-e7d8bcc88c89,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,1d012d11-4b38-4bdc-bd27-e7d8bcc88c89,Initial Population,0
-CMS951FHIRKidneyHealthEval,1d012d11-4b38-4bdc-bd27-e7d8bcc88c89,Numerator,1
+CMS951FHIRKidneyHealthEval,1d012d11-4b38-4bdc-bd27-e7d8bcc88c89,Numerator,0
 CMS951FHIRKidneyHealthEval,1e8e8baf-0c27-42b2-93ad-5426418552c7,Denominator,0
 CMS951FHIRKidneyHealthEval,1e8e8baf-0c27-42b2-93ad-5426418552c7,Denominator Exclusions,1
 CMS951FHIRKidneyHealthEval,1e8e8baf-0c27-42b2-93ad-5426418552c7,Initial Population,0
@@ -8125,7 +8125,7 @@ CMS951FHIRKidneyHealthEval,51e9e9aa-edcc-46f4-8472-24f377014ad4,Numerator,0
 CMS951FHIRKidneyHealthEval,52988c36-5e85-4818-9baa-983a3e27281a,Denominator,0
 CMS951FHIRKidneyHealthEval,52988c36-5e85-4818-9baa-983a3e27281a,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,52988c36-5e85-4818-9baa-983a3e27281a,Initial Population,0
-CMS951FHIRKidneyHealthEval,52988c36-5e85-4818-9baa-983a3e27281a,Numerator,1
+CMS951FHIRKidneyHealthEval,52988c36-5e85-4818-9baa-983a3e27281a,Numerator,0
 CMS951FHIRKidneyHealthEval,53abb201-a2ef-4966-9102-8fab192aa008,Denominator,0
 CMS951FHIRKidneyHealthEval,53abb201-a2ef-4966-9102-8fab192aa008,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,53abb201-a2ef-4966-9102-8fab192aa008,Initial Population,0
@@ -8161,7 +8161,7 @@ CMS951FHIRKidneyHealthEval,7921acb6-7c9a-4c78-bdf1-a8e1ec2c7023,Numerator,0
 CMS951FHIRKidneyHealthEval,7e7c41ee-7704-419c-937b-72d10c76f99a,Denominator,0
 CMS951FHIRKidneyHealthEval,7e7c41ee-7704-419c-937b-72d10c76f99a,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,7e7c41ee-7704-419c-937b-72d10c76f99a,Initial Population,0
-CMS951FHIRKidneyHealthEval,7e7c41ee-7704-419c-937b-72d10c76f99a,Numerator,1
+CMS951FHIRKidneyHealthEval,7e7c41ee-7704-419c-937b-72d10c76f99a,Numerator,0
 CMS951FHIRKidneyHealthEval,80cbaf27-f12e-47b7-a875-59b068294036,Denominator,0
 CMS951FHIRKidneyHealthEval,80cbaf27-f12e-47b7-a875-59b068294036,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,80cbaf27-f12e-47b7-a875-59b068294036,Initial Population,0
@@ -8177,23 +8177,23 @@ CMS951FHIRKidneyHealthEval,8cfb2747-a46d-4348-9e21-5ef3417e524a,Numerator,0
 CMS951FHIRKidneyHealthEval,8e10675e-b991-4327-9514-6feb9d385b7f,Denominator,0
 CMS951FHIRKidneyHealthEval,8e10675e-b991-4327-9514-6feb9d385b7f,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,8e10675e-b991-4327-9514-6feb9d385b7f,Initial Population,0
-CMS951FHIRKidneyHealthEval,8e10675e-b991-4327-9514-6feb9d385b7f,Numerator,1
+CMS951FHIRKidneyHealthEval,8e10675e-b991-4327-9514-6feb9d385b7f,Numerator,0
 CMS951FHIRKidneyHealthEval,94f26954-f280-4596-8bd3-e77ca79c1f41,Denominator,0
 CMS951FHIRKidneyHealthEval,94f26954-f280-4596-8bd3-e77ca79c1f41,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,94f26954-f280-4596-8bd3-e77ca79c1f41,Initial Population,0
-CMS951FHIRKidneyHealthEval,94f26954-f280-4596-8bd3-e77ca79c1f41,Numerator,1
+CMS951FHIRKidneyHealthEval,94f26954-f280-4596-8bd3-e77ca79c1f41,Numerator,0
 CMS951FHIRKidneyHealthEval,95ee3081-b973-4bd2-8b86-5b46bd664905,Denominator,0
 CMS951FHIRKidneyHealthEval,95ee3081-b973-4bd2-8b86-5b46bd664905,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,95ee3081-b973-4bd2-8b86-5b46bd664905,Initial Population,0
-CMS951FHIRKidneyHealthEval,95ee3081-b973-4bd2-8b86-5b46bd664905,Numerator,1
+CMS951FHIRKidneyHealthEval,95ee3081-b973-4bd2-8b86-5b46bd664905,Numerator,0
 CMS951FHIRKidneyHealthEval,9821f4e3-39db-4f45-8da3-eed161841bd2,Denominator,0
 CMS951FHIRKidneyHealthEval,9821f4e3-39db-4f45-8da3-eed161841bd2,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,9821f4e3-39db-4f45-8da3-eed161841bd2,Initial Population,0
-CMS951FHIRKidneyHealthEval,9821f4e3-39db-4f45-8da3-eed161841bd2,Numerator,1
+CMS951FHIRKidneyHealthEval,9821f4e3-39db-4f45-8da3-eed161841bd2,Numerator,0
 CMS951FHIRKidneyHealthEval,9f3b1077-d99c-4714-a88d-8aecc667fe57,Denominator,0
 CMS951FHIRKidneyHealthEval,9f3b1077-d99c-4714-a88d-8aecc667fe57,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,9f3b1077-d99c-4714-a88d-8aecc667fe57,Initial Population,0
-CMS951FHIRKidneyHealthEval,9f3b1077-d99c-4714-a88d-8aecc667fe57,Numerator,1
+CMS951FHIRKidneyHealthEval,9f3b1077-d99c-4714-a88d-8aecc667fe57,Numerator,0
 CMS951FHIRKidneyHealthEval,a2cf34eb-1f20-426f-bfce-53599a178b71,Denominator,0
 CMS951FHIRKidneyHealthEval,a2cf34eb-1f20-426f-bfce-53599a178b71,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,a2cf34eb-1f20-426f-bfce-53599a178b71,Initial Population,0
@@ -8209,7 +8209,7 @@ CMS951FHIRKidneyHealthEval,a9536c98-3157-4443-bfe1-ef4e585360be,Numerator,0
 CMS951FHIRKidneyHealthEval,ac7a62b6-a440-4d4c-849d-0ce05743109c,Denominator,0
 CMS951FHIRKidneyHealthEval,ac7a62b6-a440-4d4c-849d-0ce05743109c,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,ac7a62b6-a440-4d4c-849d-0ce05743109c,Initial Population,0
-CMS951FHIRKidneyHealthEval,ac7a62b6-a440-4d4c-849d-0ce05743109c,Numerator,1
+CMS951FHIRKidneyHealthEval,ac7a62b6-a440-4d4c-849d-0ce05743109c,Numerator,0
 CMS951FHIRKidneyHealthEval,ae52c591-1a71-4090-aeeb-2dd758f63ce4,Denominator,0
 CMS951FHIRKidneyHealthEval,ae52c591-1a71-4090-aeeb-2dd758f63ce4,Denominator Exclusions,0
 CMS951FHIRKidneyHealthEval,ae52c591-1a71-4090-aeeb-2dd758f63ce4,Initial Population,0
@@ -10122,15 +10122,15 @@ CMS1218FHIRHHRF,fe79603f-2876-45eb-a9d0-0be56d3d29a1,Numerator,1
 CMS129FHIRProstCaBoneScanUse,019de843-7347-4a25-ad9e-2a4ca3a84054,Denominator,0
 CMS129FHIRProstCaBoneScanUse,019de843-7347-4a25-ad9e-2a4ca3a84054,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,019de843-7347-4a25-ad9e-2a4ca3a84054,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,019de843-7347-4a25-ad9e-2a4ca3a84054,Numerator,1
+CMS129FHIRProstCaBoneScanUse,019de843-7347-4a25-ad9e-2a4ca3a84054,Numerator,0
 CMS129FHIRProstCaBoneScanUse,056a27fa-04fc-45d6-bf3f-07482f8db4a8,Denominator,0
 CMS129FHIRProstCaBoneScanUse,056a27fa-04fc-45d6-bf3f-07482f8db4a8,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,056a27fa-04fc-45d6-bf3f-07482f8db4a8,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,056a27fa-04fc-45d6-bf3f-07482f8db4a8,Numerator,1
+CMS129FHIRProstCaBoneScanUse,056a27fa-04fc-45d6-bf3f-07482f8db4a8,Numerator,0
 CMS129FHIRProstCaBoneScanUse,0c0256d2-a6d4-4ed3-bd95-ac7d88108b6c,Denominator,0
 CMS129FHIRProstCaBoneScanUse,0c0256d2-a6d4-4ed3-bd95-ac7d88108b6c,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,0c0256d2-a6d4-4ed3-bd95-ac7d88108b6c,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,0c0256d2-a6d4-4ed3-bd95-ac7d88108b6c,Numerator,1
+CMS129FHIRProstCaBoneScanUse,0c0256d2-a6d4-4ed3-bd95-ac7d88108b6c,Numerator,0
 CMS129FHIRProstCaBoneScanUse,187cc99d-9cb5-442f-8201-3695e5358101,Denominator,1
 CMS129FHIRProstCaBoneScanUse,187cc99d-9cb5-442f-8201-3695e5358101,Denominator Exceptions,1
 CMS129FHIRProstCaBoneScanUse,187cc99d-9cb5-442f-8201-3695e5358101,Initial Population,1
@@ -10150,7 +10150,7 @@ CMS129FHIRProstCaBoneScanUse,2d132665-a998-4d23-b316-3112cc046a67,Numerator,0
 CMS129FHIRProstCaBoneScanUse,2fbd48f4-a5c7-4dd9-8318-745f49cc469c,Denominator,0
 CMS129FHIRProstCaBoneScanUse,2fbd48f4-a5c7-4dd9-8318-745f49cc469c,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,2fbd48f4-a5c7-4dd9-8318-745f49cc469c,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,2fbd48f4-a5c7-4dd9-8318-745f49cc469c,Numerator,1
+CMS129FHIRProstCaBoneScanUse,2fbd48f4-a5c7-4dd9-8318-745f49cc469c,Numerator,0
 CMS129FHIRProstCaBoneScanUse,402afca0-63e5-4ede-9110-fef8edbba947,Denominator,0
 CMS129FHIRProstCaBoneScanUse,402afca0-63e5-4ede-9110-fef8edbba947,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,402afca0-63e5-4ede-9110-fef8edbba947,Initial Population,1
@@ -10162,7 +10162,7 @@ CMS129FHIRProstCaBoneScanUse,49c6ee4d-15cd-422c-a511-b7ba3d55b1f6,Numerator,1
 CMS129FHIRProstCaBoneScanUse,4c552455-4056-4466-af06-298b4399c6f7,Denominator,0
 CMS129FHIRProstCaBoneScanUse,4c552455-4056-4466-af06-298b4399c6f7,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,4c552455-4056-4466-af06-298b4399c6f7,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,4c552455-4056-4466-af06-298b4399c6f7,Numerator,1
+CMS129FHIRProstCaBoneScanUse,4c552455-4056-4466-af06-298b4399c6f7,Numerator,0
 CMS129FHIRProstCaBoneScanUse,4e7be08e-1f6f-4d44-bdd2-807439ce367a,Denominator,1
 CMS129FHIRProstCaBoneScanUse,4e7be08e-1f6f-4d44-bdd2-807439ce367a,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,4e7be08e-1f6f-4d44-bdd2-807439ce367a,Initial Population,1
@@ -10178,7 +10178,7 @@ CMS129FHIRProstCaBoneScanUse,54b4b9a9-00fd-453f-b8c1-61c324fa68da,Numerator,0
 CMS129FHIRProstCaBoneScanUse,56b77354-f6c1-4507-8270-a07de39f0fa9,Denominator,0
 CMS129FHIRProstCaBoneScanUse,56b77354-f6c1-4507-8270-a07de39f0fa9,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,56b77354-f6c1-4507-8270-a07de39f0fa9,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,56b77354-f6c1-4507-8270-a07de39f0fa9,Numerator,1
+CMS129FHIRProstCaBoneScanUse,56b77354-f6c1-4507-8270-a07de39f0fa9,Numerator,0
 CMS129FHIRProstCaBoneScanUse,597f0a09-29f9-4141-804a-56a1fca5352e,Denominator,0
 CMS129FHIRProstCaBoneScanUse,597f0a09-29f9-4141-804a-56a1fca5352e,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,597f0a09-29f9-4141-804a-56a1fca5352e,Initial Population,1
@@ -10214,7 +10214,7 @@ CMS129FHIRProstCaBoneScanUse,8fabf398-d258-4613-b8d8-12bcbc273dc8,Numerator,1
 CMS129FHIRProstCaBoneScanUse,933dce03-06ac-41e1-ba4f-0de3776046ee,Denominator,0
 CMS129FHIRProstCaBoneScanUse,933dce03-06ac-41e1-ba4f-0de3776046ee,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,933dce03-06ac-41e1-ba4f-0de3776046ee,Initial Population,0
-CMS129FHIRProstCaBoneScanUse,933dce03-06ac-41e1-ba4f-0de3776046ee,Numerator,1
+CMS129FHIRProstCaBoneScanUse,933dce03-06ac-41e1-ba4f-0de3776046ee,Numerator,0
 CMS129FHIRProstCaBoneScanUse,991879e8-a1e3-4014-a71b-7c6bdfbc9748,Denominator,null
 CMS129FHIRProstCaBoneScanUse,991879e8-a1e3-4014-a71b-7c6bdfbc9748,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,991879e8-a1e3-4014-a71b-7c6bdfbc9748,Initial Population,1
@@ -10238,7 +10238,7 @@ CMS129FHIRProstCaBoneScanUse,ab43793d-af43-4960-8b9f-012f23a08822,Numerator,1
 CMS129FHIRProstCaBoneScanUse,ab445b6e-be4b-46d3-b2bb-9c5abac8ae36,Denominator,0
 CMS129FHIRProstCaBoneScanUse,ab445b6e-be4b-46d3-b2bb-9c5abac8ae36,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,ab445b6e-be4b-46d3-b2bb-9c5abac8ae36,Initial Population,0
-CMS129FHIRProstCaBoneScanUse,ab445b6e-be4b-46d3-b2bb-9c5abac8ae36,Numerator,1
+CMS129FHIRProstCaBoneScanUse,ab445b6e-be4b-46d3-b2bb-9c5abac8ae36,Numerator,0
 CMS129FHIRProstCaBoneScanUse,b7a34d3f-446e-4a40-adff-595b8614977c,Denominator,1
 CMS129FHIRProstCaBoneScanUse,b7a34d3f-446e-4a40-adff-595b8614977c,Denominator Exceptions,1
 CMS129FHIRProstCaBoneScanUse,b7a34d3f-446e-4a40-adff-595b8614977c,Initial Population,1
@@ -10246,7 +10246,7 @@ CMS129FHIRProstCaBoneScanUse,b7a34d3f-446e-4a40-adff-595b8614977c,Numerator,0
 CMS129FHIRProstCaBoneScanUse,ba2a14bb-ba5f-4fd9-b676-ed0808280f23,Denominator,0
 CMS129FHIRProstCaBoneScanUse,ba2a14bb-ba5f-4fd9-b676-ed0808280f23,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,ba2a14bb-ba5f-4fd9-b676-ed0808280f23,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,ba2a14bb-ba5f-4fd9-b676-ed0808280f23,Numerator,1
+CMS129FHIRProstCaBoneScanUse,ba2a14bb-ba5f-4fd9-b676-ed0808280f23,Numerator,0
 CMS129FHIRProstCaBoneScanUse,bfed65eb-7ece-4d24-8470-4e9803b6b7f7,Denominator,null
 CMS129FHIRProstCaBoneScanUse,bfed65eb-7ece-4d24-8470-4e9803b6b7f7,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,bfed65eb-7ece-4d24-8470-4e9803b6b7f7,Initial Population,1
@@ -10262,7 +10262,7 @@ CMS129FHIRProstCaBoneScanUse,c123c20a-c9c3-4acd-bead-8cc61e2ba29f,Numerator,1
 CMS129FHIRProstCaBoneScanUse,c143148d-84ca-433a-a312-37c3f92b61cc,Denominator,0
 CMS129FHIRProstCaBoneScanUse,c143148d-84ca-433a-a312-37c3f92b61cc,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,c143148d-84ca-433a-a312-37c3f92b61cc,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,c143148d-84ca-433a-a312-37c3f92b61cc,Numerator,1
+CMS129FHIRProstCaBoneScanUse,c143148d-84ca-433a-a312-37c3f92b61cc,Numerator,0
 CMS129FHIRProstCaBoneScanUse,c3180c8f-a14b-4c8f-8a3f-6f092f3df8c3,Denominator,1
 CMS129FHIRProstCaBoneScanUse,c3180c8f-a14b-4c8f-8a3f-6f092f3df8c3,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,c3180c8f-a14b-4c8f-8a3f-6f092f3df8c3,Initial Population,1
@@ -10294,7 +10294,7 @@ CMS129FHIRProstCaBoneScanUse,eb735e04-483b-4fa9-ac2d-e73918acd50e,Numerator,0
 CMS129FHIRProstCaBoneScanUse,ed027d3a-1e21-4c66-8357-cfe1d05ae918,Denominator,0
 CMS129FHIRProstCaBoneScanUse,ed027d3a-1e21-4c66-8357-cfe1d05ae918,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,ed027d3a-1e21-4c66-8357-cfe1d05ae918,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,ed027d3a-1e21-4c66-8357-cfe1d05ae918,Numerator,1
+CMS129FHIRProstCaBoneScanUse,ed027d3a-1e21-4c66-8357-cfe1d05ae918,Numerator,0
 CMS129FHIRProstCaBoneScanUse,eeaa3999-225d-45e8-befa-56076faffc78,Denominator,1
 CMS129FHIRProstCaBoneScanUse,eeaa3999-225d-45e8-befa-56076faffc78,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,eeaa3999-225d-45e8-befa-56076faffc78,Initial Population,1
@@ -10302,7 +10302,7 @@ CMS129FHIRProstCaBoneScanUse,eeaa3999-225d-45e8-befa-56076faffc78,Numerator,0
 CMS129FHIRProstCaBoneScanUse,eeff5308-7deb-4820-93ae-5aca6cc35d26,Denominator,0
 CMS129FHIRProstCaBoneScanUse,eeff5308-7deb-4820-93ae-5aca6cc35d26,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,eeff5308-7deb-4820-93ae-5aca6cc35d26,Initial Population,1
-CMS129FHIRProstCaBoneScanUse,eeff5308-7deb-4820-93ae-5aca6cc35d26,Numerator,1
+CMS129FHIRProstCaBoneScanUse,eeff5308-7deb-4820-93ae-5aca6cc35d26,Numerator,0
 CMS129FHIRProstCaBoneScanUse,ef8cad07-6254-4461-ba1a-86aaf95eeb6e,Denominator,1
 CMS129FHIRProstCaBoneScanUse,ef8cad07-6254-4461-ba1a-86aaf95eeb6e,Denominator Exceptions,0
 CMS129FHIRProstCaBoneScanUse,ef8cad07-6254-4461-ba1a-86aaf95eeb6e,Initial Population,1
@@ -10738,37 +10738,37 @@ CMS871FHIRHHHyper,f4e6ce4f-8209-4f79-a9ab-2678d3e0ded8,Numerator,0
 CMS871FHIRHHHyper,f4e6ce4f-8209-4f79-a9ab-2678d3e0ded8,Numerator Exclusions,0
 CMS314FHIRHIVViralSuppression,061ab97e-4e5d-4c1d-91dc-21e34b415b5b,Denominator,0
 CMS314FHIRHIVViralSuppression,061ab97e-4e5d-4c1d-91dc-21e34b415b5b,Initial Population,0
-CMS314FHIRHIVViralSuppression,061ab97e-4e5d-4c1d-91dc-21e34b415b5b,Numerator,null
+CMS314FHIRHIVViralSuppression,061ab97e-4e5d-4c1d-91dc-21e34b415b5b,Numerator,0
 CMS314FHIRHIVViralSuppression,0dba5c80-03d8-40cd-ab24-786910e61265,Denominator,0
 CMS314FHIRHIVViralSuppression,0dba5c80-03d8-40cd-ab24-786910e61265,Initial Population,0
-CMS314FHIRHIVViralSuppression,0dba5c80-03d8-40cd-ab24-786910e61265,Numerator,1
+CMS314FHIRHIVViralSuppression,0dba5c80-03d8-40cd-ab24-786910e61265,Numerator,0
 CMS314FHIRHIVViralSuppression,14605ae3-a67b-423b-942e-06a54531bc70,Denominator,0
 CMS314FHIRHIVViralSuppression,14605ae3-a67b-423b-942e-06a54531bc70,Initial Population,0
-CMS314FHIRHIVViralSuppression,14605ae3-a67b-423b-942e-06a54531bc70,Numerator,null
+CMS314FHIRHIVViralSuppression,14605ae3-a67b-423b-942e-06a54531bc70,Numerator,0
 CMS314FHIRHIVViralSuppression,15c4c2c5-9cdb-4eed-b27a-22462692881a,Denominator,0
 CMS314FHIRHIVViralSuppression,15c4c2c5-9cdb-4eed-b27a-22462692881a,Initial Population,0
-CMS314FHIRHIVViralSuppression,15c4c2c5-9cdb-4eed-b27a-22462692881a,Numerator,1
+CMS314FHIRHIVViralSuppression,15c4c2c5-9cdb-4eed-b27a-22462692881a,Numerator,0
 CMS314FHIRHIVViralSuppression,15d3fb71-37d0-4d5c-b504-4fd1c8b5b942,Denominator,0
 CMS314FHIRHIVViralSuppression,15d3fb71-37d0-4d5c-b504-4fd1c8b5b942,Initial Population,0
-CMS314FHIRHIVViralSuppression,15d3fb71-37d0-4d5c-b504-4fd1c8b5b942,Numerator,null
+CMS314FHIRHIVViralSuppression,15d3fb71-37d0-4d5c-b504-4fd1c8b5b942,Numerator,0
 CMS314FHIRHIVViralSuppression,1a5ca6a4-7ff9-4b3f-bb47-655b5cc14fd0,Denominator,0
 CMS314FHIRHIVViralSuppression,1a5ca6a4-7ff9-4b3f-bb47-655b5cc14fd0,Initial Population,0
-CMS314FHIRHIVViralSuppression,1a5ca6a4-7ff9-4b3f-bb47-655b5cc14fd0,Numerator,null
+CMS314FHIRHIVViralSuppression,1a5ca6a4-7ff9-4b3f-bb47-655b5cc14fd0,Numerator,0
 CMS314FHIRHIVViralSuppression,1e89cfdc-ec5e-456a-abcf-ab349c9cfbed,Denominator,0
 CMS314FHIRHIVViralSuppression,1e89cfdc-ec5e-456a-abcf-ab349c9cfbed,Initial Population,0
-CMS314FHIRHIVViralSuppression,1e89cfdc-ec5e-456a-abcf-ab349c9cfbed,Numerator,1
+CMS314FHIRHIVViralSuppression,1e89cfdc-ec5e-456a-abcf-ab349c9cfbed,Numerator,0
 CMS314FHIRHIVViralSuppression,1fe11eea-dd7a-48f6-84a6-6522de5c1745,Denominator,0
 CMS314FHIRHIVViralSuppression,1fe11eea-dd7a-48f6-84a6-6522de5c1745,Initial Population,0
-CMS314FHIRHIVViralSuppression,1fe11eea-dd7a-48f6-84a6-6522de5c1745,Numerator,1
+CMS314FHIRHIVViralSuppression,1fe11eea-dd7a-48f6-84a6-6522de5c1745,Numerator,0
 CMS314FHIRHIVViralSuppression,23dd9286-8299-4fa0-8edf-2dc19e966deb,Denominator,0
 CMS314FHIRHIVViralSuppression,23dd9286-8299-4fa0-8edf-2dc19e966deb,Initial Population,0
-CMS314FHIRHIVViralSuppression,23dd9286-8299-4fa0-8edf-2dc19e966deb,Numerator,null
+CMS314FHIRHIVViralSuppression,23dd9286-8299-4fa0-8edf-2dc19e966deb,Numerator,0
 CMS314FHIRHIVViralSuppression,267848e8-9b42-4a94-931d-d2bc4a142c61,Denominator,0
 CMS314FHIRHIVViralSuppression,267848e8-9b42-4a94-931d-d2bc4a142c61,Initial Population,0
-CMS314FHIRHIVViralSuppression,267848e8-9b42-4a94-931d-d2bc4a142c61,Numerator,null
+CMS314FHIRHIVViralSuppression,267848e8-9b42-4a94-931d-d2bc4a142c61,Numerator,0
 CMS314FHIRHIVViralSuppression,2a83ceb0-b652-479c-8b3f-69209286ca86,Denominator,0
 CMS314FHIRHIVViralSuppression,2a83ceb0-b652-479c-8b3f-69209286ca86,Initial Population,0
-CMS314FHIRHIVViralSuppression,2a83ceb0-b652-479c-8b3f-69209286ca86,Numerator,null
+CMS314FHIRHIVViralSuppression,2a83ceb0-b652-479c-8b3f-69209286ca86,Numerator,0
 CMS314FHIRHIVViralSuppression,3f8c028d-5443-41dc-895e-ad9541af0dfe,Denominator,0
 CMS314FHIRHIVViralSuppression,3f8c028d-5443-41dc-895e-ad9541af0dfe,Initial Population,0
 CMS314FHIRHIVViralSuppression,3f8c028d-5443-41dc-895e-ad9541af0dfe,Numerator,0
@@ -10777,34 +10777,34 @@ CMS314FHIRHIVViralSuppression,48fd1cfc-ee44-4e04-a174-db33789bf10c,Initial Popul
 CMS314FHIRHIVViralSuppression,48fd1cfc-ee44-4e04-a174-db33789bf10c,Numerator,0
 CMS314FHIRHIVViralSuppression,4dcecfe3-5b54-46f2-b26c-f82954ca68fe,Denominator,0
 CMS314FHIRHIVViralSuppression,4dcecfe3-5b54-46f2-b26c-f82954ca68fe,Initial Population,0
-CMS314FHIRHIVViralSuppression,4dcecfe3-5b54-46f2-b26c-f82954ca68fe,Numerator,null
+CMS314FHIRHIVViralSuppression,4dcecfe3-5b54-46f2-b26c-f82954ca68fe,Numerator,0
 CMS314FHIRHIVViralSuppression,564678c9-1495-4cfe-9b68-2fcedb80fd9b,Denominator,0
 CMS314FHIRHIVViralSuppression,564678c9-1495-4cfe-9b68-2fcedb80fd9b,Initial Population,0
-CMS314FHIRHIVViralSuppression,564678c9-1495-4cfe-9b68-2fcedb80fd9b,Numerator,null
+CMS314FHIRHIVViralSuppression,564678c9-1495-4cfe-9b68-2fcedb80fd9b,Numerator,0
 CMS314FHIRHIVViralSuppression,56fc45b6-2a2b-45dd-af07-c946b029b9df,Denominator,0
 CMS314FHIRHIVViralSuppression,56fc45b6-2a2b-45dd-af07-c946b029b9df,Initial Population,0
-CMS314FHIRHIVViralSuppression,56fc45b6-2a2b-45dd-af07-c946b029b9df,Numerator,null
+CMS314FHIRHIVViralSuppression,56fc45b6-2a2b-45dd-af07-c946b029b9df,Numerator,0
 CMS314FHIRHIVViralSuppression,5da3f95f-8881-41fe-826a-cb43f0fe4949,Denominator,0
 CMS314FHIRHIVViralSuppression,5da3f95f-8881-41fe-826a-cb43f0fe4949,Initial Population,0
 CMS314FHIRHIVViralSuppression,5da3f95f-8881-41fe-826a-cb43f0fe4949,Numerator,0
 CMS314FHIRHIVViralSuppression,67fe9319-a486-463e-9e0f-346b17628e3c,Denominator,0
 CMS314FHIRHIVViralSuppression,67fe9319-a486-463e-9e0f-346b17628e3c,Initial Population,0
-CMS314FHIRHIVViralSuppression,67fe9319-a486-463e-9e0f-346b17628e3c,Numerator,null
+CMS314FHIRHIVViralSuppression,67fe9319-a486-463e-9e0f-346b17628e3c,Numerator,0
 CMS314FHIRHIVViralSuppression,6972e617-a003-45d1-8de5-9d4b695324fd,Denominator,0
 CMS314FHIRHIVViralSuppression,6972e617-a003-45d1-8de5-9d4b695324fd,Initial Population,0
-CMS314FHIRHIVViralSuppression,6972e617-a003-45d1-8de5-9d4b695324fd,Numerator,null
+CMS314FHIRHIVViralSuppression,6972e617-a003-45d1-8de5-9d4b695324fd,Numerator,0
 CMS314FHIRHIVViralSuppression,6d6980b9-1f73-495a-a78c-c9c26a26ceaf,Denominator,0
 CMS314FHIRHIVViralSuppression,6d6980b9-1f73-495a-a78c-c9c26a26ceaf,Initial Population,0
-CMS314FHIRHIVViralSuppression,6d6980b9-1f73-495a-a78c-c9c26a26ceaf,Numerator,null
+CMS314FHIRHIVViralSuppression,6d6980b9-1f73-495a-a78c-c9c26a26ceaf,Numerator,0
 CMS314FHIRHIVViralSuppression,6e36591c-d366-4dc0-b1b4-4b939b920a85,Denominator,0
 CMS314FHIRHIVViralSuppression,6e36591c-d366-4dc0-b1b4-4b939b920a85,Initial Population,0
-CMS314FHIRHIVViralSuppression,6e36591c-d366-4dc0-b1b4-4b939b920a85,Numerator,1
+CMS314FHIRHIVViralSuppression,6e36591c-d366-4dc0-b1b4-4b939b920a85,Numerator,0
 CMS314FHIRHIVViralSuppression,6f46bfc8-e7b3-45a2-82ae-896144b2aebd,Denominator,0
 CMS314FHIRHIVViralSuppression,6f46bfc8-e7b3-45a2-82ae-896144b2aebd,Initial Population,0
 CMS314FHIRHIVViralSuppression,6f46bfc8-e7b3-45a2-82ae-896144b2aebd,Numerator,0
 CMS314FHIRHIVViralSuppression,728e5e56-8230-4cab-9808-c0c4139836f4,Denominator,0
 CMS314FHIRHIVViralSuppression,728e5e56-8230-4cab-9808-c0c4139836f4,Initial Population,0
-CMS314FHIRHIVViralSuppression,728e5e56-8230-4cab-9808-c0c4139836f4,Numerator,1
+CMS314FHIRHIVViralSuppression,728e5e56-8230-4cab-9808-c0c4139836f4,Numerator,0
 CMS314FHIRHIVViralSuppression,74aab416-6a06-4fb8-8fbf-5df8012dd811,Denominator,0
 CMS314FHIRHIVViralSuppression,74aab416-6a06-4fb8-8fbf-5df8012dd811,Initial Population,0
 CMS314FHIRHIVViralSuppression,74aab416-6a06-4fb8-8fbf-5df8012dd811,Numerator,0
@@ -10813,58 +10813,58 @@ CMS314FHIRHIVViralSuppression,763778d4-705a-4659-837a-914827625a39,Initial Popul
 CMS314FHIRHIVViralSuppression,763778d4-705a-4659-837a-914827625a39,Numerator,0
 CMS314FHIRHIVViralSuppression,765f96cd-d613-460d-98d1-111d44c08723,Denominator,0
 CMS314FHIRHIVViralSuppression,765f96cd-d613-460d-98d1-111d44c08723,Initial Population,0
-CMS314FHIRHIVViralSuppression,765f96cd-d613-460d-98d1-111d44c08723,Numerator,null
+CMS314FHIRHIVViralSuppression,765f96cd-d613-460d-98d1-111d44c08723,Numerator,0
 CMS314FHIRHIVViralSuppression,770e94b3-a82c-4a56-8882-09d53533950e,Denominator,0
 CMS314FHIRHIVViralSuppression,770e94b3-a82c-4a56-8882-09d53533950e,Initial Population,0
-CMS314FHIRHIVViralSuppression,770e94b3-a82c-4a56-8882-09d53533950e,Numerator,1
+CMS314FHIRHIVViralSuppression,770e94b3-a82c-4a56-8882-09d53533950e,Numerator,0
 CMS314FHIRHIVViralSuppression,7c34502d-cd54-4f08-9c0c-93d3c04fc3bf,Denominator,0
 CMS314FHIRHIVViralSuppression,7c34502d-cd54-4f08-9c0c-93d3c04fc3bf,Initial Population,0
-CMS314FHIRHIVViralSuppression,7c34502d-cd54-4f08-9c0c-93d3c04fc3bf,Numerator,null
+CMS314FHIRHIVViralSuppression,7c34502d-cd54-4f08-9c0c-93d3c04fc3bf,Numerator,0
 CMS314FHIRHIVViralSuppression,7ebb36aa-b8dc-4d22-9c09-3250684e3d30,Denominator,0
 CMS314FHIRHIVViralSuppression,7ebb36aa-b8dc-4d22-9c09-3250684e3d30,Initial Population,0
-CMS314FHIRHIVViralSuppression,7ebb36aa-b8dc-4d22-9c09-3250684e3d30,Numerator,1
+CMS314FHIRHIVViralSuppression,7ebb36aa-b8dc-4d22-9c09-3250684e3d30,Numerator,0
 CMS314FHIRHIVViralSuppression,8a74f67d-482c-4cdd-8b71-71d1b14dd432,Denominator,0
 CMS314FHIRHIVViralSuppression,8a74f67d-482c-4cdd-8b71-71d1b14dd432,Initial Population,0
-CMS314FHIRHIVViralSuppression,8a74f67d-482c-4cdd-8b71-71d1b14dd432,Numerator,1
+CMS314FHIRHIVViralSuppression,8a74f67d-482c-4cdd-8b71-71d1b14dd432,Numerator,0
 CMS314FHIRHIVViralSuppression,8d786705-7605-4c33-a5d4-0ef145a3bcbc,Denominator,0
 CMS314FHIRHIVViralSuppression,8d786705-7605-4c33-a5d4-0ef145a3bcbc,Initial Population,0
-CMS314FHIRHIVViralSuppression,8d786705-7605-4c33-a5d4-0ef145a3bcbc,Numerator,1
+CMS314FHIRHIVViralSuppression,8d786705-7605-4c33-a5d4-0ef145a3bcbc,Numerator,0
 CMS314FHIRHIVViralSuppression,920a15ae-3bc9-4e7b-9f0f-e1554b78157a,Denominator,0
 CMS314FHIRHIVViralSuppression,920a15ae-3bc9-4e7b-9f0f-e1554b78157a,Initial Population,0
-CMS314FHIRHIVViralSuppression,920a15ae-3bc9-4e7b-9f0f-e1554b78157a,Numerator,null
+CMS314FHIRHIVViralSuppression,920a15ae-3bc9-4e7b-9f0f-e1554b78157a,Numerator,0
 CMS314FHIRHIVViralSuppression,9df5bcfb-2893-42f4-b092-a7d49bc0276e,Denominator,0
 CMS314FHIRHIVViralSuppression,9df5bcfb-2893-42f4-b092-a7d49bc0276e,Initial Population,0
-CMS314FHIRHIVViralSuppression,9df5bcfb-2893-42f4-b092-a7d49bc0276e,Numerator,1
+CMS314FHIRHIVViralSuppression,9df5bcfb-2893-42f4-b092-a7d49bc0276e,Numerator,0
 CMS314FHIRHIVViralSuppression,a98409bd-26b7-499a-bdff-f4c0118e0934,Denominator,0
 CMS314FHIRHIVViralSuppression,a98409bd-26b7-499a-bdff-f4c0118e0934,Initial Population,0
-CMS314FHIRHIVViralSuppression,a98409bd-26b7-499a-bdff-f4c0118e0934,Numerator,null
+CMS314FHIRHIVViralSuppression,a98409bd-26b7-499a-bdff-f4c0118e0934,Numerator,0
 CMS314FHIRHIVViralSuppression,b124de67-0311-4c75-bb67-e6c45e48ca45,Denominator,0
 CMS314FHIRHIVViralSuppression,b124de67-0311-4c75-bb67-e6c45e48ca45,Initial Population,0
-CMS314FHIRHIVViralSuppression,b124de67-0311-4c75-bb67-e6c45e48ca45,Numerator,null
+CMS314FHIRHIVViralSuppression,b124de67-0311-4c75-bb67-e6c45e48ca45,Numerator,0
 CMS314FHIRHIVViralSuppression,b5df1024-993a-42aa-8afd-a1a83c32c95a,Denominator,0
 CMS314FHIRHIVViralSuppression,b5df1024-993a-42aa-8afd-a1a83c32c95a,Initial Population,0
-CMS314FHIRHIVViralSuppression,b5df1024-993a-42aa-8afd-a1a83c32c95a,Numerator,1
+CMS314FHIRHIVViralSuppression,b5df1024-993a-42aa-8afd-a1a83c32c95a,Numerator,0
 CMS314FHIRHIVViralSuppression,c3a81338-d107-4762-84a8-3a8ce88b781a,Denominator,0
 CMS314FHIRHIVViralSuppression,c3a81338-d107-4762-84a8-3a8ce88b781a,Initial Population,0
-CMS314FHIRHIVViralSuppression,c3a81338-d107-4762-84a8-3a8ce88b781a,Numerator,1
+CMS314FHIRHIVViralSuppression,c3a81338-d107-4762-84a8-3a8ce88b781a,Numerator,0
 CMS314FHIRHIVViralSuppression,d4741a72-3191-4a77-b3ab-7f4e62bc8221,Denominator,0
 CMS314FHIRHIVViralSuppression,d4741a72-3191-4a77-b3ab-7f4e62bc8221,Initial Population,0
-CMS314FHIRHIVViralSuppression,d4741a72-3191-4a77-b3ab-7f4e62bc8221,Numerator,null
+CMS314FHIRHIVViralSuppression,d4741a72-3191-4a77-b3ab-7f4e62bc8221,Numerator,0
 CMS314FHIRHIVViralSuppression,e03fd6c9-9b4c-4814-9301-f22a28e4b1be,Denominator,0
 CMS314FHIRHIVViralSuppression,e03fd6c9-9b4c-4814-9301-f22a28e4b1be,Initial Population,0
-CMS314FHIRHIVViralSuppression,e03fd6c9-9b4c-4814-9301-f22a28e4b1be,Numerator,null
+CMS314FHIRHIVViralSuppression,e03fd6c9-9b4c-4814-9301-f22a28e4b1be,Numerator,0
 CMS314FHIRHIVViralSuppression,eae55f3d-0a15-4a21-9229-dfb11f8e3f9d,Denominator,0
 CMS314FHIRHIVViralSuppression,eae55f3d-0a15-4a21-9229-dfb11f8e3f9d,Initial Population,0
-CMS314FHIRHIVViralSuppression,eae55f3d-0a15-4a21-9229-dfb11f8e3f9d,Numerator,null
+CMS314FHIRHIVViralSuppression,eae55f3d-0a15-4a21-9229-dfb11f8e3f9d,Numerator,0
 CMS314FHIRHIVViralSuppression,f48ef2d5-b690-4068-9268-b06a7558bb68,Denominator,0
 CMS314FHIRHIVViralSuppression,f48ef2d5-b690-4068-9268-b06a7558bb68,Initial Population,0
-CMS314FHIRHIVViralSuppression,f48ef2d5-b690-4068-9268-b06a7558bb68,Numerator,null
+CMS314FHIRHIVViralSuppression,f48ef2d5-b690-4068-9268-b06a7558bb68,Numerator,0
 CMS314FHIRHIVViralSuppression,f5ab0931-7298-476d-8529-3e13214e626f,Denominator,0
 CMS314FHIRHIVViralSuppression,f5ab0931-7298-476d-8529-3e13214e626f,Initial Population,0
-CMS314FHIRHIVViralSuppression,f5ab0931-7298-476d-8529-3e13214e626f,Numerator,null
+CMS314FHIRHIVViralSuppression,f5ab0931-7298-476d-8529-3e13214e626f,Numerator,0
 CMS314FHIRHIVViralSuppression,fee37cef-a36c-4640-b58f-c7df0743597d,Denominator,0
 CMS314FHIRHIVViralSuppression,fee37cef-a36c-4640-b58f-c7df0743597d,Initial Population,0
-CMS314FHIRHIVViralSuppression,fee37cef-a36c-4640-b58f-c7df0743597d,Numerator,null
+CMS314FHIRHIVViralSuppression,fee37cef-a36c-4640-b58f-c7df0743597d,Numerator,0
 CMS108FHIRVTEProphylaxis,0190ef4b-c22d-4177-b293-874f1a9030a6,Denominator,1
 CMS108FHIRVTEProphylaxis,0190ef4b-c22d-4177-b293-874f1a9030a6,Denominator Exclusions,0
 CMS108FHIRVTEProphylaxis,0190ef4b-c22d-4177-b293-874f1a9030a6,Initial Population,1
