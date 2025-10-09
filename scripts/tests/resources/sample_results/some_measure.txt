@@ -5,37 +5,41 @@ Test cases:
 12786a64-c20e-4542-a4c0-bf3129d6a9e0 - /dqm-content-qicore-2025/input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/12786a64-c20e-4542-a4c0-bf3129d6a9e0
 15ad723f-b561-4cdd-9a11-7e6619780459 - /dqm-content-qicore-2025/input/tests/measure/CMS2FHIRPCSDepScreenAndFollowUp/15ad723f-b561-4cdd-9a11-7e6619780459
 
-Denominator=false
+Denominator 1=false
+Denominator 2=false
 Denominator Exceptions=false
 Denominator Exclusions=false
-Initial Population=false
+Initial Population 1=false
+Initial Population 2=false
 Numerator=false
 Patient=Patient(id=0e463fc3-d1bf-4e19-882b-fad6342aa668)
 Patient Age 12 Years or Older at Start of Measurement Period=null
-Qualifying Encounter During Measurement Period=[]
 SDE Ethnicity=Tuple {
   codes: [Code { code: 2135-2, system: urn:oid:2.16.840.1.113883.6.238, version: null, display: Hispanic or Latino }]
   display: Hispanic or Latino
 }
 
-Denominator=true
-Denominator Exceptions=true
-Denominator Exclusions=true
-Initial Population=true
+Denominator 1=true
+Denominator 2=false
+Denominator Exceptions=false
+Denominator Exclusions=false
+Initial Population 1=true
+Initial Population 2=false
 Numerator=true
 Patient=Patient(id=12786a64-c20e-4542-a4c0-bf3129d6a9e0)
 Patient Age 12 Years or Older at Start of Measurement Period=null
-Qualifying Encounter During Measurement Period=[]
 SDE Ethnicity=Tuple {
   codes: [Code { code: 2135-2, system: urn:oid:2.16.840.1.113883.6.238, version: null, display: Hispanic or Latino }]
   display: Hispanic or Latino
 }
 
-Denominator=true
-Denominator Exceptions=false
+Denominator 1=false
+Denominator 2=true
+Denominator Exceptions=true
 Denominator Exclusions=false
-Initial Population=true
-Numerator=true
+Initial Population 1=false
+Initial Population 2=true
+Numerator=false
 Patient=Patient(id=15ad723f-b561-4cdd-9a11-7e6619780459)
 Patient Age 12 Years or Older at Start of Measurement Period=null
 SDE Ethnicity=Tuple {
