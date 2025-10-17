@@ -8,17 +8,17 @@ expected_rows = {}
 with open(expected_file, "r") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        key = (row["measure_name"], row["guid"], row["display_name"])
+        key = (row["measure_name"], row["guid"], row["population"])
         expected_rows[key] = row["count"]
 
 actual_rows = {}
 with open(actual_file, "r") as f:
     reader = csv.DictReader(f)
     for row in reader:
-        key = (row["measure_name"], row["guid"], row["display_name"])
+        key = (row["measure_name"], row["guid"], row["population"])
         actual_rows[key] = row["count"]
 
-header = ["result", "measure_name", "guid", "display_name", "expected_result", "actual_result"]
+header = ["result", "measure_name", "guid", "population", "expected_result", "actual_result"]
 output = []
 
 pass_count = 0

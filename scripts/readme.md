@@ -49,11 +49,11 @@ _NOTES_
 To quickly reproduce the comparison results without running the CQL plugin:
 
 - Extract `./scripts/results-connectathon-2025-09-13.zip` to `./input/tests/results`.
-- This will populate the results directory with sample data, allowing you to run the scripts and generate `./scripts/comparison/output_results.csv
+- This will populate the results directory with sample data, allowing you to run the scripts and generate `./scripts/comparison/output_results.csv`
 
 ## Unit Tests
 
 - Unit tests are provided
-  - run tests from the command line in the scripts directory
+  - run tests from the command line in the root directory
     - _Note: Do not include the file extension_
   - example: `python -m scripts.tests.test_extract_population_actual`
