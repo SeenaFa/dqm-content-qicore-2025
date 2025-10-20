@@ -160,11 +160,23 @@ def generate_comparison_report(file: str, expected_results: Dict[ResultKey, Dict
         f.write(f'Total Test Cases: {len(set([(result_key.measure_name, result_key.patient_guid) for result_key in expected_results.keys()]))}\n')
         f.write(f'Measures with Discrepancies: {len(discrepancies)}\n')
         f.writelines(create_markdown_table(
-            ['Discrepancy Summary', 'Measure Count'],
+            ['Discrepancy Summary', 'Measure Count', 'Test Case Count'],
             [
-                ['Missing Results', len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.missing_results]))],
-                ['Missing Populations', len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.missing_populations]))],
-                ['Mismatched Test Cases', len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.mismatched_test_cases]))]
+                [
+                    'Missing Results', 
+                    len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.missing_results])),
+                    sum([len(discrepancy.missing_results) for discrepancy in discrepancies.values()])
+                ],
+                [
+                    'Missing Populations', 
+                    len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.missing_populations])),
+                    sum([len(discrepancy.missing_populations) for discrepancy in discrepancies.values()])
+                ],
+                [
+                    'Mismatched Test Cases', 
+                    len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.mismatched_test_cases])),
+                    sum([len(discrepancy.mismatched_test_cases.keys()) for discrepancy in discrepancies.values()])
+                ]
             ]))
         f.write('\n')
         f.write('_Note: Measures can have multiple discrepancies, so the Measures with Discrepancies count may not match the summary counts._\n')

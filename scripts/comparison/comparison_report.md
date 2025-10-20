@@ -1,13 +1,13 @@
 # Discrepancy Report
-Generated: 2025-10-20 14:26:14.357183
+Generated: 2025-10-20 14:44:15.367782
 Total Measures: 73
 Total Test Cases: 3798
 Measures with Discrepancies: 65
-| Discrepancy Summary | Measure Count |
-| --- | --- |
-| Missing Results | 8 |
-| Missing Populations | 1 |
-| Mismatched Test Cases | 62 |
+| Discrepancy Summary | Measure Count | Test Case Count |
+| --- | --- | --- |
+| Missing Results | 8 | 147 |
+| Missing Populations | 1 | 48 |
+| Mismatched Test Cases | 62 | 2188 |
 
 
 
