@@ -155,10 +155,15 @@ def generate_comparison_report(file: str, expected_results: Dict[ResultKey, Dict
 
     with open(file, "w", newline="") as f:
         f.write('# Discrepancy Report\n')
-        f.write(f'Generated: {datetime.now()}\n')
-        f.write(f'Total Measures: {len(set([result_key.measure_name for result_key in expected_results.keys()]))}\n')
-        f.write(f'Total Test Cases: {len(set([(result_key.measure_name, result_key.patient_guid) for result_key in expected_results.keys()]))}\n')
-        f.write(f'Measures with Discrepancies: {len(discrepancies)}\n')
+        f.writelines(create_markdown_table(
+            ['Details', 'Value'],
+            [
+                ['Generated', datetime.now()],
+                ['Total Measures', len(set([result_key.measure_name for result_key in expected_results.keys()]))],
+                ['Total Test Cases', len(set([(result_key.measure_name, result_key.patient_guid) for result_key in expected_results.keys()]))],
+                ['Measures with Discrepancies', len(discrepancies)]
+            ]
+        ))
         f.writelines(create_markdown_table(
             ['Discrepancy Summary', 'Measure Count', 'Test Case Count'],
             [
