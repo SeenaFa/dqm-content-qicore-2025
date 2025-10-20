@@ -106,7 +106,7 @@ def sort_populations(populations: List[str]) -> List[str]:
         'denominator exclusion': 3,
         'denominator exception': 4,
         'numerator': 5,
-        'denominator exclusion': 6}
+        'numerator exclusion': 6}
     return sorted(populations, key=lambda x: order[x.lower()] if x.lower() in order else 99)
 
 def cql_file_link(measure_name: str, custom_id: str = None) -> str:
@@ -220,8 +220,8 @@ def generate_comparison_report(file: str, expected_results: Dict[ResultKey, Dict
                             measure_report_file_link(measure, test_group_id.patient_guid),
                             test_group_id.group,
                             '<br>'.join([population for population in sort_populations(populations.keys())]),
-                            '<br>'.join([comparison.expected for comparison in populations.values()]),
-                            '<br>'.join([comparison.actual for comparison in populations.values()])
+                            '<br>'.join([populations[population].expected for population in sort_populations(populations.keys())]),
+                            '<br>'.join([populations[population].actual for population in sort_populations(populations.keys())])
                          ] for test_group_id, populations in discrepancy.mismatched_test_cases.items()]))
 
 def main(expected_file: str, actual_file: str, output_file: str, comparison_report: str):
