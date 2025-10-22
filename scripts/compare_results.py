@@ -256,6 +256,6 @@ if __name__ == '__main__':
     expected_file = "./scripts/comparison/expected_results.csv"
     actual_file = "./scripts/comparison/actual_results.csv"
     output_file = "./scripts/comparison/output_results.csv"
-    comparison_report = "./scripts/comparison/comparison_report.md"
+    comparison_report = "./scripts/comparison/discrepancy_report.md"
 
     main(expected_file, actual_file, output_file, comparison_report)
