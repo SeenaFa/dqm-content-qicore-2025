@@ -241,7 +241,8 @@ def generate_comparison_report(file: str, expected_results: Dict[ResultKey, Dict
                             '<br>'.join([population for population in sort_populations(populations.keys())]),
                             '<br>'.join([populations[population].expected for population in sort_populations(populations.keys())]),
                             '<br>'.join([populations[population].actual for population in sort_populations(populations.keys())])
-                         ] for test_group_id, populations in discrepancy.mismatched_test_cases.items()]))
+                         ] for test_group_id, populations in discrepancy.mismatched_test_cases.items()],
+                        '|---|---|---|:---:|:---:|\n'))
 
 def main(expected_file: str, actual_file: str, output_file: str, comparison_report: str):
     expected_results = capture_results(expected_file)
