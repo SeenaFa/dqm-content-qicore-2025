@@ -74,14 +74,14 @@ def generate_output(file: str, expected_rows: Dict, actual_rows: Dict) -> Tuple[
 
     return (pass_count, fail_count)
 
-def create_markdown_table(headers: List[str], data: List[str]) -> List[str]:
+def create_markdown_table(headers: List[str], data: List[str], custom_separator_row: str=None) -> List[str]:
     table_rows = []
 
     # header row
     table_rows.append(f'| {" | ".join(headers)} |\n')
 
     # separator row
-    table_rows.append(f'| {" | ".join(["---"] * len(headers))} |\n')
+    table_rows.append(custom_separator_row if custom_separator_row else f'| {" | ".join(["---"] * len(headers))} |\n')
 
     # data rows
     for row_data in data:
@@ -182,7 +182,8 @@ def generate_comparison_report(file: str, expected_results: Dict[ResultKey, Dict
                     len(set([measure for measure, discrepancy  in discrepancies.items() if discrepancy.mismatched_test_cases])),
                     sum([len(discrepancy.mismatched_test_cases.keys()) for discrepancy in discrepancies.values()])
                 ]
-            ]))
+            ],
+            '|---|:---:|:---:|\n'))
         f.write('\n')
         f.write('_Note: Measures can have multiple discrepancies, so the Measures with Discrepancies count may not match the summary counts._\n')
 
@@ -202,9 +203,10 @@ def generate_comparison_report(file: str, expected_results: Dict[ResultKey, Dict
                         len(discrepancy.all_test_cases),
                         len(discrepancy.missing_results),
                         len(discrepancy.missing_populations),
-                        len(discrepancy.mismatched_test_cases)
+                        f'{len(discrepancy.mismatched_test_cases)/len(discrepancy.all_test_cases)*100:.2f}%   ({len(discrepancy.mismatched_test_cases)})'
                     ] for measure, discrepancy in discrepancies.items()
-                ]))
+                ],
+                '|---|:---:|:---:|:---:|:---:|\n'))
             f.write('\n')
 
             for measure, discrepancy in discrepancies.items():

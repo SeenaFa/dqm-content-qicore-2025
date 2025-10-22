@@ -1,14 +1,14 @@
 # Discrepancy Report
 | Details | Value |
 | --- | --- |
-| Generated | 2025-10-22 11:28:14.287236 |
+| Generated | 2025-10-22 11:55:32.487415 |
 | Total Measures | 73 |
 | Total Test Cases | 3798 |
 | Measures with Discrepancies | 65 |
 
 
 | Discrepancy Summary | Measure Count | Test Case Count |
-| --- | --- | --- |
+|---|:---:|:---:|
 | Missing Results | 8 | 147 |
 | Missing Populations | 1 | 48 |
 | Mismatched Test Cases | 62 | 2188 |
@@ -27,72 +27,72 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 - CMS1206FHIRCTOQR [ [cql] ](../../input/cql/CMS1206FHIRCTOQR.cql) [ [test results] ](../../input/tests/results/CMS1206FHIRCTOQR.txt)
 ## Measures with Discrepancies (65)
 | Measure | Total Test Cases | Missing Results | Missing Populations | Mismatched Test Cases |
-| --- | --- | --- | --- | --- |
-| [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 0 | 0 | 7 |
-| [CMS56FHIRFuncStatHipReplacement](#cms56fhirfuncstathipreplacement) | 58 | 0 | 0 | 10 |
-| [CMS69FHIRPCSBMIScreenAndFollowUp](#cms69fhirpcsbmiscreenandfollowup) | 63 | 0 | 0 | 8 |
-| [CMS71FHIRSTKAnticoagAFFlutter](#cms71fhirstkanticoagafflutter) | 82 | 0 | 0 | 71 |
-| [CMS72FHIRSTKAntithromboticDay2](#cms72fhirstkantithromboticday2) | 158 | 0 | 0 | 98 |
-| [CMS74FHIRDentalCariesPrevention](#cms74fhirdentalcariesprevention) | 20 | 0 | 0 | 1 |
-| [CMS75FHIRChildrenDentalDecay](#cms75fhirchildrendentaldecay) | 20 | 0 | 0 | 3 |
-| [CMS90FHIRFSAforHeartFailure](#cms90fhirfsaforheartfailure) | 37 | 0 | 0 | 34 |
-| [CMS104FHIRSTKDCAntithrombotic](#cms104fhirstkdcantithrombotic) | 82 | 0 | 0 | 69 |
-| [CMS108FHIRVTEProphylaxis](#cms108fhirvteprophylaxis) | 140 | 0 | 0 | 25 |
-| [CMS117FHIRChildImmunStatus](#cms117fhirchildimmunstatus) | 45 | 0 | 0 | 16 |
-| [CMS122FHIRDiabetesAssessGT9Pct](#cms122fhirdiabetesassessgt9pct) | 55 | 0 | 0 | 14 |
-| [CMS124FHIRCervicalCancerScreen](#cms124fhircervicalcancerscreen) | 34 | 0 | 0 | 7 |
-| [CMS125FHIRBreastCancerScreen](#cms125fhirbreastcancerscreen) | 66 | 0 | 0 | 22 |
-| [CMS128FHIRAntidepressantMgmt](#cms128fhirantidepressantmgmt) | 58 | 0 | 0 | 56 |
-| [CMS129FHIRProstCaBoneScanUse](#cms129fhirprostcabonescanuse) | 51 | 0 | 0 | 8 |
-| [CMS130FHIRColorectalCancerScrn](#cms130fhircolorectalcancerscrn) | 64 | 0 | 0 | 9 |
-| [CMS131FHIRDiabetesEyeExam](#cms131fhirdiabeteseyeexam) | 63 | 0 | 0 | 14 |
-| [CMS133FHIRCataracts2040BCVA90Days](#cms133fhircataracts2040bcva90days) | 73 | 0 | 0 | 59 |
-| [CMS135FHIRACEIorARBorARNIforHF](#cms135fhiraceiorarborarniforhf) | 40 | 4 | 0 | 33 |
-| [CMS136FHIRChildADHDMedFollowUp](#cms136fhirchildadhdmedfollowup) | 128 | 0 | 0 | 20 |
-| [CMS137FHIRSUDTxInitEngagement](#cms137fhirsudtxinitengagement) | 90 | 0 | 0 | 58 |
-| [CMS138FHIRTobaccoScrnCessation](#cms138fhirtobaccoscrncessation) | 141 | 0 | 0 | 22 |
-| [CMS139FHIRFallRiskScreening](#cms139fhirfallriskscreening) | 29 | 0 | 0 | 2 |
-| [CMS142FHIRCommWithDrManagingDiab](#cms142fhircommwithdrmanagingdiab) | 32 | 0 | 0 | 20 |
-| [CMS143FHIRPOAGOpticNerveEval](#cms143fhirpoagopticnerveeval) | 32 | 0 | 0 | 19 |
-| [CMS144FHIRHFBetaBlockerForLVSD](#cms144fhirhfbetablockerforlvsd) | 48 | 0 | 0 | 45 |
-| [CMS145FHIRCADBBlockerTPMIorLVSD](#cms145fhircadbblockertpmiorlvsd) | 106 | 0 | 0 | 96 |
-| [CMS146FHIRApproTestPharyngitis](#cms146fhirapprotestpharyngitis) | 38 | 0 | 0 | 2 |
-| [CMS149FHIRDementiaCognitiveAssess](#cms149fhirdementiacognitiveassess) | 33 | 0 | 0 | 18 |
-| [CMS153FHIRChlamydiaScreening](#cms153fhirchlamydiascreening) | 32 | 0 | 0 | 18 |
-| [CMS154FHIRAppropriateTxforURI](#cms154fhirappropriatetxforuri) | 33 | 0 | 0 | 2 |
-| [CMS155FHIRWgtAssessCounseling](#cms155fhirwgtassesscounseling) | 102 | 0 | 0 | 12 |
-| [CMS156FHIRHighRiskMedsElderly](#cms156fhirhighriskmedselderly) | 177 | 0 | 0 | 171 |
-| [CMS157FHIRPainIntensityQuantified](#cms157fhirpainintensityquantified) | 126 | 0 | 0 | 40 |
-| [CMS159FHIRDepRemissionat12Months](#cms159fhirdepremissionat12months) | 67 | 0 | 0 | 67 |
-| [CMS165FHIRControllingHighBP](#cms165fhircontrollinghighbp) | 68 | 2 | 0 | 65 |
-| [CMS177FHIRChildMDDSuicideAssmt](#cms177fhirchildmddsuicideassmt) | 41 | 0 | 0 | 2 |
-| [CMS190FHIRVTEProphylaxisICU](#cms190fhirvteprophylaxisicu) | 125 | 0 | 0 | 18 |
-| [CMS314FHIRHIVViralSuppression](#cms314fhirhivviralsuppression) | 43 | 0 | 0 | 32 |
-| [CMS0334FHIRPCCesareanBirth](#cms0334fhirpccesareanbirth) | 138 | 0 | 0 | 52 |
-| [CMS347FHIRStatinPreventionTxCVD](#cms347fhirstatinpreventiontxcvd) | 752 | 4 | 0 | 306 |
-| [CMS349FHIRHIVScreening](#cms349fhirhivscreening) | 36 | 0 | 0 | 35 |
-| [CMS506FHIRSafeUseofOpioids](#cms506fhirsafeuseofopioids) | 51 | 0 | 0 | 1 |
-| [CMS645FHIRBoneDensityPCADTherapy](#cms645fhirbonedensitypcadtherapy) | 51 | 0 | 0 | 37 |
-| [CMS646FHIRIntravesicalBCGTherapy](#cms646fhirintravesicalbcgtherapy) | 38 | 38 | 0 | 0 |
-| [CMS771FHIRUrinarySymptomScoreBPH](#cms771fhirurinarysymptomscorebph) | 31 | 0 | 0 | 22 |
-| [CMS816FHIRHHHypo](#cms816fhirhhhypo) | 28 | 0 | 0 | 12 |
-| [CMS819FHIRHHORAE](#cms819fhirhhorae) | 28 | 0 | 0 | 2 |
-| [CMS832FHIRHHAKI](#cms832fhirhhaki) | 47 | 10 | 0 | 7 |
-| [CMSFHIR844HybridHospitalWideMortality](#cmsfhir844hybridhospitalwidemortality) | 10 | 0 | 0 | 2 |
-| [CMS871FHIRHHHyper](#cms871fhirhhhyper) | 26 | 3 | 0 | 22 |
-| [CMS951FHIRKidneyHealthEval](#cms951fhirkidneyhealtheval) | 55 | 0 | 0 | 44 |
-| [CMS986FHIRMalnutritionScore](#cms986fhirmalnutritionscore) | 48 | 0 | 48 | 0 |
-| [CMS996FHIRAptTxforSTEMI](#cms996fhirapttxforstemi) | 114 | 0 | 0 | 68 |
-| [CMS1017FHIRHHFI](#cms1017fhirhhfi) | 65 | 0 | 0 | 61 |
-| [CMS1028FHIRPCSevereOBComps](#cms1028fhirpcsevereobcomps) | 282 | 0 | 0 | 32 |
-| [CMS1154ScreeningPrediabetesFHIR](#cms1154screeningprediabetesfhir) | 10 | 0 | 0 | 7 |
-| [CMS1157FHIRHIVRetention](#cms1157fhirhivretention) | 27 | 0 | 0 | 22 |
-| [CMS1173FHIRDiagnosticDelayVTE](#cms1173fhirdiagnosticdelayvte) | 65 | 0 | 0 | 2 |
-| [CMS1188FHIRHIVSTITesting](#cms1188fhirhivstitesting) | 34 | 0 | 0 | 27 |
-| [CMS1218FHIRHHRF](#cms1218fhirhhrf) | 75 | 6 | 0 | 6 |
-| [CMS1244FHIRECATHOQR](#cms1244fhirecathoqr) | 72 | 0 | 0 | 71 |
-| [CMS1264FHIRECATREHQR](#cms1264fhirecatrehqr) | 58 | 0 | 0 | 57 |
-| [NHSNGlycemicControlHypoglycemiaInitialPopulation](#nhsnglycemiccontrolhypoglycemiainitialpopulation) | 80 | 80 | 0 | 0 |
+|---|:---:|:---:|:---:|:---:|
+| [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 0 | 0 | 19.44%   (7) |
+| [CMS56FHIRFuncStatHipReplacement](#cms56fhirfuncstathipreplacement) | 58 | 0 | 0 | 17.24%   (10) |
+| [CMS69FHIRPCSBMIScreenAndFollowUp](#cms69fhirpcsbmiscreenandfollowup) | 63 | 0 | 0 | 12.70%   (8) |
+| [CMS71FHIRSTKAnticoagAFFlutter](#cms71fhirstkanticoagafflutter) | 82 | 0 | 0 | 86.59%   (71) |
+| [CMS72FHIRSTKAntithromboticDay2](#cms72fhirstkantithromboticday2) | 158 | 0 | 0 | 62.03%   (98) |
+| [CMS74FHIRDentalCariesPrevention](#cms74fhirdentalcariesprevention) | 20 | 0 | 0 | 5.00%   (1) |
+| [CMS75FHIRChildrenDentalDecay](#cms75fhirchildrendentaldecay) | 20 | 0 | 0 | 15.00%   (3) |
+| [CMS90FHIRFSAforHeartFailure](#cms90fhirfsaforheartfailure) | 37 | 0 | 0 | 91.89%   (34) |
+| [CMS104FHIRSTKDCAntithrombotic](#cms104fhirstkdcantithrombotic) | 82 | 0 | 0 | 84.15%   (69) |
+| [CMS108FHIRVTEProphylaxis](#cms108fhirvteprophylaxis) | 140 | 0 | 0 | 17.86%   (25) |
+| [CMS117FHIRChildImmunStatus](#cms117fhirchildimmunstatus) | 45 | 0 | 0 | 35.56%   (16) |
+| [CMS122FHIRDiabetesAssessGT9Pct](#cms122fhirdiabetesassessgt9pct) | 55 | 0 | 0 | 25.45%   (14) |
+| [CMS124FHIRCervicalCancerScreen](#cms124fhircervicalcancerscreen) | 34 | 0 | 0 | 20.59%   (7) |
+| [CMS125FHIRBreastCancerScreen](#cms125fhirbreastcancerscreen) | 66 | 0 | 0 | 33.33%   (22) |
+| [CMS128FHIRAntidepressantMgmt](#cms128fhirantidepressantmgmt) | 58 | 0 | 0 | 96.55%   (56) |
+| [CMS129FHIRProstCaBoneScanUse](#cms129fhirprostcabonescanuse) | 51 | 0 | 0 | 15.69%   (8) |
+| [CMS130FHIRColorectalCancerScrn](#cms130fhircolorectalcancerscrn) | 64 | 0 | 0 | 14.06%   (9) |
+| [CMS131FHIRDiabetesEyeExam](#cms131fhirdiabeteseyeexam) | 63 | 0 | 0 | 22.22%   (14) |
+| [CMS133FHIRCataracts2040BCVA90Days](#cms133fhircataracts2040bcva90days) | 73 | 0 | 0 | 80.82%   (59) |
+| [CMS135FHIRACEIorARBorARNIforHF](#cms135fhiraceiorarborarniforhf) | 40 | 4 | 0 | 82.50%   (33) |
+| [CMS136FHIRChildADHDMedFollowUp](#cms136fhirchildadhdmedfollowup) | 128 | 0 | 0 | 15.62%   (20) |
+| [CMS137FHIRSUDTxInitEngagement](#cms137fhirsudtxinitengagement) | 90 | 0 | 0 | 64.44%   (58) |
+| [CMS138FHIRTobaccoScrnCessation](#cms138fhirtobaccoscrncessation) | 141 | 0 | 0 | 15.60%   (22) |
+| [CMS139FHIRFallRiskScreening](#cms139fhirfallriskscreening) | 29 | 0 | 0 | 6.90%   (2) |
+| [CMS142FHIRCommWithDrManagingDiab](#cms142fhircommwithdrmanagingdiab) | 32 | 0 | 0 | 62.50%   (20) |
+| [CMS143FHIRPOAGOpticNerveEval](#cms143fhirpoagopticnerveeval) | 32 | 0 | 0 | 59.38%   (19) |
+| [CMS144FHIRHFBetaBlockerForLVSD](#cms144fhirhfbetablockerforlvsd) | 48 | 0 | 0 | 93.75%   (45) |
+| [CMS145FHIRCADBBlockerTPMIorLVSD](#cms145fhircadbblockertpmiorlvsd) | 106 | 0 | 0 | 90.57%   (96) |
+| [CMS146FHIRApproTestPharyngitis](#cms146fhirapprotestpharyngitis) | 38 | 0 | 0 | 5.26%   (2) |
+| [CMS149FHIRDementiaCognitiveAssess](#cms149fhirdementiacognitiveassess) | 33 | 0 | 0 | 54.55%   (18) |
+| [CMS153FHIRChlamydiaScreening](#cms153fhirchlamydiascreening) | 32 | 0 | 0 | 56.25%   (18) |
+| [CMS154FHIRAppropriateTxforURI](#cms154fhirappropriatetxforuri) | 33 | 0 | 0 | 6.06%   (2) |
+| [CMS155FHIRWgtAssessCounseling](#cms155fhirwgtassesscounseling) | 102 | 0 | 0 | 11.76%   (12) |
+| [CMS156FHIRHighRiskMedsElderly](#cms156fhirhighriskmedselderly) | 177 | 0 | 0 | 96.61%   (171) |
+| [CMS157FHIRPainIntensityQuantified](#cms157fhirpainintensityquantified) | 126 | 0 | 0 | 31.75%   (40) |
+| [CMS159FHIRDepRemissionat12Months](#cms159fhirdepremissionat12months) | 67 | 0 | 0 | 100.00%   (67) |
+| [CMS165FHIRControllingHighBP](#cms165fhircontrollinghighbp) | 68 | 2 | 0 | 95.59%   (65) |
+| [CMS177FHIRChildMDDSuicideAssmt](#cms177fhirchildmddsuicideassmt) | 41 | 0 | 0 | 4.88%   (2) |
+| [CMS190FHIRVTEProphylaxisICU](#cms190fhirvteprophylaxisicu) | 125 | 0 | 0 | 14.40%   (18) |
+| [CMS314FHIRHIVViralSuppression](#cms314fhirhivviralsuppression) | 43 | 0 | 0 | 74.42%   (32) |
+| [CMS0334FHIRPCCesareanBirth](#cms0334fhirpccesareanbirth) | 138 | 0 | 0 | 37.68%   (52) |
+| [CMS347FHIRStatinPreventionTxCVD](#cms347fhirstatinpreventiontxcvd) | 752 | 4 | 0 | 40.69%   (306) |
+| [CMS349FHIRHIVScreening](#cms349fhirhivscreening) | 36 | 0 | 0 | 97.22%   (35) |
+| [CMS506FHIRSafeUseofOpioids](#cms506fhirsafeuseofopioids) | 51 | 0 | 0 | 1.96%   (1) |
+| [CMS645FHIRBoneDensityPCADTherapy](#cms645fhirbonedensitypcadtherapy) | 51 | 0 | 0 | 72.55%   (37) |
+| [CMS646FHIRIntravesicalBCGTherapy](#cms646fhirintravesicalbcgtherapy) | 38 | 38 | 0 | 0.00%   (0) |
+| [CMS771FHIRUrinarySymptomScoreBPH](#cms771fhirurinarysymptomscorebph) | 31 | 0 | 0 | 70.97%   (22) |
+| [CMS816FHIRHHHypo](#cms816fhirhhhypo) | 28 | 0 | 0 | 42.86%   (12) |
+| [CMS819FHIRHHORAE](#cms819fhirhhorae) | 28 | 0 | 0 | 7.14%   (2) |
+| [CMS832FHIRHHAKI](#cms832fhirhhaki) | 47 | 10 | 0 | 14.89%   (7) |
+| [CMSFHIR844HybridHospitalWideMortality](#cmsfhir844hybridhospitalwidemortality) | 10 | 0 | 0 | 20.00%   (2) |
+| [CMS871FHIRHHHyper](#cms871fhirhhhyper) | 26 | 3 | 0 | 84.62%   (22) |
+| [CMS951FHIRKidneyHealthEval](#cms951fhirkidneyhealtheval) | 55 | 0 | 0 | 80.00%   (44) |
+| [CMS986FHIRMalnutritionScore](#cms986fhirmalnutritionscore) | 48 | 0 | 48 | 0.00%   (0) |
+| [CMS996FHIRAptTxforSTEMI](#cms996fhirapttxforstemi) | 114 | 0 | 0 | 59.65%   (68) |
+| [CMS1017FHIRHHFI](#cms1017fhirhhfi) | 65 | 0 | 0 | 93.85%   (61) |
+| [CMS1028FHIRPCSevereOBComps](#cms1028fhirpcsevereobcomps) | 282 | 0 | 0 | 11.35%   (32) |
+| [CMS1154ScreeningPrediabetesFHIR](#cms1154screeningprediabetesfhir) | 10 | 0 | 0 | 70.00%   (7) |
+| [CMS1157FHIRHIVRetention](#cms1157fhirhivretention) | 27 | 0 | 0 | 81.48%   (22) |
+| [CMS1173FHIRDiagnosticDelayVTE](#cms1173fhirdiagnosticdelayvte) | 65 | 0 | 0 | 3.08%   (2) |
+| [CMS1188FHIRHIVSTITesting](#cms1188fhirhivstitesting) | 34 | 0 | 0 | 79.41%   (27) |
+| [CMS1218FHIRHHRF](#cms1218fhirhhrf) | 75 | 6 | 0 | 8.00%   (6) |
+| [CMS1244FHIRECATHOQR](#cms1244fhirecathoqr) | 72 | 0 | 0 | 98.61%   (71) |
+| [CMS1264FHIRECATREHQR](#cms1264fhirecatrehqr) | 58 | 0 | 0 | 98.28%   (57) |
+| [NHSNGlycemicControlHypoglycemiaInitialPopulation](#nhsnglycemiccontrolhypoglycemiainitialpopulation) | 80 | 80 | 0 | 0.00%   (0) |
 
 
 
