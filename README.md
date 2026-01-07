@@ -3,6 +3,11 @@ dQM Measure Content (Using QICore 6.0.0, based on FHIR R4 v4.0.1)
 
 These draft FHIR-based measures and shared libraries are translated from the QDM-based versions of eCQMs that were published in May 2025 for the 2026 reporting year, exported from MADiE after final review and updates, in preparation for public comment review.
 
+This repository has 3 branches:
+* **imported** - This branch is the direct MADiE exported content (no re-processing of Library and Measure resources), so the narrative is what MADiE produced
+* **imported-with-test-cases** - This branch is the direct MADiE export plus the test case exports in the tests directory
+* **master** - This branch is the same content, but has been refreshed with the latest CQF Tooling and has narratives built using the latest Liquid templates
+
 Commits to this repository will automatically trigger a build of the continuous integration build, available here:
 
 https://build.fhir.org/ig/cqframework/dqm-content-qicore-2025

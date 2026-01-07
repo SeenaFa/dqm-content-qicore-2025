@@ -9,3 +9,6 @@
 /input-cache/*.jar
 /bundles/mat-tests
 /input/tests/results
+__pycache__
+script_env
+*__MACOSX
