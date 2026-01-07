@@ -1,0 +1,30 @@
+{
+  "resourceType": "Procedure",
+  "id": "fbf70cf0-56e5-4d3a-ae2d-ec62a5a07e76",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+    "valueDateTime": "2026-02-02T11:30:00.000Z"
+  } ],
+  "status": "completed",
+  "code": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "386372009",
+      "display": "Nutrition management (procedure)"
+    } ],
+    "text": "Nutrition management (procedure)"
+  },
+  "subject": {
+    "reference": "Patient/08bd110c-dfda-403c-91cd-34dfc9f16dc8"
+  },
+  "encounter": {
+    "reference": "Encounter/2EncounterNotAtriskThenAtriskMSROBSPass4"
+  },
+  "performedPeriod": {
+    "start": "2026-08-01T11:30:00.000Z",
+    "end": "2026-08-07T08:15:00.000Z"
+  }
+}

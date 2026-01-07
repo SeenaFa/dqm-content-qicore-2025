@@ -48,7 +48,7 @@
   } ],
   "name": [ {
     "family": "DENEXCL11PASS",
-    "given": [ "HospiceInterventionRelevantPeriodPerformedOverlapsED" ]
+    "given": [ "HospiceInterventionRelevantPeriodProcedureOverlapsED" ]
   } ],
   "gender": "male",
   "birthDate": "1978-05-03"

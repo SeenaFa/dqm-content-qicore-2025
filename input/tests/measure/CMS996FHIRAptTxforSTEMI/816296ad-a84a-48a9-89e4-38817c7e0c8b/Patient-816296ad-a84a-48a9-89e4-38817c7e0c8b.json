@@ -47,8 +47,8 @@
     "value": "66328b236cea4124ba3e75a7"
   } ],
   "name": [ {
-    "family": "DenExcl7Pass",
-    "given": [ "DxStartsDuring90DayPeriodNoAbatementCardiac" ]
+    "family": "DENEXCL7PASS",
+    "given": [ "DxStartsDuring24hourPeriodNoAbatementCardiac" ]
   } ],
   "gender": "female",
   "birthDate": "1985-12-02"

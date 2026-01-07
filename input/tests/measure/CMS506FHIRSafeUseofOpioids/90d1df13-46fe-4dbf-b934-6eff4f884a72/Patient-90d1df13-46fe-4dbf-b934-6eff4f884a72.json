@@ -42,7 +42,7 @@
   } ],
   "name": [ {
     "family": "DENEXFail",
-    "given": [ "HasCancer" ]
+    "given": [ "HasCancerCodeNotInVS" ]
   } ],
   "gender": "female",
   "birthDate": "1944-02-01"

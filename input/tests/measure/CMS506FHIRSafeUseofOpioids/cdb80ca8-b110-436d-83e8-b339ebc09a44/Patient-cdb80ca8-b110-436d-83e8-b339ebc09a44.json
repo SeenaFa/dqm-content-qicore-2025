@@ -53,7 +53,7 @@
   } ],
   "name": [ {
     "family": "DENEXPass",
-    "given": [ "SickleDisease" ]
+    "given": [ "SickleDiseaseOnsetPrevYr" ]
   } ],
   "gender": "female",
   "birthDate": "1944-02-01"

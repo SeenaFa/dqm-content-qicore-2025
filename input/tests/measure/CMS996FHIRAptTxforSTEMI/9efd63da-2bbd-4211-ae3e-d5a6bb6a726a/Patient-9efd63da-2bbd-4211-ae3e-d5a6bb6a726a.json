@@ -32,9 +32,6 @@
       "url": "text",
       "valueString": "Not Hispanic or Latino"
     } ]
-  }, {
-    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
-    "valueCode": "248152002"
   } ],
   "identifier": [ {
     "type": {
@@ -47,7 +44,7 @@
     "value": "6419dca79c0269a68225bb41"
   } ],
   "name": [ {
-    "family": "1IPPass",
+    "family": "IPPASS",
     "given": [ "STEMIStartsDuringEndsDuringEnc" ]
   } ],
   "gender": "female",

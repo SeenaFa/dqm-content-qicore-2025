@@ -428,6 +428,10 @@
             }
         }
 
+        /* Allow table with to be scrollable when too large */
+        .content-container {
+            max-width: fit-content;
+        }
         /*
         ===============================
         Liquid Narrative Styling End
@@ -482,7 +486,7 @@
 <th scope="row" class="row-header">Version</th>
 
 
-<td class="content-container">1.0.000</td>
+<td class="content-container">Draft based on 1.0.000</td>
 </tr>
 
 
@@ -517,7 +521,7 @@
 <th scope="row" class="row-header">GUID (Version Specific)</th>
 
 
-<td class="content-container">urn:uuid:dc5bae2c-8700-487a-b2a2-7cb56f7fa43d</td>
+<td class="content-container">urn:uuid:c3828a9c-88b0-4a19-8b78-bb07f56ed929</td>
 </tr>
 
 
@@ -568,6 +572,17 @@
   
 
 
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+<td class="content-container">draft</td>
+</tr>
 
 
 
@@ -693,11 +708,14 @@
 
   
   
+  
   <td class="content-container">
     
     
     
     Academy of Nutrition and Dietetics. (2017). The Nutrition Care Process Model. Retrieved June 12, 2023 from https://www.ncpro.org/pubs/2020-encpt-en/ncp-model
+    
+    
     
     
     
@@ -715,6 +733,7 @@
 <th scope="row" class="row-header">Citation</th>
 
 
+  
   
   
   <td class="content-container">
@@ -727,6 +746,8 @@
     
     
     
+    
+    
   </td>
 </tr>
 
@@ -739,6 +760,7 @@
 <th scope="row" class="row-header">Citation</th>
 
 
+  
   
   
   <td class="content-container">
@@ -751,6 +773,8 @@
     
     
     
+    
+    
   </td>
 </tr>
 
@@ -763,6 +787,7 @@
 <th scope="row" class="row-header">Citation</th>
 
 
+  
   
   
   <td class="content-container">
@@ -775,6 +800,8 @@
     
     
     
+    
+    
   </td>
 </tr>
 
@@ -787,6 +814,7 @@
 <th scope="row" class="row-header">Citation</th>
 
 
+  
   
   
   <td class="content-container">
@@ -799,6 +827,8 @@
     
     
     
+    
+    
   </td>
 </tr>
 
@@ -811,6 +841,7 @@
 <th scope="row" class="row-header">Citation</th>
 
 
+  
   
   
   <td class="content-container">
@@ -823,6 +854,8 @@
     
     
     
+    
+    
   </td>
 </tr>
 
@@ -837,11 +870,14 @@
 
   
   
+  
   <td class="content-container">
     
     
     
     Sriram, K., Sulo, S., VanDerBosc,h .G, Partridge, J., Feldstein, J., Hegazi, R.A., Summerfelt, W.T. (2016) A comprehensive nutrition-focused quality improvement program reduces 30-day readmissions and length of stay in hospitalized patients. Journal of Parenteral and Enteral Nutrition, 41(3), 384-391. https://doi.org/10.1177/0148607116681468
+    
+    
     
     
     
@@ -916,6 +952,8 @@
 
 
   
+  
+  
     
     <tr>
 
@@ -966,7 +1004,6 @@
 
 
 
-  
 <tr>
 
 
@@ -975,7 +1012,6 @@
 
 <td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
 </tr>
-
 
 
 
@@ -993,6 +1029,8 @@
 
   
   
+    
+    
     <tr>
       
         
@@ -1013,14 +1051,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-initial-population">Initial Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_1-InitialPopulation_1">Initial Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1041,14 +1086,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population">Measure Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_1-MeasurePopulation_1">Measure Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1069,14 +1121,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population-exclusion">Measure Population Exclusion</a> 
+              
+              <em>Criteria</em>: <a href="#Group_1-MeasurePopulationExclusion_1">Measure Population Exclusion</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1099,8 +1158,17 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-observation-1">Measure Observation 1</a> 
+              
+              <em>Criteria</em>: <a href="#Group_1-MeasureObservation_1">Measure Observation 1</a> 
+            
           
+          
+        
+        
+          <br/><em>Input Population</em>: MeasurePopulation_1
+        
+        
+          <em>AggregateMethod</em>: Sum
         
       </td>
     </tr>
@@ -1108,6 +1176,8 @@
 
   
 
+  
+  
   
     
     <tr>
@@ -1159,7 +1229,6 @@
 
 
 
-  
 <tr>
 
 
@@ -1168,7 +1237,6 @@
 
 <td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
 </tr>
-
 
 
 
@@ -1186,6 +1254,8 @@
 
   
   
+    
+    
     <tr>
       
         
@@ -1206,14 +1276,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-initial-population">Initial Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_2-InitialPopulation_2">Initial Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1234,14 +1311,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population">Measure Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_2-MeasurePopulation_2">Measure Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1262,14 +1346,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population-exclusion">Measure Population Exclusion</a> 
+              
+              <em>Criteria</em>: <a href="#Group_2-MeasurePopulationExclusion_2">Measure Population Exclusion</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1290,8 +1381,17 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-observation-2">Measure Observation 2</a> 
+              
+              <em>Criteria</em>: <a href="#Group_2-MeasureObservation_2">Measure Observation 2</a> 
+            
           
+          
+        
+        
+          <br/><em>Input Population</em>: MeasurePopulation_2
+        
+        
+          <em>AggregateMethod</em>: Sum
         
       </td>
     </tr>
@@ -1299,6 +1399,8 @@
 
   
 
+  
+  
   
     
     <tr>
@@ -1350,7 +1452,6 @@
 
 
 
-  
 <tr>
 
 
@@ -1359,7 +1460,6 @@
 
 <td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
 </tr>
-
 
 
 
@@ -1377,6 +1477,8 @@
 
   
   
+    
+    
     <tr>
       
         
@@ -1397,14 +1499,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-initial-population">Initial Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_3-InitialPopulation_3">Initial Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1425,14 +1534,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population">Measure Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_3-MeasurePopulation_3">Measure Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1453,14 +1569,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population-exclusion">Measure Population Exclusion</a> 
+              
+              <em>Criteria</em>: <a href="#Group_3-MeasurePopulationExclusion_3">Measure Population Exclusion</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1481,8 +1604,17 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-observation-3">Measure Observation 3</a> 
+              
+              <em>Criteria</em>: <a href="#Group_3-MeasureObservation_3">Measure Observation 3</a> 
+            
           
+          
+        
+        
+          <br/><em>Input Population</em>: MeasurePopulation_3
+        
+        
+          <em>AggregateMethod</em>: Sum
         
       </td>
     </tr>
@@ -1490,6 +1622,8 @@
 
   
 
+  
+  
   
     
     <tr>
@@ -1541,7 +1675,6 @@
 
 
 
-  
 <tr>
 
 
@@ -1550,7 +1683,6 @@
 
 <td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
 </tr>
-
 
 
 
@@ -1568,6 +1700,8 @@
 
   
   
+    
+    
     <tr>
       
         
@@ -1588,14 +1722,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-initial-population">Initial Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_4-InitialPopulation_4">Initial Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1616,14 +1757,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population">Measure Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_4-MeasurePopulation_4">Measure Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1644,14 +1792,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population-exclusion">Measure Population Exclusion</a> 
+              
+              <em>Criteria</em>: <a href="#Group_4-MeasurePopulationExclusion_4">Measure Population Exclusion</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1672,8 +1827,17 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-observation-4">Measure Observation 4</a> 
+              
+              <em>Criteria</em>: <a href="#Group_4-MeasureObservation_4">Measure Observation 4</a> 
+            
           
+          
+        
+        
+          <br/><em>Input Population</em>: MeasurePopulation_4
+        
+        
+          <em>AggregateMethod</em>: Sum
         
       </td>
     </tr>
@@ -1681,6 +1845,8 @@
 
   
 
+  
+  
   
     
     <tr>
@@ -1732,7 +1898,6 @@
 
 
 
-  
 <tr>
 
 
@@ -1741,7 +1906,6 @@
 
 <td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
 </tr>
-
 
 
 
@@ -1759,6 +1923,8 @@
 
   
   
+    
+    
     <tr>
       
         
@@ -1779,14 +1945,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-initial-population">Initial Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_5-InitialPopulation_5">Initial Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1807,14 +1980,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population">Measure Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_5-MeasurePopulation_5">Measure Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1835,14 +2015,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population-exclusion">Measure Population Exclusion</a> 
+              
+              <em>Criteria</em>: <a href="#Group_5-MeasurePopulationExclusion_5">Measure Population Exclusion</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1863,8 +2050,17 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-observation-total-malnutrition-components-score">Measure Observation Total Malnutrition Components Score</a> 
+              
+              <em>Criteria</em>: <a href="#Group_5-MeasureObservation_5">Measure Observation Total Malnutrition Components Score</a> 
+            
           
+          
+        
+        
+          <br/><em>Input Population</em>: MeasurePopulation_5
+        
+        
+          <em>AggregateMethod</em>: Count
         
       </td>
     </tr>
@@ -1872,6 +2068,8 @@
 
   
 
+  
+  
   
     
     <tr>
@@ -1923,7 +2121,6 @@
 
 
 
-  
 <tr>
 
 
@@ -1932,7 +2129,6 @@
 
 <td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#intermediate-outcome: 'Intermediate Outcome']</td>
 </tr>
-
 
 
 
@@ -1950,6 +2146,8 @@
 
   
   
+    
+    
     <tr>
       
         
@@ -1970,14 +2168,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-initial-population">Initial Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_6-InitialPopulation_6">Initial Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -1998,14 +2203,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population">Measure Population</a> 
+              
+              <em>Criteria</em>: <a href="#Group_6-MeasurePopulation_6">Measure Population</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -2026,14 +2238,21 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-population-exclusion">Measure Population Exclusion</a> 
+              
+              <em>Criteria</em>: <a href="#Group_6-MeasurePopulationExclusion_6">Measure Population Exclusion</a> 
+            
           
+          
+        
+        
         
       </td>
     </tr>
   
 
   
+    
+    
     <tr>
       
         
@@ -2054,8 +2273,17 @@
         
           
             
-            <em>Logic Definition</em>: <a href="#primary-cms986fhirmalnutritionscore-measure-observation-total-malnutrition-care-score-as-percentage">Measure Observation Total Malnutrition Care Score as Percentage</a> 
+              
+              <em>Criteria</em>: <a href="#Group_6-MeasureObservation_6">Measure Observation Total Malnutrition Care Score as Percentage</a> 
+            
           
+          
+        
+        
+          <br/><em>Input Population</em>: MeasurePopulation_6
+        
+        
+          <em>AggregateMethod</em>: Average
         
       </td>
     </tr>
@@ -2115,7 +2343,9 @@
       
         <br/>
         
-        <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-payer-type">SDE Payer Type</a> 
+          
+          <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-payer-type">SDE Payer Type</a> 
+        
       
     
   </td>
@@ -2149,7 +2379,9 @@
       
         <br/>
         
-        <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-race">SDE Race</a> 
+          
+          <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-race">SDE Race</a> 
+        
       
     
   </td>
@@ -2183,7 +2415,9 @@
       
         <br/>
         
-        <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-ethnicity">SDE Ethnicity</a> 
+          
+          <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-ethnicity">SDE Ethnicity</a> 
+        
       
     
   </td>
@@ -2217,7 +2451,9 @@
       
         <br/>
         
-        <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-sex">SDE Sex</a> 
+          
+          <em>Logic Definition</em>: <a href="#cms986fhirmalnutritionscore-sde-sex">SDE Sex</a> 
+        
       
     
   </td>
@@ -2271,6 +2507,9 @@
   
   
   
+
+  
+  
   
     
     <tr>
@@ -2291,12 +2530,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-initial-population"> </a>
-    
     
     Initial Population
     
@@ -2305,18 +2542,27 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_1-InitialPopulation_1"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
       and AgeInYearsAt(date from start of EncounterInpatient.period) &gt;= 18
       and ( duration in hours of EncounterInpatient.period &gt;= 24 )
       and EncounterInpatient.status = 'finished'</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-initial-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -2437,12 +2683,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population"> </a>
-    
     
     Measure Population
     
@@ -2451,14 +2695,23 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_1-MeasurePopulation_1"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -2585,12 +2838,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     
     Measure Population Exclusion
     
@@ -2599,9 +2850,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_1-MeasurePopulationExclusion_1"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population-exclusion"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -2702,8 +2964,6 @@
         
           
         
-          
-        
       
     
   
@@ -2711,8 +2971,6 @@
   
     
       
-        
-          
         
           
         
@@ -2786,12 +3044,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-observation-1"> </a>
-    
     
     Measure Observation
     
@@ -2800,9 +3056,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_1-MeasureObservation_1"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 1&quot;(MalnutritionRiskScreening Encounter):
   if &quot;Encounters with Malnutrition Risk Screening or with Dietitian Referral&quot; contains MalnutritionRiskScreening then 1 
     else 0</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-observation-1"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -2852,6 +3119,9 @@
   
   
 
+
+  
+  
   
     
     <tr>
@@ -2872,12 +3142,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-initial-population"> </a>
-    
     
     Initial Population
     
@@ -2886,18 +3154,27 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_2-InitialPopulation_2"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
       and AgeInYearsAt(date from start of EncounterInpatient.period) &gt;= 18
       and ( duration in hours of EncounterInpatient.period &gt;= 24 )
       and EncounterInpatient.status = 'finished'</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-initial-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -3018,12 +3295,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population"> </a>
-    
     
     Measure Population
     
@@ -3032,14 +3307,23 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_2-MeasurePopulation_2"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -3166,12 +3450,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     
     Measure Population Exclusion
     
@@ -3180,9 +3462,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_2-MeasurePopulationExclusion_2"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population-exclusion"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -3283,8 +3576,6 @@
         
           
         
-          
-        
       
     
   
@@ -3292,8 +3583,6 @@
   
     
       
-        
-          
         
           
         
@@ -3371,12 +3660,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-observation-2"> </a>
-    
     
     Measure Observation
     
@@ -3385,11 +3672,22 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_2-MeasureObservation_2"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 2&quot;(NutritionAssessment Encounter):
   if &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot; contains NutritionAssessment then 0 
     else if &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; contains NutritionAssessment then if &quot;Encounter With Most Recent Nutrition Assessment And Identified Status&quot; contains NutritionAssessment then 1 
     else 0 
     else 0</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-observation-2"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -3435,6 +3733,9 @@
   
   
 
+
+  
+  
   
     
     <tr>
@@ -3455,12 +3756,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-initial-population"> </a>
-    
     
     Initial Population
     
@@ -3469,18 +3768,27 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_3-InitialPopulation_3"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
       and AgeInYearsAt(date from start of EncounterInpatient.period) &gt;= 18
       and ( duration in hours of EncounterInpatient.period &gt;= 24 )
       and EncounterInpatient.status = 'finished'</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-initial-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -3601,12 +3909,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population"> </a>
-    
     
     Measure Population
     
@@ -3615,14 +3921,23 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_3-MeasurePopulation_3"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -3749,12 +4064,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     
     Measure Population Exclusion
     
@@ -3763,9 +4076,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_3-MeasurePopulationExclusion_3"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population-exclusion"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -3866,8 +4190,6 @@
         
           
         
-          
-        
       
     
   
@@ -3875,8 +4197,6 @@
   
     
       
-        
-          
         
           
         
@@ -3962,12 +4282,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-observation-3"> </a>
-    
     
     Measure Observation
     
@@ -3976,6 +4294,13 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_3-MeasureObservation_3"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 3&quot;(MalnutritionDiagnosis Encounter):
   if &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot; contains MalnutritionDiagnosis then 0 
     else if &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; contains MalnutritionDiagnosis then if &quot;Encounters with Malnutrition Diagnosis&quot; contains MalnutritionDiagnosis then if &quot;Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished&quot; contains MalnutritionDiagnosis then 0 
@@ -3983,6 +4308,10 @@
     else 0 
     else 0 
     else 0</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-observation-3"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -4020,6 +4349,9 @@
   
   
 
+
+  
+  
   
     
     <tr>
@@ -4040,12 +4372,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-initial-population"> </a>
-    
     
     Initial Population
     
@@ -4054,18 +4384,27 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_4-InitialPopulation_4"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
       and AgeInYearsAt(date from start of EncounterInpatient.period) &gt;= 18
       and ( duration in hours of EncounterInpatient.period &gt;= 24 )
       and EncounterInpatient.status = 'finished'</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-initial-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -4186,12 +4525,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population"> </a>
-    
     
     Measure Population
     
@@ -4200,14 +4537,23 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_4-MeasurePopulation_4"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -4334,12 +4680,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     
     Measure Population Exclusion
     
@@ -4348,9 +4692,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_4-MeasurePopulationExclusion_4"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population-exclusion"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -4451,8 +4806,6 @@
         
           
         
-          
-        
       
     
   
@@ -4460,8 +4813,6 @@
   
     
       
-        
-          
         
           
         
@@ -4563,12 +4914,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-observation-4"> </a>
-    
     
     Measure Observation
     
@@ -4577,6 +4926,13 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_4-MeasureObservation_4"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 4&quot;(NutritionCarePlan Encounter):
   if &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot; contains NutritionCarePlan then 0 
     else if &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; contains NutritionCarePlan then if &quot;Encounters with Nutrition Care Plan&quot; contains NutritionCarePlan then if &quot;Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished&quot; contains NutritionCarePlan then 0 
@@ -4584,6 +4940,10 @@
     else 0 
     else 0 
     else 0</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-observation-4"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -4605,6 +4965,9 @@
   
   
 
+
+  
+  
   
     
     <tr>
@@ -4625,12 +4988,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-initial-population"> </a>
-    
     
     Initial Population
     
@@ -4639,18 +5000,27 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_5-InitialPopulation_5"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
       and AgeInYearsAt(date from start of EncounterInpatient.period) &gt;= 18
       and ( duration in hours of EncounterInpatient.period &gt;= 24 )
       and EncounterInpatient.status = 'finished'</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-initial-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -4771,12 +5141,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population"> </a>
-    
     
     Measure Population
     
@@ -4785,14 +5153,23 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_5-MeasurePopulation_5"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -4919,12 +5296,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     
     Measure Population Exclusion
     
@@ -4933,9 +5308,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_5-MeasurePopulationExclusion_5"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population-exclusion"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -5036,8 +5422,6 @@
         
           
         
-          
-        
       
     
   
@@ -5045,8 +5429,6 @@
   
     
       
-        
-          
         
           
         
@@ -5122,12 +5504,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-observation-total-malnutrition-components-score"> </a>
-    
     
     Measure Observation
     
@@ -5136,8 +5516,19 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_5-MeasureObservation_5"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation Total Malnutrition Components Score&quot;(QualifyingEncounter Encounter):
   Sum({ &quot;Measure Observation 1&quot;(QualifyingEncounter), &quot;Measure Observation 2&quot;(QualifyingEncounter), &quot;Measure Observation 3&quot;(QualifyingEncounter), &quot;Measure Observation 4&quot;(QualifyingEncounter) })</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-observation-total-malnutrition-components-score"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -5185,6 +5576,9 @@
   
   
 
+
+  
+  
   
     
     <tr>
@@ -5205,12 +5599,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-initial-population"> </a>
-    
     
     Initial Population
     
@@ -5219,18 +5611,27 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_6-InitialPopulation_6"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
       and AgeInYearsAt(date from start of EncounterInpatient.period) &gt;= 18
       and ( duration in hours of EncounterInpatient.period &gt;= 24 )
       and EncounterInpatient.status = 'finished'</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-initial-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -5351,12 +5752,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population"> </a>
-    
     
     Measure Population
     
@@ -5365,14 +5764,23 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_6-MeasurePopulation_6"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population"><em>Definition</em></a>
+    
   </td>
 
 </tr>
 
-          
-        
           
         
           
@@ -5499,12 +5907,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     
     Measure Population Exclusion
     
@@ -5513,9 +5919,20 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_6-MeasurePopulationExclusion_6"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-population-exclusion"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -5616,8 +6033,6 @@
         
           
         
-          
-        
       
     
   
@@ -5625,8 +6040,6 @@
   
     
       
-        
-          
         
           
         
@@ -5734,12 +6147,10 @@
             
               
             
+            
+            
             <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="primary-cms986fhirmalnutritionscore-measure-observation-total-malnutrition-care-score-as-percentage"> </a>
-    
     
     Measure Observation
     
@@ -5748,8 +6159,19 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      
+      <a name="Group_6-MeasureObservation_6"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation Total Malnutrition Care Score as Percentage&quot;(QualifyingEncounter Encounter):
   100 * ( &quot;Measure Observation Total Malnutrition Components Score&quot;(QualifyingEncounter) / &quot;Total Malnutrition Care Score Eligible Occurrences&quot;(QualifyingEncounter) )</code></pre>
+    
+      
+      <a href="#cms986fhirmalnutritionscore-measure-observation-total-malnutrition-care-score-as-percentage"><em>Definition</em></a>
+    
   </td>
 
 </tr>
@@ -5808,10 +6230,6 @@
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="supplementaldataelements-sde-race"> </a>
-    
     Logic Definition
   </th>
 
@@ -5821,6 +6239,12 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="supplementaldataelements-sde-race"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
   Patient.race R
     return Tuple {
@@ -5842,10 +6266,6 @@
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="supplementaldataelements-sde-sex"> </a>
-    
     Logic Definition
   </th>
 
@@ -5855,6 +6275,12 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="supplementaldataelements-sde-sex"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
   case
     when Patient.sex = '248153007' then &quot;Male (finding)&quot;
@@ -5934,16 +6360,8 @@
         
 
 
-
-        
-
-
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="supplementaldataelements-sde-payer"> </a>
-    
     Logic Definition
   </th>
 
@@ -5953,6 +6371,12 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="supplementaldataelements-sde-payer"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
   [Coverage: type in &quot;Payer Type&quot;] Payer
     return {
@@ -5974,10 +6398,6 @@
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="supplementaldataelements-sde-ethnicity"> </a>
-    
     Logic Definition
   </th>
 
@@ -5987,6 +6407,12 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="supplementaldataelements-sde-ethnicity"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
   Patient.ethnicity E
     return Tuple {
@@ -6220,16 +6646,8 @@
         
 
 
-
-        
-
-
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="fhirhelpers-tointerval"> </a>
-    
     Logic Definition
   </th>
 
@@ -6239,6 +6657,12 @@
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-tointerval"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
 value to a CQL DateTime Interval
@@ -6273,10 +6697,6 @@ define function ToInterval(period FHIR.Period):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="fhirhelpers-tostring"> </a>
-    
     Logic Definition
   </th>
 
@@ -6286,6 +6706,12 @@ define function ToInterval(period FHIR.Period):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-tostring"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
   </td>
 
@@ -6298,10 +6724,6 @@ define function ToInterval(period FHIR.Period):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="fhirhelpers-tocode"> </a>
-    
     Logic Definition
   </th>
 
@@ -6311,6 +6733,12 @@ define function ToInterval(period FHIR.Period):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-tocode"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
 */
@@ -6375,10 +6803,6 @@ define function ToCode(coding FHIR.Coding):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="fhirhelpers-toconcept"> </a>
-    
     Logic Definition
   </th>
 
@@ -6388,6 +6812,12 @@ define function ToCode(coding FHIR.Coding):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-toconcept"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Converts the given FHIR [CodeableConcept](https://hl7.org/fhir/datatypes.html#CodeableConcept) value to a CQL Concept.
 */
@@ -6622,16 +7052,8 @@ define function ToConcept(concept FHIR.CodeableConcept):
         
 
 
-
-        
-
-
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="status-verified"> </a>
-    
     Logic Definition
   </th>
 
@@ -6641,6 +7063,12 @@ define function ToConcept(concept FHIR.CodeableConcept):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="status-verified"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//This library contains functions used to constrain FHIR resource elements for measures authored by NCQA, based on QICore 6.0.0 resources including IG and authoring patterns. The functions may appear similar to some QICoreCommon functions but differ in that they have constraints that are relevant for measures authored by NCQA.
 
 //Condition
@@ -6816,16 +7244,8 @@ define fluent function verified(conditions List&lt;Choice&lt;ConditionProblemsHe
         
 
 
-
-        
-
-
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cqmcommon-hospitalizationwithobservation"> </a>
-    
     Logic Definition
   </th>
 
@@ -6835,6 +7255,12 @@ define fluent function verified(conditions List&lt;Choice&lt;ConditionProblemsHe
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cqmcommon-hospitalizationwithobservation"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Hospitalization with Observation returns the total interval from the start of any immediately prior emergency department visit through the observation visit to the discharge of the given encounter
 */
@@ -6919,10 +7345,6 @@ define fluent function hospitalizationWithObservation(TheEncounter Encounter ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cqmcommon-encounterdiagnosis"> </a>
-    
     Logic Definition
   </th>
 
@@ -6932,6 +7354,12 @@ define fluent function hospitalizationWithObservation(TheEncounter Encounter ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cqmcommon-encounterdiagnosis"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*  
 @description: Returns the Condition resources referenced by the diagnosis element of the Encounter  
 */
@@ -7093,16 +7521,8 @@ define fluent function encounterDiagnosis(Encounter Encounter ):
         
 
 
-
-        
-
-
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-tointerval"> </a>
-    
     Logic Definition
   </th>
 
@@ -7112,6 +7532,12 @@ define fluent function encounterDiagnosis(Encounter Encounter ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-tointerval"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Normalizes a value that is a choice of timing-valued types to an equivalent interval
 @comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types
@@ -7184,10 +7610,6 @@ define fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-latest"> </a>
-    
     Logic Definition
   </th>
 
@@ -7197,6 +7619,12 @@ define fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-latest"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Given an interval, returns the ending point if the interval has an ending boundary specified,
 otherwise, returns the starting point
@@ -7217,10 +7645,6 @@ define fluent function latest(choice Choice&lt;DateTime, Quantity, Interval&lt;D
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-hasend"> </a>
-    
     Logic Definition
   </th>
 
@@ -7230,6 +7654,12 @@ define fluent function latest(choice Choice&lt;DateTime, Quantity, Interval&lt;D
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-hasend"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Given an interval, returns true if the interval has an ending boundary specified
 (i.e. the end of the interval is not null and not the maximum DateTime value)
@@ -7258,10 +7688,6 @@ define fluent function hasEnd(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-prevalenceinterval"> </a>
-    
     Logic Definition
   </th>
 
@@ -7271,6 +7697,12 @@ define fluent function hasEnd(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-prevalenceinterval"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Returns an interval representing the normalized prevalence period of a given Condition.
 @comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from
@@ -7299,10 +7731,6 @@ else
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-abatementinterval"> </a>
-    
     Logic Definition
   </th>
 
@@ -7312,6 +7740,12 @@ else
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-abatementinterval"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Returns an interval representing the normalized abatement of a given Condition.
 @comment: If the abatement element of the Condition is represented as a DateTime, the result
@@ -7361,10 +7795,6 @@ define fluent function abatementInterval(condition Choice&lt;&quot;ConditionEnco
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-references"> </a>
-    
     Logic Definition
   </th>
 
@@ -7374,6 +7804,12 @@ define fluent function abatementInterval(condition Choice&lt;&quot;ConditionEnco
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-references"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Returns true if the given reference is to the given resourceId
 @comment: Returns true if the `resourceId` parameter exactly equals the tail of the given reference.
@@ -7396,10 +7832,6 @@ define fluent function references(reference Reference, resourceId String):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-earliest"> </a>
-    
     Logic Definition
   </th>
 
@@ -7409,6 +7841,12 @@ define fluent function references(reference Reference, resourceId String):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-earliest"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Given an interval, return the starting point if the interval has a starting boundary specified,
 otherwise, return the ending point
@@ -7429,10 +7867,6 @@ define fluent function earliest(choice Choice&lt;DateTime, Quantity, Interval&lt
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="qicorecommon-hasstart"> </a>
-    
     Logic Definition
   </th>
 
@@ -7442,6 +7876,12 @@ define fluent function earliest(choice Choice&lt;DateTime, Quantity, Interval&lt
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="qicorecommon-hasstart"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
 @description: Given an interval, return true if the interval has a starting boundary specified
 (i.e. the start of the interval is not null and not the minimum DateTime value)
@@ -7471,10 +7911,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-initial-population"> </a>
-    
     Logic Definition
   </th>
 
@@ -7484,6 +7920,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-initial-population"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
   [Encounter: &quot;Encounter Inpatient&quot;] EncounterInpatient
     where EncounterInpatient.period ends during day of &quot;Measurement Period&quot;
@@ -7501,10 +7943,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-population"> </a>
-    
     Logic Definition
   </th>
 
@@ -7514,6 +7952,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-population"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population&quot;:
   &quot;Initial Population&quot;</code></pre>
   </td>
@@ -7527,10 +7971,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-discharge-for-hospice-care"> </a>
-    
     Logic Definition
   </th>
 
@@ -7540,6 +7980,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-discharge-for-hospice-care"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Discharge for Hospice Care&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     where QualifyingEncounter.hospitalization.dischargeDisposition in &quot;Hospice Care Referral or Admission&quot;</code></pre>
@@ -7554,10 +8000,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-intervention-hospice-care"> </a>
-    
     Logic Definition
   </th>
 
@@ -7567,13 +8009,39 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
-    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Intervention Hospice Care&quot;:
-  ( [&quot;ServiceRequest&quot;: &quot;Hospice Status&quot;] HospiceStatusOrder
-      where HospiceStatusOrder.status in { 'active', 'completed', 'on-hold' }
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-intervention-hospice-care"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*define &quot;Intervention Hospice Care&quot;:
+    ( [&quot;ServiceRequest&quot;: &quot;Hospice Status&quot;] HospiceStatusOrder
+    where HospiceStatusOrder.status in { 'active', 'completed', 'on-hold' }
         and HospiceStatusOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }
   )
     union ( [&quot;Procedure&quot;: &quot;Hospice Status&quot;] HospiceStatusPerformed
+            where HospiceStatusPerformed.status in { 'completed', 'in-progress' } 
+           )
+
+define &quot;Encounters with Hospice during Eligible Encounter&quot;:
+    &quot;Measure Population&quot; QualifyingEncounter
+    with &quot;Intervention Hospice Care&quot; HospiceStatus
+            such that Coalesce (start of HospiceStatus.performed.toInterval(), HospiceStatus.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )
+*/
+//Testing definitions based on Codev comment
+
+
+
+define &quot;Intervention Hospice Care&quot;:
+  ( [&quot;ServiceRequest&quot;: &quot;Hospice Status&quot;] HospiceStatusOrder
+      where HospiceStatusOrder.status in { 'active', 'completed', 'on-hold' }
+        and HospiceStatusOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }
+      return HospiceStatusOrder.authoredOn
+  )
+    union ( [&quot;Procedure&quot;: &quot;Hospice Status&quot;] HospiceStatusPerformed
         where HospiceStatusPerformed.status in { 'completed', 'in-progress' }
+        return start of HospiceStatusPerformed.performed.toInterval ( )
     )</code></pre>
   </td>
 
@@ -7586,10 +8054,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-hospice-during-eligible-encounter"> </a>
-    
     Logic Definition
   </th>
 
@@ -7599,10 +8063,16 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-hospice-during-eligible-encounter"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Hospice during Eligible Encounter&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
-    with &quot;Intervention Hospice Care&quot; HospiceStatus
-      such that Coalesce(start of HospiceStatus.performed.toInterval(), HospiceStatus.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )</code></pre>
+    with &quot;Intervention Hospice Care&quot; HospiceStatusDate
+      such that HospiceStatusDate during day of QualifyingEncounter.hospitalizationWithObservation ( )</code></pre>
   </td>
 
 </tr>
@@ -7614,10 +8084,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
-    
     Logic Definition
   </th>
 
@@ -7627,6 +8093,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-population-exclusion"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Measure Population Exclusion&quot;:
   &quot;Encounters with Discharge for Hospice Care&quot;
     union &quot;Encounters with Hospice during Eligible Encounter&quot;</code></pre>
@@ -7645,10 +8117,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-sde-race"> </a>
-    
     Logic Definition
   </th>
 
@@ -7658,6 +8126,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-sde-race"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
   SDE.&quot;SDE Race&quot;</code></pre>
   </td>
@@ -7675,10 +8149,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-sde-sex"> </a>
-    
     Logic Definition
   </th>
 
@@ -7688,6 +8158,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-sde-sex"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
   SDE.&quot;SDE Sex&quot;</code></pre>
   </td>
@@ -7701,10 +8177,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-not-at-risk"> </a>
-    
     Logic Definition
   </th>
 
@@ -7714,6 +8186,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-not-at-risk"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Risk Screening Not At Risk&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     with [&quot;ObservationScreeningAssessment&quot;: &quot;Malnutrition Risk Screening&quot;] MalnutritionRiskScreening
@@ -7731,10 +8209,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-at-risk"> </a>
-    
     Logic Definition
   </th>
 
@@ -7744,6 +8218,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-at-risk"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Risk Screening At Risk&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     with [&quot;ObservationScreeningAssessment&quot;: &quot;Malnutrition Risk Screening&quot;] MalnutritionRiskScreening
@@ -7761,10 +8241,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening"> </a>
-    
     Logic Definition
   </th>
 
@@ -7774,6 +8250,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Risk Screening&quot;:
   &quot;Encounters with Malnutrition Risk Screening Not At Risk&quot;
     union &quot;Encounters with Malnutrition Risk Screening At Risk&quot;</code></pre>
@@ -7788,10 +8270,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-intervention-dietitian-referral"> </a>
-    
     Logic Definition
   </th>
 
@@ -7801,13 +8279,40 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
-    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Intervention Dietitian Referral&quot;:
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-intervention-dietitian-referral"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*define &quot;Intervention Dietitian Referral&quot;:
+( [&quot;ServiceRequest&quot;: &quot;Dietitian Referral&quot;] DietitianReferralOrder
+    where DietitianReferralOrder.status in { 'active', 'completed', 'on-hold' }
+        and DietitianReferralOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }
+  
+  )
+    union ( [&quot;Procedure&quot;: &quot;Dietitian Referral&quot;] DietitianReferralPerformed
+            where DietitianReferralPerformed.status in { 'completed', 'in-progress' } 
+           )
+
+define &quot;Encounters with Dietitian Referral&quot;:
+    &quot;Measure Population&quot; QualifyingEncounter
+    with &quot;Intervention Dietitian Referral&quot; DietitianReferral
+            such that Coalesce (start of DietitianReferral.performed.toInterval(), DietitianReferral.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )
+*/
+//New definition from Codev comments
+
+
+
+define &quot;Intervention Dietitian Referral&quot;:
   ( [&quot;ServiceRequest&quot;: &quot;Dietitian Referral&quot;] DietitianReferralOrder
       where DietitianReferralOrder.status in { 'active', 'completed', 'on-hold' }
         and DietitianReferralOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }
+      return DietitianReferralOrder.authoredOn
   )
     union ( [&quot;Procedure&quot;: &quot;Dietitian Referral&quot;] DietitianReferralPerformed
         where DietitianReferralPerformed.status in { 'completed', 'in-progress' }
+        return start of DietitianReferralPerformed.performed.toInterval ( )
     )</code></pre>
   </td>
 
@@ -7820,10 +8325,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-dietitian-referral"> </a>
-    
     Logic Definition
   </th>
 
@@ -7833,10 +8334,16 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-dietitian-referral"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Dietitian Referral&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
-    with &quot;Intervention Dietitian Referral&quot; DietitianReferral
-      such that Coalesce(start of DietitianReferral.performed.toInterval(), DietitianReferral.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )</code></pre>
+    with &quot;Intervention Dietitian Referral&quot; DietitianReferralDate
+      such that DietitianReferralDate during day of QualifyingEncounter.hospitalizationWithObservation ( )</code></pre>
   </td>
 
 </tr>
@@ -7848,10 +8355,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-or-with-dietitian-referral"> </a>
-    
     Logic Definition
   </th>
 
@@ -7861,6 +8364,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-or-with-dietitian-referral"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Risk Screening or with Dietitian Referral&quot;:
   &quot;Encounters with Malnutrition Risk Screening&quot;
     union &quot;Encounters with Dietitian Referral&quot;</code></pre>
@@ -7875,10 +8384,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-not-at-risk-screening-and-without-dietitian-referral"> </a>
-    
     Logic Definition
   </th>
 
@@ -7888,6 +8393,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-not-at-risk-screening-and-without-dietitian-referral"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot;:
   &quot;Encounters with Malnutrition Risk Screening Not At Risk&quot;
     except &quot;Encounters with Dietitian Referral&quot;</code></pre>
@@ -7902,10 +8413,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-at-risk-or-with-dietitian-referral"> </a>
-    
     Logic Definition
   </th>
 
@@ -7915,6 +8422,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-risk-screening-at-risk-or-with-dietitian-referral"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot;:
   &quot;Encounters with Malnutrition Risk Screening At Risk&quot;
     union &quot;Encounters with Dietitian Referral&quot;</code></pre>
@@ -7929,10 +8442,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-nutrition-assessment-performed"> </a>
-    
     Logic Definition
   </th>
 
@@ -7942,41 +8451,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
-    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Nutrition Assessment Performed&quot;:
-  from
-    &quot;Measure Population&quot; QualifyingEncounter,
-    [&quot;ObservationScreeningAssessment&quot;: &quot;Nutrition Assessment&quot;] NutritionAssessment
-    where NutritionAssessment.status in { 'final', 'amended', 'corrected' }
-      and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )
-      and NutritionAssessment.value is not null
-    return Tuple {
-      HospEncId: QualifyingEncounter.id,
-      NutrAssessTimingLatest: NutritionAssessment.effective.latest ( )
-    }</code></pre>
-  </td>
-
-</tr>
-
-
-
-        
-
-
-<tr>
-  <th scope="row" rowspan="2" class="row-header">
     
-      
+    
+    
+    
       <a name="cms986fhirmalnutritionscore-encounter-with-most-recent-nutrition-assessment-and-identified-status"> </a>
     
-    Logic Definition
-  </th>
-
-  <td class="content-container"><em>Library Name:</em> CMS986FHIRMalnutritionScore</td>
-
-</tr>
-<tr>
-
-  <td>
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounter With Most Recent Nutrition Assessment And Identified Status&quot;:
   &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; QualifyingEncounter
     with [&quot;ObservationScreeningAssessment&quot;: &quot;Nutrition Assessment&quot;] NutritionAssessment
@@ -7999,10 +8479,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-has-malnutrition-diagnosis"> </a>
-    
     Logic Definition
   </th>
 
@@ -8012,6 +8488,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-has-malnutrition-diagnosis"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Malnutrition Diagnosis&quot;:
   [ConditionProblemsHealthConcerns: &quot;Malnutrition Diagnosis&quot;] MalnutritionDiagnosis
     where MalnutritionDiagnosis.prevalenceInterval ( ) overlaps &quot;Measurement Period&quot;
@@ -8027,10 +8509,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-encounter-diagnosis-of-malnutrition-diagnosis"> </a>
-    
     Logic Definition
   </th>
 
@@ -8040,6 +8518,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-encounter-diagnosis-of-malnutrition-diagnosis"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters With Encounter Diagnosis Of Malnutrition Diagnosis&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     where QualifyingEncounter.reasonCode in &quot;Malnutrition Diagnosis&quot;
@@ -8055,10 +8539,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-diagnosis"> </a>
-    
     Logic Definition
   </th>
 
@@ -8068,6 +8548,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-malnutrition-diagnosis"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Malnutrition Diagnosis&quot;:
   ( &quot;Measure Population&quot; QualifyingEncounter
       where exists ( &quot;Has Malnutrition Diagnosis&quot; MalnutritionDiagnosis
@@ -8086,10 +8572,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounter-with-most-recent-nutrition-assessment-status-of-not-or-mildly-malnourished"> </a>
-    
     Logic Definition
   </th>
 
@@ -8099,6 +8581,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounter-with-most-recent-nutrition-assessment-status-of-not-or-mildly-malnourished"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     with [&quot;ObservationScreeningAssessment&quot;: &quot;Nutrition Assessment&quot;] NutritionAssessment
@@ -8118,10 +8606,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounter-with-most-recent-nutrition-assessment-status-of-moderately-or-severely-malnourished"> </a>
-    
     Logic Definition
   </th>
 
@@ -8131,6 +8615,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounter-with-most-recent-nutrition-assessment-status-of-moderately-or-severely-malnourished"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounter With Most Recent Nutrition Assessment Status of Moderately Or Severely Malnourished&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     with [&quot;ObservationScreeningAssessment&quot;: &quot;Nutrition Assessment&quot;] NutritionAssessment
@@ -8151,10 +8641,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-encounters-with-nutrition-care-plan"> </a>
-    
     Logic Definition
   </th>
 
@@ -8164,6 +8650,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-encounters-with-nutrition-care-plan"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Nutrition Care Plan&quot;:
   &quot;Measure Population&quot; QualifyingEncounter
     with [&quot;Procedure&quot;: &quot;Nutrition Care Plan&quot;] NutritionCarePlan
@@ -8184,10 +8676,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-sde-payer-type"> </a>
-    
     Logic Definition
   </th>
 
@@ -8197,6 +8685,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-sde-payer-type"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer Type&quot;:
   SDE.&quot;SDE Payer&quot;</code></pre>
   </td>
@@ -8214,10 +8708,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-sde-ethnicity"> </a>
-    
     Logic Definition
   </th>
 
@@ -8227,6 +8717,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-sde-ethnicity"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
   SDE.&quot;SDE Ethnicity&quot;</code></pre>
   </td>
@@ -8260,10 +8756,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-observation-1"> </a>
-    
     Logic Definition
   </th>
 
@@ -8273,6 +8765,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-observation-1"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 1&quot;(MalnutritionRiskScreening Encounter):
   if &quot;Encounters with Malnutrition Risk Screening or with Dietitian Referral&quot; contains MalnutritionRiskScreening then 1 
     else 0</code></pre>
@@ -8287,10 +8785,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-observation-total-malnutrition-components-score"> </a>
-    
     Logic Definition
   </th>
 
@@ -8300,6 +8794,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-observation-total-malnutrition-components-score"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation Total Malnutrition Components Score&quot;(QualifyingEncounter Encounter):
   Sum({ &quot;Measure Observation 1&quot;(QualifyingEncounter), &quot;Measure Observation 2&quot;(QualifyingEncounter), &quot;Measure Observation 3&quot;(QualifyingEncounter), &quot;Measure Observation 4&quot;(QualifyingEncounter) })</code></pre>
   </td>
@@ -8313,10 +8813,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-observation-2"> </a>
-    
     Logic Definition
   </th>
 
@@ -8326,6 +8822,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-observation-2"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 2&quot;(NutritionAssessment Encounter):
   if &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot; contains NutritionAssessment then 0 
     else if &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; contains NutritionAssessment then if &quot;Encounter With Most Recent Nutrition Assessment And Identified Status&quot; contains NutritionAssessment then 1 
@@ -8350,10 +8852,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-last-nutrition-assessment-day-during-encounter"> </a>
-    
     Logic Definition
   </th>
 
@@ -8363,10 +8861,40 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
-    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Last Nutrition Assessment Day During Encounter&quot;(QualifyingEncounter Encounter):
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-last-nutrition-assessment-day-during-encounter"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*define function &quot;Last Nutrition Assessment Day During Encounter&quot;(QualifyingEncounter Encounter):
   Max(&quot;Nutrition Assessment Performed&quot; NutritionAssessmentTuple
-      where NutritionAssessmentTuple.HospEncId = QualifyingEncounter.id
-      return NutritionAssessmentTuple.NutrAssessTimingLatest
+    where NutritionAssessmentTuple.HospEncId = QualifyingEncounter.id
+    return NutritionAssessmentTuple.NutrAssessTimingLatest
+  )
+
+define &quot;Nutrition Assessment Performed&quot;:
+    from
+    &quot;Measure Population&quot; QualifyingEncounter,
+    [&quot;ObservationScreeningAssessment&quot;: &quot;Nutrition Assessment&quot;] NutritionAssessment
+        where NutritionAssessment.status in { 'final', 'amended', 'corrected' }
+            and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )
+            and NutritionAssessment.value is not null
+            return Tuple {
+        HospEncId: QualifyingEncounter.id,
+        NutrAssessTimingLatest: NutritionAssessment.effective.latest()
+        }
+*/
+//Test definition per CODev feedback
+
+
+
+define function &quot;Last Nutrition Assessment Day During Encounter&quot;(QualifyingEncounter Encounter):
+  Max([&quot;ObservationScreeningAssessment&quot;: &quot;Nutrition Assessment&quot;] NutritionAssessment
+      where NutritionAssessment.status in { 'final', 'amended', 'corrected' }
+        and NutritionAssessment.effective.toInterval() during QualifyingEncounter.hospitalizationWithObservation()
+        and NutritionAssessment.value is not null
+      return NutritionAssessment.effective.latest()
   )</code></pre>
   </td>
 
@@ -8379,10 +8907,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-observation-3"> </a>
-    
     Logic Definition
   </th>
 
@@ -8392,6 +8916,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-observation-3"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 3&quot;(MalnutritionDiagnosis Encounter):
   if &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot; contains MalnutritionDiagnosis then 0 
     else if &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; contains MalnutritionDiagnosis then if &quot;Encounters with Malnutrition Diagnosis&quot; contains MalnutritionDiagnosis then if &quot;Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished&quot; contains MalnutritionDiagnosis then 0 
@@ -8418,10 +8948,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-isverified"> </a>
-    
     Logic Definition
   </th>
 
@@ -8431,6 +8957,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-isverified"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define fluent function isVerified(condition Choice&lt;QICore.ConditionProblemsHealthConcerns, QICore.ConditionEncounterDiagnosis&gt;):
   condition.verificationStatus is not null implies ( condition.verificationStatus ~ QICoreCommon.&quot;confirmed&quot;
       or condition.verificationStatus ~ QICoreCommon.&quot;unconfirmed&quot;
@@ -8464,10 +8996,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-observation-4"> </a>
-    
     Logic Definition
   </th>
 
@@ -8477,6 +9005,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-observation-4"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation 4&quot;(NutritionCarePlan Encounter):
   if &quot;Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral&quot; contains NutritionCarePlan then 0 
     else if &quot;Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral&quot; contains NutritionCarePlan then if &quot;Encounters with Nutrition Care Plan&quot; contains NutritionCarePlan then if &quot;Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished&quot; contains NutritionCarePlan then 0 
@@ -8503,10 +9037,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-measure-observation-total-malnutrition-care-score-as-percentage"> </a>
-    
     Logic Definition
   </th>
 
@@ -8516,6 +9046,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-measure-observation-total-malnutrition-care-score-as-percentage"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Measure Observation Total Malnutrition Care Score as Percentage&quot;(QualifyingEncounter Encounter):
   100 * ( &quot;Measure Observation Total Malnutrition Components Score&quot;(QualifyingEncounter) / &quot;Total Malnutrition Care Score Eligible Occurrences&quot;(QualifyingEncounter) )</code></pre>
   </td>
@@ -8529,10 +9065,6 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 
 <tr>
   <th scope="row" rowspan="2" class="row-header">
-    
-      
-      <a name="cms986fhirmalnutritionscore-total-malnutrition-care-score-eligible-occurrences"> </a>
-    
     Logic Definition
   </th>
 
@@ -8542,6 +9074,12 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
 <tr>
 
   <td>
+    
+    
+    
+    
+      <a name="cms986fhirmalnutritionscore-total-malnutrition-care-score-eligible-occurrences"> </a>
+    
     <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;Total Malnutrition Care Score Eligible Occurrences&quot;(QualifyingEncounter Encounter):
   if &quot;Encounters with Malnutrition Risk Screening or with Dietitian Referral&quot; contains QualifyingEncounter
     and &quot;Encounters with Malnutrition Risk Screening Not At Risk&quot; contains QualifyingEncounter
@@ -9585,27 +10123,7 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
   
    
    
-    <em>Must Support Elements</em>: id, period, id.value
-    <br/>
-   
-   
-  </td>
-</tr>
-
-<tr>
-  <th scope="row" class="row-header">Data Requirement</th>
-  <td class="content-container">
-    <em>Type</em>: Encounter
-    <br/>
-  
-    <em>Profile(s)</em>: 
-  
-    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
-    <br/>        
-  
-   
-   
-    <em>Must Support Elements</em>: type, period, status, status.value, hospitalization, hospitalization.dischargeDisposition, id, id.value, reasonCode
+    <em>Must Support Elements</em>: type, period, status, status.value, hospitalization, hospitalization.dischargeDisposition, reasonCode
     <br/>
    
   
@@ -9640,7 +10158,7 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
   
    
    
-    <em>Must Support Elements</em>: code, status, status.value, intent, intent.value
+    <em>Must Support Elements</em>: code, status, status.value, intent, intent.value, authoredOn, authoredOn.value
     <br/>
    
   
@@ -9675,7 +10193,7 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
   
    
    
-    <em>Must Support Elements</em>: code, status, status.value, intent, intent.value
+    <em>Must Support Elements</em>: code, status, status.value, intent, intent.value, authoredOn, authoredOn.value
     <br/>
    
   
@@ -9710,7 +10228,7 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
   
    
    
-    <em>Must Support Elements</em>: code, status, status.value
+    <em>Must Support Elements</em>: code, status, status.value, performed
     <br/>
    
   
@@ -9745,7 +10263,7 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
   
    
    
-    <em>Must Support Elements</em>: code, status, status.value
+    <em>Must Support Elements</em>: code, status, status.value, performed
     <br/>
    
   
@@ -9980,7 +10498,7 @@ define fluent function hasStart(period Interval&lt;DateTime&gt; ):
   
 
 <tr>
-  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.9 of the sample-content-ig Liquid templates</th>
 </tr>
 
     </tbody>

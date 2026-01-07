@@ -61,7 +61,7 @@
   }, {
     "entity": {
       "reference": "Patient/3dfa6b2c-e7e1-46a4-a2cc-54602538c44e",
-      "display": "2Benzodiazepines NUMERFail"
+      "display": "2BenzodiazepinesNoOpioid NUMERFail"
     }
   }, {
     "entity": {
@@ -146,12 +146,12 @@
   }, {
     "entity": {
       "reference": "Patient/8e2e72d9-194d-4031-83a3-51dbd703de36",
-      "display": "DischargeAgainstMedicalAdvice DENEXPass"
+      "display": "DischargeLeftAgainstMedicalAdvice DENEXPass"
     }
   }, {
     "entity": {
       "reference": "Patient/90d1df13-46fe-4dbf-b934-6eff4f884a72",
-      "display": "HasCancer DENEXFail"
+      "display": "HasCancerCodeNotInVS DENEXFail"
     }
   }, {
     "entity": {
@@ -216,7 +216,7 @@
   }, {
     "entity": {
       "reference": "Patient/cdb80ca8-b110-436d-83e8-b339ebc09a44",
-      "display": "SickleDisease DENEXPass"
+      "display": "SickleDiseaseOnsetPrevYr DENEXPass"
     }
   }, {
     "entity": {

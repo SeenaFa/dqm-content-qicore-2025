@@ -49,7 +49,7 @@
   "name": [ {
     "use": "usual",
     "family": "NUMPass",
-    "given": [ "Fibrinolytic30MinOfEDStart" ]
+    "given": [ "Fibrinolytic30MinofEDStartRelevantDateTime" ]
   } ],
   "gender": "female",
   "birthDate": "1985-12-02"

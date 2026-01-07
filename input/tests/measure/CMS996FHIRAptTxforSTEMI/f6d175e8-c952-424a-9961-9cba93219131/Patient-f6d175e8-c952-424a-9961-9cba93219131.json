@@ -47,8 +47,8 @@
     "value": "617825214bf8e25b8f204e0f"
   } ],
   "name": [ {
-    "family": "DenExcl1Fail",
-    "given": [ "DxExclStartsBeforeEDNoend" ]
+    "family": "DENEXCL1FAIL",
+    "given": [ "DxExclStartsBeforeEDNoEnd" ]
   } ],
   "gender": "female",
   "birthDate": "1985-12-02"

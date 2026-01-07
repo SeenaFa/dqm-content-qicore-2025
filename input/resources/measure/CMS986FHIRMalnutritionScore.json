@@ -153,7 +153,7 @@
         "valueString": "Intervention Hospice Care"
       }, {
         "url": "statement",
-        "valueString": "define \"Intervention Hospice Care\":\n  ( [\"ServiceRequest\": \"Hospice Status\"] HospiceStatusOrder\n      where HospiceStatusOrder.status in { 'active', 'completed', 'on-hold' }\n        and HospiceStatusOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }\n  )\n    union ( [\"Procedure\": \"Hospice Status\"] HospiceStatusPerformed\n        where HospiceStatusPerformed.status in { 'completed', 'in-progress' }\n    )"
+        "valueString": "/*define \"Intervention Hospice Care\":\n    ( [\"ServiceRequest\": \"Hospice Status\"] HospiceStatusOrder\n    where HospiceStatusOrder.status in { 'active', 'completed', 'on-hold' }\n        and HospiceStatusOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }\n  )\n    union ( [\"Procedure\": \"Hospice Status\"] HospiceStatusPerformed\n            where HospiceStatusPerformed.status in { 'completed', 'in-progress' } \n           )\n\ndefine \"Encounters with Hospice during Eligible Encounter\":\n    \"Measure Population\" QualifyingEncounter\n    with \"Intervention Hospice Care\" HospiceStatus\n            such that Coalesce (start of HospiceStatus.performed.toInterval(), HospiceStatus.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )\n*/\n//Testing definitions based on Codev comment\n\n\n\ndefine \"Intervention Hospice Care\":\n  ( [\"ServiceRequest\": \"Hospice Status\"] HospiceStatusOrder\n      where HospiceStatusOrder.status in { 'active', 'completed', 'on-hold' }\n        and HospiceStatusOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }\n      return HospiceStatusOrder.authoredOn\n  )\n    union ( [\"Procedure\": \"Hospice Status\"] HospiceStatusPerformed\n        where HospiceStatusPerformed.status in { 'completed', 'in-progress' }\n        return start of HospiceStatusPerformed.performed.toInterval ( )\n    )"
       }, {
         "url": "displaySequence",
         "valueInteger": 3
@@ -168,7 +168,7 @@
         "valueString": "Encounters with Hospice during Eligible Encounter"
       }, {
         "url": "statement",
-        "valueString": "define \"Encounters with Hospice during Eligible Encounter\":\n  \"Measure Population\" QualifyingEncounter\n    with \"Intervention Hospice Care\" HospiceStatus\n      such that Coalesce(start of HospiceStatus.performed.toInterval(), HospiceStatus.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )"
+        "valueString": "define \"Encounters with Hospice during Eligible Encounter\":\n  \"Measure Population\" QualifyingEncounter\n    with \"Intervention Hospice Care\" HospiceStatusDate\n      such that HospiceStatusDate during day of QualifyingEncounter.hospitalizationWithObservation ( )"
       }, {
         "url": "displaySequence",
         "valueInteger": 4
@@ -303,7 +303,7 @@
         "valueString": "Intervention Dietitian Referral"
       }, {
         "url": "statement",
-        "valueString": "define \"Intervention Dietitian Referral\":\n  ( [\"ServiceRequest\": \"Dietitian Referral\"] DietitianReferralOrder\n      where DietitianReferralOrder.status in { 'active', 'completed', 'on-hold' }\n        and DietitianReferralOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }\n  )\n    union ( [\"Procedure\": \"Dietitian Referral\"] DietitianReferralPerformed\n        where DietitianReferralPerformed.status in { 'completed', 'in-progress' }\n    )"
+        "valueString": "/*define \"Intervention Dietitian Referral\":\n( [\"ServiceRequest\": \"Dietitian Referral\"] DietitianReferralOrder\n    where DietitianReferralOrder.status in { 'active', 'completed', 'on-hold' }\n        and DietitianReferralOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }\n  \n  )\n    union ( [\"Procedure\": \"Dietitian Referral\"] DietitianReferralPerformed\n            where DietitianReferralPerformed.status in { 'completed', 'in-progress' } \n           )\n\ndefine \"Encounters with Dietitian Referral\":\n    \"Measure Population\" QualifyingEncounter\n    with \"Intervention Dietitian Referral\" DietitianReferral\n            such that Coalesce (start of DietitianReferral.performed.toInterval(), DietitianReferral.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )\n*/\n//New definition from Codev comments\n\n\n\ndefine \"Intervention Dietitian Referral\":\n  ( [\"ServiceRequest\": \"Dietitian Referral\"] DietitianReferralOrder\n      where DietitianReferralOrder.status in { 'active', 'completed', 'on-hold' }\n        and DietitianReferralOrder.intent in { 'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order' }\n      return DietitianReferralOrder.authoredOn\n  )\n    union ( [\"Procedure\": \"Dietitian Referral\"] DietitianReferralPerformed\n        where DietitianReferralPerformed.status in { 'completed', 'in-progress' }\n        return start of DietitianReferralPerformed.performed.toInterval ( )\n    )"
       }, {
         "url": "displaySequence",
         "valueInteger": 13
@@ -318,7 +318,7 @@
         "valueString": "Encounters with Dietitian Referral"
       }, {
         "url": "statement",
-        "valueString": "define \"Encounters with Dietitian Referral\":\n  \"Measure Population\" QualifyingEncounter\n    with \"Intervention Dietitian Referral\" DietitianReferral\n      such that Coalesce(start of DietitianReferral.performed.toInterval(), DietitianReferral.authoredOn) during day of QualifyingEncounter.hospitalizationWithObservation ( )"
+        "valueString": "define \"Encounters with Dietitian Referral\":\n  \"Measure Population\" QualifyingEncounter\n    with \"Intervention Dietitian Referral\" DietitianReferralDate\n      such that DietitianReferralDate during day of QualifyingEncounter.hospitalizationWithObservation ( )"
       }, {
         "url": "displaySequence",
         "valueInteger": 14
@@ -375,28 +375,13 @@
         "valueString": "CMS986FHIRMalnutritionScore"
       }, {
         "url": "name",
-        "valueString": "Nutrition Assessment Performed"
-      }, {
-        "url": "statement",
-        "valueString": "define \"Nutrition Assessment Performed\":\n  from\n    \"Measure Population\" QualifyingEncounter,\n    [\"ObservationScreeningAssessment\": \"Nutrition Assessment\"] NutritionAssessment\n    where NutritionAssessment.status in { 'final', 'amended', 'corrected' }\n      and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )\n      and NutritionAssessment.value is not null\n    return Tuple {\n      HospEncId: QualifyingEncounter.id,\n      NutrAssessTimingLatest: NutritionAssessment.effective.latest ( )\n    }"
-      }, {
-        "url": "displaySequence",
-        "valueInteger": 18
-      } ]
-    }, {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
-      "extension": [ {
-        "url": "libraryName",
-        "valueString": "CMS986FHIRMalnutritionScore"
-      }, {
-        "url": "name",
         "valueString": "Encounter With Most Recent Nutrition Assessment And Identified Status"
       }, {
         "url": "statement",
         "valueString": "define \"Encounter With Most Recent Nutrition Assessment And Identified Status\":\n  \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" QualifyingEncounter\n    with [\"ObservationScreeningAssessment\": \"Nutrition Assessment\"] NutritionAssessment\n      such that ( NutritionAssessment.status in { 'final', 'amended', 'corrected' }\n          and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )\n          and ( NutritionAssessment.value as Concept in \"Nutrition Assessment Status Finding of Well Nourished or Not Malnourished or Mildly Malnourished\"\n              or ( NutritionAssessment.value as Concept in \"Nutrition Assessment Status Finding of Moderately Malnourished\" )\n              or ( NutritionAssessment.value as Concept in \"Nutrition Assessment Status Finding of Severely Malnourished\" )\n          )\n          and NutritionAssessment.effective.latest ( ) same day as \"Last Nutrition Assessment Day During Encounter\"(QualifyingEncounter)\n      )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 19
+        "valueInteger": 18
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -411,7 +396,7 @@
         "valueString": "define \"Has Malnutrition Diagnosis\":\n  [ConditionProblemsHealthConcerns: \"Malnutrition Diagnosis\"] MalnutritionDiagnosis\n    where MalnutritionDiagnosis.prevalenceInterval ( ) overlaps \"Measurement Period\"\n      and MalnutritionDiagnosis.isVerified ( )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 20
+        "valueInteger": 19
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -426,7 +411,7 @@
         "valueString": "define \"Encounters With Encounter Diagnosis Of Malnutrition Diagnosis\":\n  \"Measure Population\" QualifyingEncounter\n    where QualifyingEncounter.reasonCode in \"Malnutrition Diagnosis\"\n      or QualifyingEncounter.encounterDiagnosis ( ).verified ( ).code in \"Malnutrition Diagnosis\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 21
+        "valueInteger": 20
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -441,7 +426,7 @@
         "valueString": "define \"Encounters with Malnutrition Diagnosis\":\n  ( \"Measure Population\" QualifyingEncounter\n      where exists ( \"Has Malnutrition Diagnosis\" MalnutritionDiagnosis\n          where MalnutritionDiagnosis.prevalenceInterval ( ) overlaps day of QualifyingEncounter.hospitalizationWithObservation ( )\n      )\n  )\n    union \"Encounters With Encounter Diagnosis Of Malnutrition Diagnosis\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 22
+        "valueInteger": 21
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -456,7 +441,7 @@
         "valueString": "define \"Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished\":\n  \"Measure Population\" QualifyingEncounter\n    with [\"ObservationScreeningAssessment\": \"Nutrition Assessment\"] NutritionAssessment\n      such that ( NutritionAssessment.status in { 'final', 'amended', 'corrected' }\n          and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )\n          and ( NutritionAssessment.value as Concept in \"Nutrition Assessment Status Finding of Well Nourished or Not Malnourished or Mildly Malnourished\" )\n          and NutritionAssessment.effective.latest ( ) same day as \"Last Nutrition Assessment Day During Encounter\"(QualifyingEncounter)\n      )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 23
+        "valueInteger": 22
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -471,7 +456,7 @@
         "valueString": "define \"Encounter With Most Recent Nutrition Assessment Status of Moderately Or Severely Malnourished\":\n  \"Measure Population\" QualifyingEncounter\n    with [\"ObservationScreeningAssessment\": \"Nutrition Assessment\"] NutritionAssessment\n      such that NutritionAssessment.status in { 'final', 'amended', 'corrected' }\n        and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )\n        and ( NutritionAssessment.value as Concept in \"Nutrition Assessment Status Finding of Moderately Malnourished\"\n            or NutritionAssessment.value as Concept in \"Nutrition Assessment Status Finding of Severely Malnourished\"\n        )\n        and NutritionAssessment.effective.latest ( ) same day as \"Last Nutrition Assessment Day During Encounter\"(QualifyingEncounter)"
       }, {
         "url": "displaySequence",
-        "valueInteger": 24
+        "valueInteger": 23
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -486,7 +471,7 @@
         "valueString": "define \"Encounters with Nutrition Care Plan\":\n  \"Measure Population\" QualifyingEncounter\n    with [\"Procedure\": \"Nutrition Care Plan\"] NutritionCarePlan\n      such that NutritionCarePlan.status in { 'completed', 'in-progress' }\n        and NutritionCarePlan.performed.earliest ( ) during QualifyingEncounter.hospitalizationWithObservation ( )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 25
+        "valueInteger": 24
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -501,7 +486,7 @@
         "valueString": "define \"SDE Payer\":\n  [Coverage: type in \"Payer Type\"] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 26
+        "valueInteger": 25
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -516,7 +501,7 @@
         "valueString": "define \"SDE Payer Type\":\n  SDE.\"SDE Payer\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 27
+        "valueInteger": 26
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -531,7 +516,7 @@
         "valueString": "define \"Initial Population\":\n  [Encounter: \"Encounter Inpatient\"] EncounterInpatient\n    where EncounterInpatient.period ends during day of \"Measurement Period\"\n      and AgeInYearsAt(date from start of EncounterInpatient.period) >= 18\n      and ( duration in hours of EncounterInpatient.period >= 24 )\n      and EncounterInpatient.status = 'finished'"
       }, {
         "url": "displaySequence",
-        "valueInteger": 28
+        "valueInteger": 27
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -546,7 +531,7 @@
         "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 29
+        "valueInteger": 28
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -561,7 +546,7 @@
         "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 30
+        "valueInteger": 29
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -576,7 +561,7 @@
         "valueString": "define \"Measure Population\":\n  \"Initial Population\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 31
+        "valueInteger": 30
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -591,7 +576,7 @@
         "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
       }, {
         "url": "displaySequence",
-        "valueInteger": 32
+        "valueInteger": 31
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -606,7 +591,7 @@
         "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nIf the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval\n*/\ndefine fluent function toInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>, Timing>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is Timing then\n      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval<DateTime>\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
       }, {
         "url": "displaySequence",
-        "valueInteger": 33
+        "valueInteger": 32
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -621,7 +606,7 @@
         "valueString": "/*\n@description: Hospitalization with Observation returns the total interval from the start of any immediately prior emergency department visit through the observation visit to the discharge of the given encounter\n*/\ndefine fluent function hospitalizationWithObservation(TheEncounter Encounter ):\n  TheEncounter Visit\n  \t\tlet ObsVisit: Last([Encounter: \"Observation Services\"] LastObs\n  \t\t\t\twhere LastObs.status = 'finished'\n            and LastObs.period ends 1 hour or less on or before start of Visit.period\n  \t\t\t\tsort by end of period\n  \t\t\t),\n  \t\t\tVisitStart: Coalesce(start of ObsVisit.period, start of Visit.period),\n  \t\t\tEDVisit: Last([Encounter: \"Emergency Department Visit\"] LastED\n  \t\t\t\twhere LastED.status = 'finished'\n            and LastED.period ends 1 hour or less on or before VisitStart\n  \t\t\t\tsort by end of period\n  \t\t\t)\n  \t\treturn Interval[Coalesce(start of EDVisit.period, VisitStart), end of Visit.period]"
       }, {
         "url": "displaySequence",
-        "valueInteger": 34
+        "valueInteger": 33
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -636,7 +621,7 @@
         "valueString": "define function ToString(value uri): value.value"
       }, {
         "url": "displaySequence",
-        "valueInteger": 35
+        "valueInteger": 34
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -651,7 +636,7 @@
         "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 36
+        "valueInteger": 35
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -666,7 +651,7 @@
         "valueString": "define function \"Measure Observation 1\"(MalnutritionRiskScreening Encounter):\n  if \"Encounters with Malnutrition Risk Screening or with Dietitian Referral\" contains MalnutritionRiskScreening then 1 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 37
+        "valueInteger": 36
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -681,7 +666,7 @@
         "valueString": "define function \"Measure Observation Total Malnutrition Components Score\"(QualifyingEncounter Encounter):\n  Sum({ \"Measure Observation 1\"(QualifyingEncounter), \"Measure Observation 2\"(QualifyingEncounter), \"Measure Observation 3\"(QualifyingEncounter), \"Measure Observation 4\"(QualifyingEncounter) })"
       }, {
         "url": "displaySequence",
-        "valueInteger": 38
+        "valueInteger": 37
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -696,7 +681,7 @@
         "valueString": "define function \"Measure Observation 1\"(MalnutritionRiskScreening Encounter):\n  if \"Encounters with Malnutrition Risk Screening or with Dietitian Referral\" contains MalnutritionRiskScreening then 1 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 39
+        "valueInteger": 38
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -711,7 +696,7 @@
         "valueString": "define function \"Measure Observation 2\"(NutritionAssessment Encounter):\n  if \"Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral\" contains NutritionAssessment then 0 \n    else if \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" contains NutritionAssessment then if \"Encounter With Most Recent Nutrition Assessment And Identified Status\" contains NutritionAssessment then 1 \n    else 0 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 40
+        "valueInteger": 39
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -726,7 +711,7 @@
         "valueString": "/*\n@description: Given an interval, returns the ending point if the interval has an ending boundary specified,\notherwise, returns the starting point\n*/\ndefine fluent function latest(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>> ):\n  (choice.toInterval()) period\n    return\n      if (period.\"hasEnd\"()) then end of period\n      else start of period"
       }, {
         "url": "displaySequence",
-        "valueInteger": 41
+        "valueInteger": 40
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -741,7 +726,7 @@
         "valueString": "/*\n@description: Given an interval, returns true if the interval has an ending boundary specified\n(i.e. the end of the interval is not null and not the maximum DateTime value)\n*/\ndefine fluent function hasEnd(period Interval<DateTime> ):\n  not (\n    end of period is null\n      or end of period = maximum DateTime\n  )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 42
+        "valueInteger": 41
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -753,10 +738,10 @@
         "valueString": "Last Nutrition Assessment Day During Encounter"
       }, {
         "url": "statement",
-        "valueString": "define function \"Last Nutrition Assessment Day During Encounter\"(QualifyingEncounter Encounter):\n  Max(\"Nutrition Assessment Performed\" NutritionAssessmentTuple\n      where NutritionAssessmentTuple.HospEncId = QualifyingEncounter.id\n      return NutritionAssessmentTuple.NutrAssessTimingLatest\n  )"
+        "valueString": "/*define function \"Last Nutrition Assessment Day During Encounter\"(QualifyingEncounter Encounter):\n  Max(\"Nutrition Assessment Performed\" NutritionAssessmentTuple\n    where NutritionAssessmentTuple.HospEncId = QualifyingEncounter.id\n    return NutritionAssessmentTuple.NutrAssessTimingLatest\n  )\n\ndefine \"Nutrition Assessment Performed\":\n    from\n    \"Measure Population\" QualifyingEncounter,\n    [\"ObservationScreeningAssessment\": \"Nutrition Assessment\"] NutritionAssessment\n        where NutritionAssessment.status in { 'final', 'amended', 'corrected' }\n            and NutritionAssessment.effective.toInterval ( ) during QualifyingEncounter.hospitalizationWithObservation ( )\n            and NutritionAssessment.value is not null\n            return Tuple {\n        HospEncId: QualifyingEncounter.id,\n        NutrAssessTimingLatest: NutritionAssessment.effective.latest()\n        }\n*/\n//Test definition per CODev feedback\n\n\n\ndefine function \"Last Nutrition Assessment Day During Encounter\"(QualifyingEncounter Encounter):\n  Max([\"ObservationScreeningAssessment\": \"Nutrition Assessment\"] NutritionAssessment\n      where NutritionAssessment.status in { 'final', 'amended', 'corrected' }\n        and NutritionAssessment.effective.toInterval() during QualifyingEncounter.hospitalizationWithObservation()\n        and NutritionAssessment.value is not null\n      return NutritionAssessment.effective.latest()\n  )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 43
+        "valueInteger": 42
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -771,7 +756,7 @@
         "valueString": "define function \"Measure Observation 3\"(MalnutritionDiagnosis Encounter):\n  if \"Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral\" contains MalnutritionDiagnosis then 0 \n    else if \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" contains MalnutritionDiagnosis then if \"Encounters with Malnutrition Diagnosis\" contains MalnutritionDiagnosis then if \"Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished\" contains MalnutritionDiagnosis then 0 \n    else if \"Encounter With Most Recent Nutrition Assessment Status of Moderately Or Severely Malnourished\" contains MalnutritionDiagnosis then 1 \n    else 0 \n    else 0 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 44
+        "valueInteger": 43
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -786,7 +771,7 @@
         "valueString": "/*\n@description: Returns an interval representing the normalized prevalence period of a given Condition.\n@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from\nonset to abatement as specified in the given Condition. If the condition is active, or has an abatement date the resulting \ninterval will have a closed ending boundary. Otherwise, the resulting interval will have an open ending boundary.\n*/\ndefine fluent function prevalenceInterval(condition Choice<\"ConditionEncounterDiagnosis\", \"ConditionProblemsHealthConcerns\">):\nif condition.clinicalStatus ~ \"active\"\n  or condition.clinicalStatus ~ \"recurrence\"\n  or condition.clinicalStatus ~ \"relapse\" then\n  Interval[start of condition.onset.toInterval(), end of condition.abatementInterval()]\nelse\n    (end of condition.abatementInterval()) abatementDate\n    return if abatementDate is null then\n      Interval[start of condition.onset.toInterval(), abatementDate)\n    else\n      Interval[start of condition.onset.toInterval(), abatementDate]"
       }, {
         "url": "displaySequence",
-        "valueInteger": 45
+        "valueInteger": 44
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -801,7 +786,7 @@
         "valueString": "/*\n@description: Returns an interval representing the normalized abatement of a given Condition.\n@comment: If the abatement element of the Condition is represented as a DateTime, the result\nis an interval beginning and ending on that DateTime.\nIf the abatement is represented as a Quantity, the quantity is expected to be a calendar-duration and is interpreted as the age of the patient. The\nresult is an interval from the date the patient turned that age to immediately before one year later.\nIf the abatement is represented as a Quantity Interval, the quantities are expected to be calendar-durations and are interpreted as an age range during\nwhich the abatement occurred. The result is an interval from the date the patient turned the starting age of the quantity interval, and ending immediately\nbefore one year later than the date the patient turned the ending age of the quantity interval.\n*/\ndefine fluent function abatementInterval(condition Choice<\"ConditionEncounterDiagnosis\", \"ConditionProblemsHealthConcerns\">):\n\tif condition.abatement is DateTime then\n\t  Interval[condition.abatement as DateTime, condition.abatement as DateTime]\n\telse if condition.abatement is Quantity then\n\t\tInterval[Patient.birthDate + (condition.abatement as Quantity),\n\t\t\tPatient.birthDate + (condition.abatement as Quantity) + 1 year)\n\telse if condition.abatement is Interval<Quantity> then\n\t  Interval[Patient.birthDate + (condition.abatement.low as Quantity),\n\t\t  Patient.birthDate + (condition.abatement.high as Quantity) + 1 year)\n\telse if condition.abatement is Interval<DateTime> then\n\t  Interval[condition.abatement.low, condition.abatement.high)\n\telse null as Interval<DateTime>"
       }, {
         "url": "displaySequence",
-        "valueInteger": 46
+        "valueInteger": 45
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -816,7 +801,7 @@
         "valueString": "define fluent function isVerified(condition Choice<QICore.ConditionProblemsHealthConcerns, QICore.ConditionEncounterDiagnosis>):\n  condition.verificationStatus is not null implies ( condition.verificationStatus ~ QICoreCommon.\"confirmed\"\n      or condition.verificationStatus ~ QICoreCommon.\"unconfirmed\"\n      or condition.verificationStatus ~ QICoreCommon.\"provisional\"\n      or condition.verificationStatus ~ QICoreCommon.\"differential\"\n  )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 47
+        "valueInteger": 46
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -831,7 +816,7 @@
         "valueString": "/*\n@description: Converts the given FHIR [CodeableConcept](https://hl7.org/fhir/datatypes.html#CodeableConcept) value to a CQL Concept.\n*/\ndefine function ToConcept(concept FHIR.CodeableConcept):\n    if concept is null then\n        null\n    else\n        System.Concept {\n            codes: concept.coding C return ToCode(C),\n            display: concept.text.value\n        }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 48
+        "valueInteger": 47
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -846,7 +831,7 @@
         "valueString": "//This library contains functions used to constrain FHIR resource elements for measures authored by NCQA, based on QICore 6.0.0 resources including IG and authoring patterns. The functions may appear similar to some QICoreCommon functions but differ in that they have constraints that are relevant for measures authored by NCQA.\n\n//Condition\n//Returns conditions in the given list that either have no verification status or have a verification status of confirmed, unconfirmed, provisional, or differential\ndefine fluent function verified(conditions List<Choice<ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis>>):\n  conditions C\n    where C.verificationStatus is not null implies\n      (C.verificationStatus ~ \"confirmed\"\n        or C.verificationStatus ~ \"unconfirmed\"\n        or C.verificationStatus ~ \"provisional\"\n        or C.verificationStatus ~ \"differential\"\n      )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 49
+        "valueInteger": 48
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -861,7 +846,7 @@
         "valueString": "/*  \n@description: Returns the Condition resources referenced by the diagnosis element of the Encounter  \n*/\ndefine fluent function encounterDiagnosis(Encounter Encounter ):\n  Encounter.reasonReference D\n    return singleton from (([ConditionEncounterDiagnosis] union [ConditionProblemsHealthConcerns]) C where D.references(C.id))"
       }, {
         "url": "displaySequence",
-        "valueInteger": 50
+        "valueInteger": 49
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -876,7 +861,7 @@
         "valueString": "/*\n@description: Returns true if the given reference is to the given resourceId\n@comment: Returns true if the `resourceId` parameter exactly equals the tail of the given reference.\nNOTE: This function assumes resources from the same source server.\n*/\ndefine fluent function references(reference Reference, resourceId String):\n  resourceId = Last(Split(reference.reference, '/'))"
       }, {
         "url": "displaySequence",
-        "valueInteger": 51
+        "valueInteger": 50
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -891,7 +876,7 @@
         "valueString": "define function \"Measure Observation 4\"(NutritionCarePlan Encounter):\n  if \"Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral\" contains NutritionCarePlan then 0 \n    else if \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" contains NutritionCarePlan then if \"Encounters with Nutrition Care Plan\" contains NutritionCarePlan then if \"Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished\" contains NutritionCarePlan then 0 \n    else if \"Encounter With Most Recent Nutrition Assessment Status of Moderately Or Severely Malnourished\" contains NutritionCarePlan then 1 \n    else 0 \n    else 0 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 52
+        "valueInteger": 51
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -906,7 +891,7 @@
         "valueString": "/*\n@description: Given an interval, return the starting point if the interval has a starting boundary specified,\notherwise, return the ending point\n*/\ndefine fluent function earliest(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>> ):\n  (choice.toInterval()) period\n    return\n      if (period.\"hasStart\"()) then start of period\n      else end of period"
       }, {
         "url": "displaySequence",
-        "valueInteger": 53
+        "valueInteger": 52
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -921,7 +906,7 @@
         "valueString": "/*\n@description: Given an interval, return true if the interval has a starting boundary specified\n(i.e. the start of the interval is not null and not the minimum DateTime value)\n*/\ndefine fluent function hasStart(period Interval<DateTime> ):\n  not ( start of period is null\n      or start of period = minimum DateTime\n  )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 54
+        "valueInteger": 53
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -936,7 +921,7 @@
         "valueString": "define function \"Measure Observation 3\"(MalnutritionDiagnosis Encounter):\n  if \"Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral\" contains MalnutritionDiagnosis then 0 \n    else if \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" contains MalnutritionDiagnosis then if \"Encounters with Malnutrition Diagnosis\" contains MalnutritionDiagnosis then if \"Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished\" contains MalnutritionDiagnosis then 0 \n    else if \"Encounter With Most Recent Nutrition Assessment Status of Moderately Or Severely Malnourished\" contains MalnutritionDiagnosis then 1 \n    else 0 \n    else 0 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 55
+        "valueInteger": 54
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -951,7 +936,7 @@
         "valueString": "define function \"Measure Observation 2\"(NutritionAssessment Encounter):\n  if \"Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral\" contains NutritionAssessment then 0 \n    else if \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" contains NutritionAssessment then if \"Encounter With Most Recent Nutrition Assessment And Identified Status\" contains NutritionAssessment then 1 \n    else 0 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 56
+        "valueInteger": 55
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -966,7 +951,7 @@
         "valueString": "define function \"Measure Observation 4\"(NutritionCarePlan Encounter):\n  if \"Encounters with Malnutrition Not At Risk Screening and without Dietitian Referral\" contains NutritionCarePlan then 0 \n    else if \"Encounters with Malnutrition Risk Screening At Risk or with Dietitian Referral\" contains NutritionCarePlan then if \"Encounters with Nutrition Care Plan\" contains NutritionCarePlan then if \"Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished\" contains NutritionCarePlan then 0 \n    else if \"Encounter With Most Recent Nutrition Assessment Status of Moderately Or Severely Malnourished\" contains NutritionCarePlan then 1 \n    else 0 \n    else 0 \n    else 0"
       }, {
         "url": "displaySequence",
-        "valueInteger": 57
+        "valueInteger": 56
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -981,7 +966,7 @@
         "valueString": "define function \"Measure Observation Total Malnutrition Care Score as Percentage\"(QualifyingEncounter Encounter):\n  100 * ( \"Measure Observation Total Malnutrition Components Score\"(QualifyingEncounter) / \"Total Malnutrition Care Score Eligible Occurrences\"(QualifyingEncounter) )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 58
+        "valueInteger": 57
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -996,7 +981,7 @@
         "valueString": "define function \"Measure Observation Total Malnutrition Components Score\"(QualifyingEncounter Encounter):\n  Sum({ \"Measure Observation 1\"(QualifyingEncounter), \"Measure Observation 2\"(QualifyingEncounter), \"Measure Observation 3\"(QualifyingEncounter), \"Measure Observation 4\"(QualifyingEncounter) })"
       }, {
         "url": "displaySequence",
-        "valueInteger": 59
+        "valueInteger": 58
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -1011,7 +996,7 @@
         "valueString": "define function \"Total Malnutrition Care Score Eligible Occurrences\"(QualifyingEncounter Encounter):\n  if \"Encounters with Malnutrition Risk Screening or with Dietitian Referral\" contains QualifyingEncounter\n    and \"Encounters with Malnutrition Risk Screening Not At Risk\" contains QualifyingEncounter\n    and not ( \"Encounters with Dietitian Referral\" contains QualifyingEncounter ) then 1 \n    else if ( \"Encounters with Malnutrition Risk Screening or with Dietitian Referral\" contains QualifyingEncounter\n      and \"Encounters with Malnutrition Risk Screening At Risk\" contains QualifyingEncounter\n      or \"Encounters with Dietitian Referral\" contains QualifyingEncounter\n  )\n    and \"Encounter With Most Recent Nutrition Assessment Status of Not or Mildly Malnourished\" contains QualifyingEncounter\n    or not ( \"Encounter With Most Recent Nutrition Assessment And Identified Status\" contains QualifyingEncounter ) then 2 \n    else 4"
       }, {
         "url": "displaySequence",
-        "valueInteger": 60
+        "valueInteger": 59
       } ]
     } ],
     "name": "EffectiveDataRequirements",
@@ -1212,9 +1197,140 @@
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
       } ]
     }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
       "type": "ServiceRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest" ],
-      "mustSupport": [ "code", "status", "status.value", "intent", "intent.value" ],
+      "mustSupport": [ "code", "status", "status.value", "intent", "intent.value", "authoredOn", "authoredOn.value" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.101"
@@ -1222,14 +1338,11 @@
     }, {
       "type": "Procedure",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure" ],
-      "mustSupport": [ "code", "status", "status.value" ],
+      "mustSupport": [ "code", "status", "status.value", "performed" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.101"
       } ]
-    }, {
-      "type": "Patient",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
@@ -1284,11 +1397,11 @@
     }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "url", "value.value" ]
+      "mustSupport": [ "extension" ]
     }, {
       "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "url", "value.value" ]
+      "mustSupport": [ "extension" ]
     }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment" ],
@@ -1324,7 +1437,7 @@
     }, {
       "type": "ServiceRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest" ],
-      "mustSupport": [ "code", "status", "status.value", "intent", "intent.value" ],
+      "mustSupport": [ "code", "status", "status.value", "intent", "intent.value", "authoredOn", "authoredOn.value" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.91"
@@ -1332,7 +1445,7 @@
     }, {
       "type": "Procedure",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure" ],
-      "mustSupport": [ "code", "status", "status.value" ],
+      "mustSupport": [ "code", "status", "status.value", "performed" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.91"
@@ -1354,14 +1467,6 @@
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.21"
       } ]
     }, {
-      "type": "Encounter",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value", "id", "id.value" ],
-      "codeFilter": [ {
-        "path": "type",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
-      } ]
-    }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment" ],
       "mustSupport": [ "code", "status", "status.value", "effective", "value" ],
@@ -1369,6 +1474,518 @@
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1095.21"
       } ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "birthDate.value" ]
     }, {
       "type": "Condition",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
@@ -1569,11 +2186,6 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
   } ],
   "url": "https://madie.cms.gov/Measure/CMS986FHIRMalnutritionScore",
   "identifier": [ {
@@ -1608,7 +2220,7 @@
       } ]
     },
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:dc5bae2c-8700-487a-b2a2-7cb56f7fa43d"
+    "value": "urn:uuid:c3828a9c-88b0-4a19-8b78-bb07f56ed929"
   }, {
     "use": "official",
     "type": {
@@ -1638,12 +2250,12 @@
       "display": "CMS"
     }
   } ],
-  "version": "1.0.000",
+  "version": "Draft based on 1.0.000",
   "name": "CMS986FHIRMalnutritionScore",
   "title": "Malnutrition Care ScoreFHIR\n",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
-  "date": "2025-09-07T21:23:15+00:00",
+  "date": "2026-01-07T14:45:49+00:00",
   "publisher": "Academy of Nutrition and Dietetics",
   "contact": [ {
     "telecom": [ {
@@ -1772,7 +2384,7 @@
       "id": "MeasureObservation_1",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
-        "valueString": "Sum"
+        "valueCode": "Sum"
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
         "valueString": "MeasurePopulation_1"
@@ -1870,7 +2482,7 @@
       "id": "MeasureObservation_2",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
-        "valueString": "Sum"
+        "valueCode": "Sum"
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
         "valueString": "MeasurePopulation_2"
@@ -1968,7 +2580,7 @@
       "id": "MeasureObservation_3",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
-        "valueString": "Sum"
+        "valueCode": "Sum"
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
         "valueString": "MeasurePopulation_3"
@@ -2066,7 +2678,7 @@
       "id": "MeasureObservation_4",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
-        "valueString": "Sum"
+        "valueCode": "Sum"
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
         "valueString": "MeasurePopulation_4"
@@ -2164,7 +2776,7 @@
       "id": "MeasureObservation_5",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
-        "valueString": "Count"
+        "valueCode": "Count"
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
         "valueString": "MeasurePopulation_5"
@@ -2262,7 +2874,7 @@
       "id": "MeasureObservation_6",
       "extension": [ {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-aggregateMethod",
-        "valueString": "Average"
+        "valueCode": "Average"
       }, {
         "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-criteriaReference",
         "valueString": "MeasurePopulation_6"

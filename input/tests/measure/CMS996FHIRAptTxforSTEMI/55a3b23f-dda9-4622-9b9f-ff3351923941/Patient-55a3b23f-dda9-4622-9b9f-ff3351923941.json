@@ -47,7 +47,7 @@
     "value": "6179ea77ad1a790b7af75252"
   } ],
   "name": [ {
-    "family": "DenExcl2Fail",
+    "family": "DENEXCL2FAIL",
     "given": [ "PxExclStartsBeforeEndsDuringED" ]
   } ],
   "gender": "female",

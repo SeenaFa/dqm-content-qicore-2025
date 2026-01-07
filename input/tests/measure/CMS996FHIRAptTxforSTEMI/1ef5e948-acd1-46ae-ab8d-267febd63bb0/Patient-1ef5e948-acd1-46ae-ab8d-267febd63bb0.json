@@ -47,8 +47,8 @@
     "value": "617bebf41619a529957d62be"
   } ],
   "name": [ {
-    "family": "DenExcl7Pass",
-    "given": [ "DxStartsBeforeandEndsDuring90DayPeriod" ]
+    "family": "DENEXCL7FAIL",
+    "given": [ "DXStartsBeforeEndsBefore24HourPeriod" ]
   } ],
   "gender": "female",
   "birthDate": "1985-12-02"

@@ -17,13 +17,6 @@
     }, {
       "url": "text",
       "valueString": "Asian"
-    }, {
-      "url": "detailed",
-      "valueCoding": {
-        "system": "urn:oid:2.16.840.1.113883.6.238",
-        "code": "1653-5",
-        "display": "Tohono O'Odham"
-      }
     } ]
   }, {
     "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
@@ -38,13 +31,6 @@
     }, {
       "url": "text",
       "valueString": "Not Hispanic or Latino"
-    }, {
-      "url": "detailed",
-      "valueCoding": {
-        "system": "urn:oid:2.16.840.1.113883.6.238",
-        "code": "2153-5",
-        "display": "Mexican American Indian"
-      }
     } ]
   }, {
     "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
@@ -61,8 +47,8 @@
     "value": "617b06d8513b5d1ee28b756d"
   } ],
   "name": [ {
-    "family": "IPPass",
-    "given": [ "EncDuringMP" ]
+    "family": "IPPASS",
+    "given": [ "EncDuringMPandRaceEthnicity" ]
   } ],
   "gender": "female",
   "birthDate": "1985-12-02"

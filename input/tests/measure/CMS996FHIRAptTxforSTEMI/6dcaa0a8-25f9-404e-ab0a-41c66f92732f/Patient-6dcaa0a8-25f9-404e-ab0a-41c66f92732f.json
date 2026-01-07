@@ -32,9 +32,6 @@
       "url": "text",
       "valueString": "Hispanic or Latino"
     } ]
-  }, {
-    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
-    "valueCode": "999999999"
   } ],
   "identifier": [ {
     "type": {
@@ -48,7 +45,7 @@
   } ],
   "name": [ {
     "family": "DENEXCL11PASS",
-    "given": [ "HospiceEncDiagnosisOverlapEDStart" ]
+    "given": [ "HospiceProbDiagnosisOverlapEDStart" ]
   } ],
   "gender": "unknown",
   "birthDate": "1986-09-15"

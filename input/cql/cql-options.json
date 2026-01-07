@@ -1,6 +1,7 @@
 {
    "options":[
       "EnableAnnotations",
+      "EnableResultTypes",
       "EnableLocators",
       "DisableListDemotion",
       "DisableListPromotion"
@@ -12,7 +13,7 @@
    "validateUnits":true,
    "verifyOnly":false,
    "errorLevel":"Info",
-   "signatureLevel":"Overloads",
+   "signatureLevel":"All",
    "analyzeDataRequirements":false,
    "collapseDataRequirements":false
 } 

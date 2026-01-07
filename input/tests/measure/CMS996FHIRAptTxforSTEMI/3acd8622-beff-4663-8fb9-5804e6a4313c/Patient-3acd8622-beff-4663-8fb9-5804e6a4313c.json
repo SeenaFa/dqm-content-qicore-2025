@@ -47,8 +47,8 @@
     "value": "617835c74bf8e25b8f204e27"
   } ],
   "name": [ {
-    "family": "NumFail",
-    "given": [ "Depart46minsfromEDstartMultLocation" ]
+    "family": "NUMFAIL",
+    "given": [ "Depart46MinsFromEDStartMultLocation" ]
   } ],
   "gender": "female",
   "birthDate": "1985-12-02"

@@ -48,7 +48,7 @@
   } ],
   "name": [ {
     "family": "DENEXCL11FAIL",
-    "given": [ "HospiceEncDiagnosisEndsBeforeED" ]
+    "given": [ "HospiceProbDiagnosisEndsBeforeED" ]
   } ],
   "gender": "male",
   "birthDate": "1988-10-15"

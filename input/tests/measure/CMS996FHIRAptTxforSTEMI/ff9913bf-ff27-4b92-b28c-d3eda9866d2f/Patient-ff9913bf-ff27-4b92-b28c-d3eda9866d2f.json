@@ -47,7 +47,7 @@
     "value": "6179e214e2011aa9929f330e"
   } ],
   "name": [ {
-    "family": "DenExcl1Fail",
+    "family": "DENEXCL1FAIL",
     "given": [ "DxExclStartsBeforeEndsDuringED" ]
   } ],
   "gender": "female",
