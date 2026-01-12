@@ -117,7 +117,7 @@ def load_measure_sections(dir_path: str) -> Generator['MeasureSection', None, No
     """
     for file_name in os.listdir(dir_path):
         # Skip hidden/system files like .DS_Store
-        if file_name.startswith('.'):
+        if file_name.startswith('.') or not file_name.endswith('.txt'):
             continue
         log(f' {file_name}')
         file_path = os.path.join(dir_path, file_name)
