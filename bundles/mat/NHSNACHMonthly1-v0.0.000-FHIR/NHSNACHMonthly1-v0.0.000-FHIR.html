@@ -1,0 +1,6208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffff;;
+            margin: 0px;
+            padding: 10px;
+            height: 100%;
+            font-size: 1em;
+        }
+
+        p, li {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        tr {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.colstu td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #fff5e6;
+        }
+
+        table.colsd td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #efefef;
+        }
+
+        table.colsn td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+
+        table.colse td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6e6e6;
+        }
+
+        table.colsi td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #ffffe6;
+        }
+
+        table.list td {
+            border-top: 1px silver solid;
+            border-spacing: 0;
+        }
+
+        table.bare td {
+            border-spacing: 0;
+        }
+
+        ul.dict li {
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+        }
+
+        table.dict td {
+            padding: 3px 7px 2px 7px;
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.dict p {
+            font-size: 11px;
+        }
+
+        table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        table.codes td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid {
+            margin-bottom: 10px;
+            border: 1px black solid;
+            margin-right: auto;
+
+        }
+
+        table.grid th {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding: 0 0 0 25px;
+        }
+
+        .dense li {
+            margin: 0 0 0 0;
+        }
+
+        li {
+            margin: 0 0 5px 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+            font-family: verdana;
+            border-bottom: 1px solid #7e7e7e;
+            padding-bottom: 2px;
+        }
+
+        h2 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            margin-top: 15px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 11px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        div.sidebar h2 {
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+            padding-top: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+        div.sidebar p {
+            padding-bottom: 0px;
+            padding-top: 10px;
+            font-weight: normal;
+            margin-left: 8px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        div.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            margin-left: 6px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        div.sidebar li {
+            margin: 0px 0px 0px 6px;
+            padding: 0px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        a {
+            color: #428bca;
+            text-decoration: none;
+        }
+
+        a.xmltag :visited {
+            color: Navy;
+        }
+
+        a.xmltag :hover {
+            color: Blue;
+        }
+
+        pre {
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        pre a {
+            color: darkgreen;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        /* PrismJS 1.21.0
+        https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=keep-markup */
+        /**
+         * prism.js default theme for JavaScript, CSS and HTML
+         * Based on dabblet (http://dabblet.com)
+         * @author Lea Verou
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        /*
+  ===============================
+  Liquid Narrative Styling Start
+  ===============================
+  */
+
+        .narrative-table {
+            border: 1pt inset rgb(0, 0, 0);
+            line-height: 10pt;
+            border-collapse: separate;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+        }
+
+
+        .narrative-table ul,
+        .content-container ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table ol,
+        .content-container ol {
+            list-style: decimal;
+            padding: 0 0 0 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table strong,
+        .content-container strong {
+            font-weight: 700;
+        }
+
+        .narrative-table>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        .narrative-table>tbody>tr {
+            display: table-row;
+            background-color: lightgray;
+            vertical-align: inherit;
+        }
+
+        .narrative-table>tbody>tr>th {
+            padding: 5px;
+        }
+
+        .section-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .row-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .tab-one {
+            padding-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .row-header {
+                min-width: 138px;
+                max-width: 138px;
+            }
+
+            .content-container {
+                max-width: 576px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row-header {
+                min-width: 181px;
+                max-width: 181px;
+            }
+
+            .content-container {
+                max-width: 745px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .row-header {
+                min-width: 213px;
+                max-width: 213px;
+            }
+
+            .content-container {
+                max-width: 873px;
+            }
+        }
+
+        /* Allow table with to be scrollable when too large */
+        .content-container {
+            max-width: fit-content;
+        }
+        /*
+        ===============================
+        Liquid Narrative Styling End
+        ===============================
+        */
+
+        /*
+        ===============================
+        Rich text editor styling
+        ===============================
+        */
+
+        table.rich-text-table th,td {
+            border: 1px solid #9c9c9c;
+            box-sizing: border-box;
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+        }
+        table.rich-text-table th {
+            background-color: #3d25140d;
+        }
+    </style>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml" class="col-12">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+
+<td class="content-container">NHSN Acute Care Hospital Monthly Initial Population 1</td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+
+<td class="content-container">Draft based on 0.0.000</td>
+
+
+</tr>
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Short Name</th>
+
+
+
+<td class="content-container">NHSNACHMonthly1</td>
+
+
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Independent)</th>
+
+
+
+<td class="content-container">urn:uuid:1a6d58a6-1063-421b-8231-b8700d8009c9</td>
+
+
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Specific)</th>
+
+
+
+<td class="content-container">urn:uuid:6156503c-1e85-4137-891c-1ee73c0c01d0</td>
+
+
+</tr>
+
+
+
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Effective Period</th>
+
+
+
+<td class="content-container">2025-01-01 through 2025-01-31</td>
+
+
+</tr>
+
+  
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Status</th>
+
+
+
+<td class="content-container">draft</td>
+
+
+</tr>
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Experimental</th>
+
+
+
+<td class="content-container">true</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+
+<td class="content-container">Centers for Disease Control and Prevention (CDC)</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Developer</th>
+
+
+
+<td class="content-container">Lantana Consulting Group</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+
+<td class="content-container"><p>Patients of all ages with inpatient (Inpt), emergency department (ED), observation (OBS), or short stay (SS) encounter type or with Inpt, ED, OBS, SS encounter class or with an Inpt, ED, OBS, SS location during the measurement period.</p></td>
+
+
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Copyright</th>
+
+
+
+<td class="content-container">UNKNOWN</td>
+
+
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Disclaimer</th>
+
+
+
+<td class="content-container">UNKNOWN</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Basis</th>
+
+
+
+<td class="content-container">Encounter</td>
+
+
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring</th>
+
+
+
+<td class="content-container">
+    Cohort
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+
+<td class="content-container">
+    Outcome
+
+
+</td>
+
+
+</tr>
+
+
+
+
+  
+  
+    
+    
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Initial Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: InitialPopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>All inpatient encounters, as well as ED and OBS encounters that end within 1 hour of the start of the inpatient encounter, for patients of all ages where at least one diabetes medication was ordered or administered during the encounter that is during the measurement period.</p></p>
+        
+        
+          
+            
+              
+              <em>Criteria</em>: <a href="#Group_1-InitialPopulation_1">Initial Population</a> 
+            
+          
+          
+        
+        
+        
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    
+    
+    
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance Guidance</th>
+
+
+
+<td class="content-container"><p>SDE</p></td>
+
+
+</tr>
+
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+
+</tr>
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-condition-problems-healthconcerns
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Condition Problems HealthConcerns
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-condition-problems-healthconcerns">SDE Condition Problems HealthConcerns</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-condition-diagnosis
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Condition Diagnosis
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-condition-diagnosis">SDE Condition Diagnosis</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-coverage
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Coverage
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-coverage">SDE Coverage</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-device
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Device
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-device">SDE Device</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-diagnosticreport-lab
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE DiagnosticReport Lab
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-diagnosticreport-lab">SDE DiagnosticReport Lab</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-diagnosticreport-note
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE DiagnosticReport Note
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-diagnosticreport-note">SDE DiagnosticReport Note</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-diagnosticreport-others
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE DiagnosticReport Others
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-diagnosticreport-others">SDE DiagnosticReport Others</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-encounter
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Encounter
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-encounter">SDE Encounter</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ip-encounters
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE IP Encounters
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-ip-encounters">SDE IP Encounters</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-location
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Location
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-location">SDE Location</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-administration
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Administration
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-administration">SDE Medication Administration</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-administration-base
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Administration Base
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-administration-base">SDE Medication Administration Base</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-administration-not-done
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Administration Not Done
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-administration-not-done">SDE Medication Administration Not Done</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-request-base
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Request Base
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-request-base">SDE Medication Request Base</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-not-requested
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Not Requested
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-not-requested">SDE Medication Not Requested</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-request
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Request
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-request">SDE Medication Request</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication">SDE Medication</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-lab-category
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Lab Category
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-lab-category">SDE Observation Lab Category</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-simple
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Simple
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-simple">SDE Observation Simple</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-survey
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Survey
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-survey">SDE Observation Survey</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-observation-vital-signs-category
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Observation Vital Signs Category
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-vital-signs-category">SDE Observation Vital Signs Category</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-procedure
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Procedure
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-procedure">SDE Procedure</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-service-request-base
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Service Request Base
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-service-request-base">SDE Service Request Base</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-service-not-requested
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Service Not Requested
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-service-not-requested">SDE Service Not Requested</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-service-request
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Service Request
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-service-request">SDE Service Request</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-minimal-patient
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Minimal Patient
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-minimal-patient">SDE Minimal Patient</a> 
+        
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-specimens
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Specimens
+    
+    
+      
+        <br/>
+        
+          
+          <em>Logic Definition</em>: <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-sde-specimens">SDE Specimens</a> 
+        
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+
+<td class="content-container">https://madie.cms.gov/Library/NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+
+</tr>
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Contents</th>
+  <td class="content-container">
+    <em><a href="#population-criteria">Population Criteria</a></em>
+    <br/>
+    <em><a href="#definitions">Logic Definitions</a></em>
+    <br/>
+    <em><a href="#terminology">Terminology</a></em>
+    <br/>
+    <em><a href="#dependencies">Dependencies</a></em>
+    <br/>
+    <em><a href="#data-requirements">Data Requirements</a></em>
+    <br/>
+    <em><a href="#parameters">Parameters</a></em>
+    <br/>
+  </td>
+</tr>
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="population-criteria"> </a>Population Criteria</th>
+
+
+</tr>
+  
+  
+  
+
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+    Initial Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      
+      <a name="Group_1-InitialPopulation_1"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  &quot;Qualifying Encounters During Measurement Period&quot;
+    union &quot;Encounters with Patient Hospital Locations&quot;</code></pre>
+    
+      
+      <a href="#nhsnacutecarehospitalmonthlyinitialpopulation1-initial-population"><em>Definition</em></a>
+    
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="definitions"> </a>Logic Definitions</th>
+
+
+</tr>
+  
+  
+          
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CQMCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="cqmcommon-getlocation"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns the Location resource specified by the given reference.
+*/
+define fluent function getLocation(reference Reference):
+  singleton from (
+    [Location] L where reference.references(L)
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
+value to a CQL DateTime Interval
+@comment: If the start value of the given period is unspecified, the starting
+boundary of the resulting interval will be open (meaning the start of the interval
+is unknown, as opposed to interpreted as the beginning of time).
+*/
+define function ToInterval(period FHIR.Period):
+    if period is null then
+        null
+    else
+        if period.&quot;start&quot; is null then
+            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]
+        else
+            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-toconcept"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [CodeableConcept](https://hl7.org/fhir/datatypes.html#CodeableConcept) value to a CQL Concept.
+*/
+define function ToConcept(concept FHIR.CodeableConcept):
+    if concept is null then
+        null
+    else
+        System.Concept {
+            codes: concept.coding C return ToCode(C),
+            display: concept.text.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-tocode"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
+*/
+define function ToCode(coding FHIR.Coding):
+    if coding is null then
+        null
+    else
+        System.Code {
+          code: coding.code.value,
+          system: coding.system.value,
+          version: coding.version.value,
+          display: coding.display.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="fhirhelpers-tostring"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-encounters-with-nhsn-inpatient-class"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// ----------------------------------------------------------------------
+// Core encounter logic
+// ----------------------------------------------------------------------
+
+// Encounters with NHSN class codes (IMP, ACUTE, NONAC, SS)
+
+
+
+
+
+define &quot;Encounters with NHSN Inpatient Class&quot;:
+  [Encounter] Enc
+    where Enc.class ~ QICoreCommon.&quot;inpatient encounter&quot;
+      or Enc.class ~ QICoreCommon.&quot;inpatient acute&quot;
+      or Enc.class ~ QICoreCommon.&quot;inpatient non-acute&quot;
+      or Enc.class ~ QICoreCommon.&quot;short stay&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-qualifying-encounters-during-measurement-period"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Qualifying Encounters During Measurement Period&quot;:
+  ( [Encounter: &quot;Encounter Inpatient&quot;]
+    union [Encounter: &quot;Emergency Department Visit&quot;]
+    union [Encounter: &quot;Observation Services&quot;]
+    union &quot;Encounters with NHSN Inpatient Class&quot;
+    union [Encounter: class ~ &quot;emergency&quot;]
+    union [Encounter: class ~ &quot;observation encounter&quot;] ) QualifyingEncounters
+    where QualifyingEncounters.status in { 'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error' }
+      and QualifyingEncounters.period overlaps &quot;Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-encounters"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters&quot;:
+  [Encounter]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-encounters-with-patient-hospital-locations"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Patient Hospital Locations&quot;:
+  &quot;Encounters&quot; Ens
+    where exists ( Ens.location EncounterLocation
+        where EncounterLocation.period overlaps Ens.period
+          and EncounterLocation.location.getLocation ( ).type in &quot;Inpatient, Emergency, and Observation Locations&quot;
+    )
+      and Ens.status in { 'in-progress', 'finished', 'triaged', 'onleave', 'entered-in-error' }
+      and Ens.period overlaps &quot;Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-initial-population"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  &quot;Qualifying Encounters During Measurement Period&quot;
+    union &quot;Encounters with Patient Hospital Locations&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-coverage"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Coverage SDE – tuples of Coverage data
+
+
+define &quot;SDE Coverage&quot;:
+  [Coverage] Coverages
+    where exists ( &quot;Initial Population&quot; IP
+        where Coverages.period overlaps IP.period
+    )
+    return {
+      id: Coverages.id,
+      meta: Coverages.meta,
+      status: Coverages.status,
+      type: Coverages.type,
+      policyHolder: Coverages.policyHolder,
+      subscriber: Coverages.subscriber,
+      subscriberId: Coverages.subscriberId,
+      beneficiary: Coverages.beneficiary,
+      dependent: Coverages.dependent,
+      relationship: Coverages.relationship,
+      period: Coverages.period,
+      payor: Coverages.payor,
+      class: Coverages.class,
+      order: Coverages.order,
+      network: Coverages.network,
+      subrogation: Coverages.subrogation,
+      contract: Coverages.contract
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-encounter"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Encounter SDEs
+
+
+define &quot;SDE Encounter&quot;:
+  &quot;Encounters&quot; Ens
+    where not &quot;CheckIP&quot;(Ens)
+      and exists ( &quot;Initial Population&quot; IP
+          where Ens.period overlaps IP.period
+      )
+    return {
+      id: Ens.id,
+      meta: Ens.meta,
+      identifier: Ens.identifier,
+      status: Ens.status,
+      statusHistory: Ens.statusHistory,
+      class: Ens.class,
+      classHistory: Ens.classHistory,
+      type: Ens.type,
+      serviceType: Ens.serviceType,
+      priority: Ens.priority,
+      subject: Ens.subject,
+      period: Ens.period,
+      length: Ens.length,
+      reasonCode: Ens.reasonCode,
+      reasonReference: Ens.reasonReference,
+      diagnosis: Ens.diagnosis,
+      account: Ens.account,
+      hospitalization: Ens.hospitalization,
+      location: Ens.location,
+      partOf: Ens.partOf
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-procedure"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Procedure SDE
+
+
+define &quot;SDE Procedure&quot;:
+  [Procedure] Procedures
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(Procedures.performed) overlaps IP.period
+    )
+    return {
+      id: Procedures.id,
+      meta: Procedures.meta,
+      extension: Procedures.extension,
+      basedOn: Procedures.basedOn,
+      partOf: Procedures.partOf,
+      status: Procedures.status,
+      category: Procedures.category,
+      code: Procedures.code,
+      subject: Procedures.subject,
+      encounter: Procedures.encounter,
+      performed: Procedures.performed,
+      location: Procedures.location,
+      reasonCode: Procedures.reasonCode,
+      reasonReference: Procedures.reasonReference,
+      bodySite: Procedures.bodySite
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-device"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Device SDE – tuples of Device data
+
+
+define &quot;SDE Device&quot;:
+  [Device] Devices
+    where exists ( &quot;Initial Population&quot; )
+    return {
+      id: Devices.id,
+      meta: Devices.meta,
+      extension: Devices.extension,
+      status: Devices.status,
+      expirationDate: Devices.expirationDate,
+      lotNumber: Devices.lotNumber,
+      serialNumber: Devices.serialNumber,
+      modelNumber: Devices.modelNumber,
+      partNumber: Devices.partNumber,
+      type: Devices.type,
+      patient: Devices.patient,
+      parent: Devices.parent
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-vital-signs-category"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Observation Vital Signs Category&quot;:
+  [USCoreVitalSignsProfile] Obs
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(Obs.effective) overlaps IP.period
+    )
+    return {
+      id: Obs.id,
+      meta: Obs.meta,
+      extension: Obs.extension,
+      partOf: Obs.partOf,
+      status: Obs.status,
+      category: Obs.category,
+      code: Obs.code,
+      subject: Obs.subject,
+      encounter: Obs.encounter,
+      effective: Obs.effective,
+      issued: Obs.issued,
+      value: Obs.value,
+      dataAbsentReason: Obs.dataAbsentReason,
+      interpretation: Obs.interpretation,
+      bodySite: Obs.bodySite,
+      method: Obs.method,
+      specimen: Obs.specimen,
+      referenceRange: Obs.referenceRange,
+      hasMember: Obs.hasMember,
+      derivedFrom: Obs.derivedFrom,
+      component: Obs.component
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-diagnosticreport-others"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE DiagnosticReport Others&quot;:
+  [DiagnosticReportNote] dr
+    where not ( exists ( dr.category Category
+          where Category ~ &quot;Radiology&quot;
+      )
+        or exists ( dr.category Category
+            where Category ~ &quot;Pathology&quot;
+        )
+        or exists ( dr.category Category
+            where Category ~ &quot;Cardiology&quot;
+        )
+    )
+      and exists ( &quot;Initial Population&quot; IP
+          where &quot;Normalize Interval&quot;(dr.effective) overlaps IP.period
+      )
+    return {
+      id: dr.id,
+      meta: dr.meta,
+      extension: dr.extension,
+      basedOn: dr.basedOn,
+      status: dr.status,
+      category: dr.category,
+      code: dr.code,
+      subject: dr.subject,
+      encounter: dr.encounter,
+      effective: dr.effective,
+      issued: dr.issued,
+      specimen: dr.specimen,
+      result: dr.result,
+      conclusion: dr.conclusion,
+      conclusionCode: dr.conclusionCode
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-specimens"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Specimens&quot;:
+  [USCoreSpecimenProfile] sp
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(sp.collection.collected) overlaps IP.period
+    )
+    return {
+      id: sp.id,
+      type: sp.type
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-administration-not-done"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication Administration Not Done&quot;:
+  [MedicationAdministrationNotDone] MedAdministrations
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(MedAdministrations.effective) overlaps IP.period
+    )
+    return {
+      id: MedAdministrations.id,
+      meta: MedAdministrations.meta,
+      instantiates: MedAdministrations.instantiates,
+      partOf: MedAdministrations.partOf,
+      status: MedAdministrations.status,
+      statusReason: MedAdministrations.statusReason,
+      category: MedAdministrations.category,
+      medication: MedAdministrations.medication,
+      subject: MedAdministrations.subject,
+      context: MedAdministrations.context,
+      supportingInformation: MedAdministrations.supportingInformation,
+      effective: MedAdministrations.effective,
+      performer: MedAdministrations.performer,
+      reasonCode: MedAdministrations.reasonCode,
+      reasonReference: MedAdministrations.reasonReference,
+      request: MedAdministrations.request,
+      device: MedAdministrations.device,
+      note: MedAdministrations.note,
+      dosage: MedAdministrations.dosage
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-not-requested"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// SDE Medication Not Requested - negation requests (doNotPerform is true)
+
+
+define &quot;SDE Medication Not Requested&quot;:
+  [MedicationNotRequested] MedNotRequests
+    where exists ( &quot;Initial Population&quot; IP
+        where MedNotRequests.authoredOn during IP.period
+    )
+    return {
+      id: MedNotRequests.id,
+      meta: MedNotRequests.meta,
+      status: MedNotRequests.status,
+      statusReason: MedNotRequests.statusReason,
+      intent: MedNotRequests.intent,
+      category: MedNotRequests.category,
+      priority: MedNotRequests.priority,
+      doNotPerform: MedNotRequests.doNotPerform,
+      reported: MedNotRequests.reported,
+      medication: MedNotRequests.medication,
+      subject: MedNotRequests.subject,
+      encounter: MedNotRequests.encounter,
+      authoredOn: MedNotRequests.authoredOn,
+      requester: MedNotRequests.requester,
+      recorder: MedNotRequests.recorder,
+      reasonCode: MedNotRequests.reasonCode,
+      reasonReference: MedNotRequests.reasonReference,
+      instantiatesCanonical: MedNotRequests.instantiatesCanonical,
+      instantiatesUri: MedNotRequests.instantiatesUri,
+      courseOfTherapyType: MedNotRequests.courseOfTherapyType,
+      dosageInstruction: MedNotRequests.dosageInstruction
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-service-request-base"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// ServiceRequest SDE - regular requests (doNotPerform is false or absent)
+
+
+define &quot;SDE Service Request Base&quot;:
+  [ServiceRequest] ServiceRequests
+    where exists ( &quot;Initial Population&quot; IP
+        where ServiceRequests.authoredOn during IP.period
+    )
+    return {
+      id: ServiceRequests.id,
+      meta: ServiceRequests.meta,
+      instantiatesCanonical: ServiceRequests.instantiatesCanonical,
+      instantiatesUri: ServiceRequests.instantiatesUri,
+      basedOn: ServiceRequests.basedOn,
+      replaces: ServiceRequests.replaces,
+      requisition: ServiceRequests.requisition,
+      status: ServiceRequests.status,
+      intent: ServiceRequests.intent,
+      category: ServiceRequests.category,
+      priority: ServiceRequests.priority,
+      //doNotPerform: ServiceRequests.doNotPerform,
+      
+      code: ServiceRequests.code,
+      orderDetail: ServiceRequests.orderDetail,
+      quantity: ServiceRequests.quantity,
+      subject: ServiceRequests.subject,
+      encounter: ServiceRequests.encounter,
+      occurrence: ServiceRequests.occurrence,
+      asNeeded: ServiceRequests.asNeeded,
+      authoredOn: ServiceRequests.authoredOn,
+      requester: ServiceRequests.requester,
+      performerType: ServiceRequests.performerType,
+      performer: ServiceRequests.performer,
+      locationCode: ServiceRequests.locationCode,
+      reasonCode: ServiceRequests.reasonCode,
+      reasonReference: ServiceRequests.reasonReference,
+      insurance: ServiceRequests.insurance,
+      bodySite: ServiceRequests.bodySite,
+      note: ServiceRequests.note,
+      patientInstruction: ServiceRequests.patientInstruction
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-service-not-requested"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// ServiceNotRequested SDE - negation requests (doNotPerform is true)
+
+
+define &quot;SDE Service Not Requested&quot;:
+  [ServiceNotRequested] ServiceNotReqs
+    where exists ( &quot;Initial Population&quot; IP
+        where ServiceNotReqs.authoredOn during IP.period
+    )
+    return {
+      id: ServiceNotReqs.id,
+      meta: ServiceNotReqs.meta,
+      instantiatesCanonical: ServiceNotReqs.instantiatesCanonical,
+      instantiatesUri: ServiceNotReqs.instantiatesUri,
+      basedOn: ServiceNotReqs.basedOn,
+      replaces: ServiceNotReqs.replaces,
+      requisition: ServiceNotReqs.requisition,
+      status: ServiceNotReqs.status,
+      intent: ServiceNotReqs.intent,
+      category: ServiceNotReqs.category,
+      priority: ServiceNotReqs.priority,
+      doNotPerform: ServiceNotReqs.doNotPerform,
+      code: ServiceNotReqs.code,
+      orderDetail: ServiceNotReqs.orderDetail,
+      quantity: ServiceNotReqs.quantity,
+      subject: ServiceNotReqs.subject,
+      encounter: ServiceNotReqs.encounter,
+      occurrence: ServiceNotReqs.occurrence,
+      asNeeded: ServiceNotReqs.asNeeded,
+      authoredOn: ServiceNotReqs.authoredOn,
+      requester: ServiceNotReqs.requester,
+      performerType: ServiceNotReqs.performerType,
+      performer: ServiceNotReqs.performer,
+      locationCode: ServiceNotReqs.locationCode,
+      reasonCode: ServiceNotReqs.reasonCode,
+      reasonReference: ServiceNotReqs.reasonReference,
+      insurance: ServiceNotReqs.insurance,
+      bodySite: ServiceNotReqs.bodySite,
+      note: ServiceNotReqs.note,
+      patientInstruction: ServiceNotReqs.patientInstruction
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-service-request"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Combined SDE for all Service Requests (both regular and negation)
+
+
+define &quot;SDE Service Request&quot;:
+  &quot;SDE Service Request Base&quot;
+    union &quot;SDE Service Not Requested&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-survey"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Survey is fixed category code in ObservationScreeningAssessment profile in QI-Core    
+
+
+define &quot;SDE Observation Survey&quot;:
+  [ObservationScreeningAssessment] Obs
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(Obs.effective) overlaps IP.period
+    )
+    return {
+      id: Obs.id,
+      meta: Obs.meta,
+      extension: Obs.extension,
+      partOf: Obs.partOf,
+      status: Obs.status,
+      category: Obs.category,
+      code: Obs.code,
+      subject: Obs.subject,
+      encounter: Obs.encounter,
+      effective: Obs.effective,
+      issued: Obs.issued,
+      value: Obs.value,
+      dataAbsentReason: Obs.dataAbsentReason,
+      interpretation: Obs.interpretation,
+      bodySite: Obs.bodySite,
+      method: Obs.method,
+      specimen: Obs.specimen,
+      referenceRange: Obs.referenceRange,
+      hasMember: Obs.hasMember,
+      derivedFrom: Obs.derivedFrom,
+      component: Obs.component
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-minimal-patient"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Minimal patient SDE
+
+
+define &quot;SDE Minimal Patient&quot;:
+  [Patient] MinPt
+    where exists ( &quot;Initial Population&quot; )
+    return {
+      id: MinPt.id,
+      meta: MinPt.meta,
+      extension: MinPt.extension,
+      identifier: MinPt.identifier,
+      active: MinPt.active,
+      name: MinPt.name,
+      telecom: MinPt.telecom,
+      gender: MinPt.gender,
+      birthDate: MinPt.birthDate,
+      deceased: MinPt.deceased,
+      address: MinPt.address,
+      maritalStatus: MinPt.maritalStatus,
+      multipleBirth: MinPt.multipleBirth,
+      photo: MinPt.photo,
+      contact: MinPt.contact,
+      communication: MinPt.communication,
+      generalPractitioner: MinPt.generalPractitioner,
+      managingOrganization: MinPt.managingOrganization,
+      link: MinPt.link
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication&quot;:
+  ( [MedicationRequest]
+    union [MedicationAdministration] ) MedReqOrAdmin
+    let medication: GetMedication(MedReqOrAdmin.medication as Reference)
+    where medication is not null
+      and exists ( &quot;Initial Population&quot; IP
+          where Coalesce(&quot;Normalize Interval&quot;(MedReqOrAdmin.effective), MedReqOrAdmin.authoredOn.toInterval()) overlaps IP.period
+      )
+    return {
+      id: medication.id,
+      meta: medication.meta,
+      code: medication.code,
+      status: medication.status,
+      manufacturer: medication.manufacturer,
+      form: medication.form,
+      amount: medication.amount,
+      ingredient: medication.ingredient,
+      batch: medication.batch
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-request-base"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// SDE Medication Request - regular requests (doNotPerform is false or absent)
+
+
+define &quot;SDE Medication Request Base&quot;:
+  [MedicationRequest] MedRequests
+    where exists ( &quot;Initial Population&quot; IP
+        where MedRequests.authoredOn during IP.period
+    )
+    return {
+      id: MedRequests.id,
+      meta: MedRequests.meta,
+      status: MedRequests.status,
+      statusReason: MedRequests.statusReason,
+      intent: MedRequests.intent,
+      category: MedRequests.category,
+      priority: MedRequests.priority,
+      //doNotPerform: MedRequests.doNotPerform,
+      
+      reported: MedRequests.reported,
+      medication: MedRequests.medication,
+      subject: MedRequests.subject,
+      encounter: MedRequests.encounter,
+      authoredOn: MedRequests.authoredOn,
+      requester: MedRequests.requester,
+      recorder: MedRequests.recorder,
+      reasonCode: MedRequests.reasonCode,
+      reasonReference: MedRequests.reasonReference,
+      instantiatesCanonical: MedRequests.instantiatesCanonical,
+      instantiatesUri: MedRequests.instantiatesUri,
+      courseOfTherapyType: MedRequests.courseOfTherapyType,
+      dosageInstruction: MedRequests.dosageInstruction
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-request"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Combined SDE for all Medication Requests (both regular and negation)
+
+
+define &quot;SDE Medication Request&quot;:
+  &quot;SDE Medication Request Base&quot;
+    union &quot;SDE Medication Not Requested&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-ip-encounters"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE IP Encounters&quot;:
+  &quot;Initial Population&quot; IP
+    return {
+      id: IP.id,
+      meta: IP.meta,
+      identifier: IP.identifier,
+      status: IP.status,
+      statusHistory: IP.statusHistory,
+      class: IP.class,
+      classHistory: IP.classHistory,
+      type: IP.type,
+      serviceType: IP.serviceType,
+      priority: IP.priority,
+      subject: IP.subject,
+      period: IP.period,
+      length: IP.length,
+      reasonCode: IP.reasonCode,
+      reasonReference: IP.reasonReference,
+      diagnosis: IP.diagnosis,
+      account: IP.account,
+      hospitalization: IP.hospitalization,
+      location: IP.location,
+      partOf: IP.partOf
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-simple"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Observation Simple&quot;:
+  [SimpleObservation] Obs
+    where ( exists ( Obs.category Category
+          where Category ~ &quot;social-history&quot;
+      )
+        or exists ( Obs.category Category
+            where Category ~ &quot;imaging&quot;
+        )
+        or exists ( Obs.category Category
+            where Category ~ &quot;procedure&quot;
+        )
+    )
+      and exists ( &quot;Initial Population&quot; IP
+          where &quot;Normalize Interval&quot;(Obs.effective) overlaps IP.period
+      )
+    return {
+      id: Obs.id,
+      meta: Obs.meta,
+      extension: Obs.extension,
+      partOf: Obs.partOf,
+      status: Obs.status,
+      category: Obs.category,
+      code: Obs.code,
+      subject: Obs.subject,
+      encounter: Obs.encounter,
+      effective: Obs.effective,
+      issued: Obs.issued,
+      value: Obs.value,
+      dataAbsentReason: Obs.dataAbsentReason,
+      interpretation: Obs.interpretation,
+      bodySite: Obs.bodySite,
+      method: Obs.method,
+      specimen: Obs.specimen,
+      referenceRange: Obs.referenceRange,
+      hasMember: Obs.hasMember,
+      derivedFrom: Obs.derivedFrom,
+      component: Obs.component
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-observation-lab-category"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Observation SDEs
+
+
+define &quot;SDE Observation Lab Category&quot;:
+  [LaboratoryResultObservation] Obs
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(Obs.effective) overlaps IP.period
+    )
+    return {
+      id: Obs.id,
+      meta: Obs.meta,
+      extension: Obs.extension,
+      partOf: Obs.partOf,
+      status: Obs.status,
+      category: Obs.category,
+      code: Obs.code,
+      subject: Obs.subject,
+      encounter: Obs.encounter,
+      effective: Obs.effective,
+      issued: Obs.issued,
+      value: Obs.value,
+      dataAbsentReason: Obs.dataAbsentReason,
+      interpretation: Obs.interpretation,
+      bodySite: Obs.bodySite,
+      method: Obs.method,
+      specimen: Obs.specimen,
+      referenceRange: Obs.referenceRange,
+      hasMember: Obs.hasMember,
+      derivedFrom: Obs.derivedFrom,
+      component: Obs.component
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-administration-base"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication Administration Base&quot;:
+  [MedicationAdministration] MedAdministrations
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(MedAdministrations.effective) overlaps IP.period
+    )
+    return {
+      id: MedAdministrations.id,
+      meta: MedAdministrations.meta,
+      instantiates: MedAdministrations.instantiates,
+      partOf: MedAdministrations.partOf,
+      status: MedAdministrations.status,
+      statusReason: MedAdministrations.statusReason,
+      category: MedAdministrations.category,
+      medication: MedAdministrations.medication,
+      subject: MedAdministrations.subject,
+      context: MedAdministrations.context,
+      supportingInformation: MedAdministrations.supportingInformation,
+      effective: MedAdministrations.effective,
+      performer: MedAdministrations.performer,
+      reasonCode: MedAdministrations.reasonCode,
+      reasonReference: MedAdministrations.reasonReference,
+      request: MedAdministrations.request,
+      device: MedAdministrations.device,
+      note: MedAdministrations.note,
+      dosage: MedAdministrations.dosage
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-medication-administration"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Medication SDEs
+
+
+define &quot;SDE Medication Administration&quot;:
+  &quot;SDE Medication Administration Base&quot;
+    union &quot;SDE Medication Administration Not Done&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-diagnosticreport-lab"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// DiagnosticReport SDEs
+
+
+define &quot;SDE DiagnosticReport Lab&quot;:
+  [DiagnosticReportLab] dr
+    where exists ( &quot;Initial Population&quot; IP
+        where &quot;Normalize Interval&quot;(dr.effective) overlaps IP.period
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-get-locations-from-ip-encounters-in-measurement-period"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// ----------------------------------------------------------------------
+// Core retrieves
+// ----------------------------------------------------------------------
+
+// Locations from IP encounters
+
+
+
+
+
+define &quot;Get Locations from IP Encounters in Measurement Period&quot;:
+  flatten ( &quot;Initial Population&quot; IP
+      let locationElements: IP.location
+      return locationElements LE
+        let locationReference: LE.location
+        return locationReference.getLocation ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-location"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Location SDE
+
+
+define &quot;SDE Location&quot;:
+  &quot;Get Locations from IP Encounters in Measurement Period&quot; Locations
+    where exists ( &quot;Initial Population&quot; )
+      and Locations is not null
+    return {
+      id: Locations.id,
+      meta: Locations.meta,
+      extension: Locations.extension,
+      status: Locations.status,
+      operationalStatus: Locations.operationalStatus,
+      name: Locations.name,
+      alias: Locations.alias,
+      description: Locations.description,
+      mode: Locations.mode,
+      type: Locations.type,
+      telecom: Locations.telecom,
+      address: Locations.address,
+      physicalType: Locations.physicalType,
+      position: Locations.position,
+      managingOrganization: Locations.managingOrganization,
+      partOf: Locations.partOf,
+      hoursOfOperation: Locations.hoursOfOperation,
+      availabilityExceptions: Locations.availabilityExceptions,
+      endpoint: Locations.endpoint
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-diagnosticreport-note"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE DiagnosticReport Note&quot;:
+  [DiagnosticReportNote] dr
+    where ( exists ( dr.category Category
+          where Category ~ &quot;Radiology&quot;
+      )
+        or exists ( dr.category Category
+            where Category ~ &quot;Pathology&quot;
+        )
+        or exists ( dr.category Category
+            where Category ~ &quot;Cardiology&quot;
+        )
+    )
+      and exists ( &quot;Initial Population&quot; IP
+          where &quot;Normalize Interval&quot;(dr.effective) overlaps IP.period
+      )
+    return {
+      id: dr.id,
+      meta: dr.meta,
+      extension: dr.extension,
+      basedOn: dr.basedOn,
+      status: dr.status,
+      category: dr.category,
+      code: dr.code,
+      subject: dr.subject,
+      encounter: dr.encounter,
+      effective: dr.effective,
+      issued: dr.issued,
+      specimen: dr.specimen,
+      result: dr.result,
+      conclusion: dr.conclusion,
+      conclusionCode: dr.conclusionCode
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-condition-problems-healthconcerns"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// ----------------------------------------------------------------------
+// SDEs
+// ----------------------------------------------------------------------
+
+
+
+
+define &quot;SDE Condition Problems HealthConcerns&quot;:
+  [ConditionProblemsHealthConcerns] Diagnosis
+    where exists ( &quot;Initial Population&quot; IP
+        where Diagnosis.prevalenceInterval ( ) overlaps day of IP.period
+    )
+    return {
+      id: Diagnosis.id,
+      meta: Diagnosis.meta,
+      status: Diagnosis.clinicalStatus,
+      verificationStatus: Diagnosis.verificationStatus,
+      category: Diagnosis.category,
+      severity: Diagnosis.severity,
+      code: Diagnosis.code,
+      bodySite: Diagnosis.bodySite,
+      subject: Diagnosis.subject,
+      encounterReferenceId: Diagnosis.encounter.reference.getId ( ),
+      onset: Diagnosis.onset,
+      stage: Diagnosis.stage,
+      evidence: Diagnosis.evidence,
+      note: Diagnosis.note
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-sde-condition-diagnosis"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Condition Diagnosis&quot;:
+  [ConditionEncounterDiagnosis] Diagnosis
+    where exists ( &quot;Initial Population&quot; IP
+        where Diagnosis.prevalenceInterval ( ) overlaps day of IP.period
+    )
+    return {
+      id: Diagnosis.id,
+      meta: Diagnosis.meta,
+      status: Diagnosis.clinicalStatus,
+      verificationStatus: Diagnosis.verificationStatus,
+      category: Diagnosis.category,
+      severity: Diagnosis.severity,
+      code: Diagnosis.code,
+      bodySite: Diagnosis.bodySite,
+      subject: Diagnosis.subject,
+      encounterReferenceId: Diagnosis.encounter.reference.getId ( ),
+      onset: Diagnosis.onset,
+      stage: Diagnosis.stage,
+      evidence: Diagnosis.evidence,
+      note: Diagnosis.note
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-checkip"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// ----------------------------------------------------------------------
+// Helper functions
+// ----------------------------------------------------------------------
+
+
+
+
+define function &quot;CheckIP&quot;(encounter Encounter):
+  exists ( &quot;Initial Population&quot; IP
+      where encounter.id = IP.id
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-normalize-interval"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Former NHSNHelpers functions, adapted for QI Core
+
+
+define function &quot;Normalize Interval&quot;(choice Choice&lt;DateTime, Interval&lt;DateTime&gt;&gt;):
+  case
+    when choice is DateTime then Interval[choice as DateTime, choice as DateTime]
+    when choice is Interval&lt;DateTime&gt;then choice as Interval&lt;DateTime&gt;
+    else null as Interval&lt;DateTime&gt;end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNAcuteCareHospitalMonthlyInitialPopulation1</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="nhsnacutecarehospitalmonthlyinitialpopulation1-getmedication"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetMedication&quot;(reference Reference):
+  singleton from ( [Medication] Medication
+      where reference.references ( Medication )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="qicorecommon-references"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns true if the given reference is to the given resource
+@comment: Returns true if the `id` element of the given resource exactly equals the tail of the given reference.
+NOTE: This function assumes resources from the same source server.
+*/
+define fluent function references(reference Reference, resource Resource):
+  resource.id = Last(Split(reference.reference, '/'))</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="qicorecommon-tointerval"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval
+@comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types
+to an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible
+representations for timing-valued elements in QICore, allowing this function to be used across any resource.
+The input can be provided as a DateTime, Quantity, Interval&lt;DateTime&gt; or Interval&lt;Quantity&gt;.
+The intent of this function is to provide a clear and concise mechanism to treat single
+elements that have multiple possible representations as intervals so that logic doesn't have to account
+for the variability. More complex calculations (such as medication request period or dispense period
+calculation) need specific guidance and consideration. That guidance may make use of this function, but
+the focus of this function is on single element calculations where the semantics are unambiguous.
+If the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.
+If the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,
+and the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.
+If the input is a DateTime Interval, the result is the input.
+If the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result
+is a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending
+immediately before one year later than the date the patient turned the age given as the end of the quantity interval.
+If the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval
+*/
+define fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;, Timing&gt;):
+  case
+	  when choice is DateTime then
+    	Interval[choice as DateTime, choice as DateTime]
+		when choice is Interval&lt;DateTime&gt; then
+  		choice as Interval&lt;DateTime&gt;
+		when choice is Quantity then
+		  Interval[Patient.birthDate + (choice as Quantity),
+			  Patient.birthDate + (choice as Quantity) + 1 year)
+		when choice is Interval&lt;Quantity&gt; then
+		  Interval[Patient.birthDate + (choice.low as Quantity),
+			  Patient.birthDate + (choice.high as Quantity) + 1 year)
+		when choice is Timing then
+      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval&lt;DateTime&gt;
+		else
+			null as Interval&lt;DateTime&gt;
+	end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="qicorecommon-prevalenceinterval"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns an interval representing the normalized prevalence period of a given Condition.
+@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from
+onset to abatement as specified in the given Condition. If the condition is active, or has an abatement date the resulting 
+interval will have a closed ending boundary. Otherwise, the resulting interval will have an open ending boundary.
+*/
+define fluent function prevalenceInterval(condition Choice&lt;&quot;ConditionEncounterDiagnosis&quot;, &quot;ConditionProblemsHealthConcerns&quot;&gt;):
+if condition.clinicalStatus ~ &quot;active&quot;
+  or condition.clinicalStatus ~ &quot;recurrence&quot;
+  or condition.clinicalStatus ~ &quot;relapse&quot; then
+  Interval[start of condition.onset.toInterval(), end of condition.abatementInterval()]
+else
+    (end of condition.abatementInterval()) abatementDate
+    return if abatementDate is null then
+      Interval[start of condition.onset.toInterval(), abatementDate)
+    else
+      Interval[start of condition.onset.toInterval(), abatementDate]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="qicorecommon-abatementinterval"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns an interval representing the normalized abatement of a given Condition.
+@comment: If the abatement element of the Condition is represented as a DateTime, the result
+is an interval beginning and ending on that DateTime.
+If the abatement is represented as a Quantity, the quantity is expected to be a calendar-duration and is interpreted as the age of the patient. The
+result is an interval from the date the patient turned that age to immediately before one year later.
+If the abatement is represented as a Quantity Interval, the quantities are expected to be calendar-durations and are interpreted as an age range during
+which the abatement occurred. The result is an interval from the date the patient turned the starting age of the quantity interval, and ending immediately
+before one year later than the date the patient turned the ending age of the quantity interval.
+*/
+define fluent function abatementInterval(condition Choice&lt;&quot;ConditionEncounterDiagnosis&quot;, &quot;ConditionProblemsHealthConcerns&quot;&gt;):
+	if condition.abatement is DateTime then
+	  Interval[condition.abatement as DateTime, condition.abatement as DateTime]
+	else if condition.abatement is Quantity then
+		Interval[Patient.birthDate + (condition.abatement as Quantity),
+			Patient.birthDate + (condition.abatement as Quantity) + 1 year)
+	else if condition.abatement is Interval&lt;Quantity&gt; then
+	  Interval[Patient.birthDate + (condition.abatement.low as Quantity),
+		  Patient.birthDate + (condition.abatement.high as Quantity) + 1 year)
+	else if condition.abatement is Interval&lt;DateTime&gt; then
+	  Interval[condition.abatement.low, condition.abatement.high)
+	else null as Interval&lt;DateTime&gt;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    
+    
+    
+    
+      <a name="qicorecommon-getid"> </a>
+    
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns the tail of the given uri (i.e. everything after the last slash in the URI).
+@comment: This function can be used to determine the logical id of a given resource. It can be used in
+a single-server environment to trace references. However, this function does not attempt to resolve
+or distinguish the base of the given url, and so cannot be used safely in multi-server environments.
+*/
+define fluent function getId(uri String):
+  Last(Split(uri, '/'))</code></pre>
+  </td>
+
+</tr>
+
+
+
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="terminology"> </a>Terminology</th>
+
+
+</tr>
+  
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ActCode
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/v3-ActCode
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system LOINC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://loinc.org
+    <br/>
+    <em>Canonical URL</em>: <tt>http://loinc.org</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system Observation Category
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/observation-category
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ConditionClinicalStatusCodes
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-clinical
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Encounter Inpatient
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Emergency Department Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Observation Services
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Inpatient, Emergency, and Observation Locations
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265</tt>
+    
+  </td>
+</tr>
+ 
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: inpatient encounter
+        <br/>
+      
+      <em>Code</em>: IMP
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: inpatient acute
+        <br/>
+      
+      <em>Code</em>: ACUTE
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: inpatient non-acute
+        <br/>
+      
+      <em>Code</em>: NONAC
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: short stay
+        <br/>
+      
+      <em>Code</em>: SS
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: emergency
+        <br/>
+      
+      <em>Code</em>: EMER
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: observation encounter
+        <br/>
+      
+      <em>Code</em>: OBSENC
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Radiology
+        <br/>
+      
+      <em>Code</em>: LP29684-5
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Pathology
+        <br/>
+      
+      <em>Code</em>: LP7839-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Cardiology
+        <br/>
+      
+      <em>Code</em>: LP29708-2
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Social History
+        <br/>
+      
+      <em>Code</em>: social-history
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Imaging
+        <br/>
+      
+      <em>Code</em>: imaging
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Procedure
+        <br/>
+      
+      <em>Code</em>: procedure
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/observation-category</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Active
+        <br/>
+      
+      <em>Code</em>: active
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Recurrence
+        <br/>
+      
+      <em>Code</em>: recurrence
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Relapse
+        <br/>
+      
+      <em>Code</em>: relapse
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="dependencies"> </a>Dependencies</th>
+
+
+</tr>
+  
+  
+  
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: QICore model information
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library QICoreCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library CQMCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/CQMCommon|4.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/CQMCommon|4.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+  
+  
+
+
+
+
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="data-requirements"> </a>Data Requirements</th>
+
+
+</tr>
+  
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period, id, id.value, meta, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period, id, id.value, meta, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period, id, id.value, meta, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: class, status, status.value, period, id, id.value, meta, identifier, statusHistory, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: class</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER: 'emergency'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: class, status, status.value, period, id, id.value, meta, identifier, statusHistory, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: class</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://terminology.hl7.org/CodeSystem/v3-ActCode#OBSENC: 'observation encounter'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: class, status, status.value, period, id, id.value, meta, identifier, statusHistory, classHistory, type, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, location, partOf
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Resource
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/StructureDefinition/Resource
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Location
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, extension, status, status.value, operationalStatus, name, name.value, alias, description, description.value, mode, mode.value, type, telecom, address, physicalType, position, managingOrganization, partOf, hoursOfOperation, availabilityExceptions, availabilityExceptions.value, endpoint
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: period, id, id.value, meta, status, status.value, type, policyHolder, subscriber, subscriberId, subscriberId.value, beneficiary, dependent, dependent.value, relationship, payor, class, order, order.value, network, network.value, subrogation, subrogation.value, contract
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: performed, id, id.value, meta, extension, basedOn, partOf, status, status.value, category, code, subject, encounter, location, reasonCode, reasonReference, bodySite
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Device
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-device
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, extension, status, status.value, expirationDate, expirationDate.value, lotNumber, lotNumber.value, serialNumber, serialNumber.value, modelNumber, modelNumber.value, partNumber, partNumber.value, type, patient, parent
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective, id, id.value, meta, extension, partOf, status, status.value, category, code, subject, encounter, issued, issued.value, value, dataAbsentReason, interpretation, bodySite, method, specimen, referenceRange, hasMember, derivedFrom, component
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: DiagnosticReport
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-diagnosticreport-note
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: category, effective, id, id.value, meta, extension, basedOn, status, status.value, code, subject, encounter, issued, issued.value, specimen, result, conclusion, conclusion.value, conclusionCode
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Specimen
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: collection, collection.collected, id, id.value, type
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationAdministration
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationadministrationnotdone
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective, id, id.value, meta, instantiates, partOf, status, status.value, statusReason, category, medication, medication.extension, subject, context, supportingInformation, performer, reasonCode, reasonReference, request, device, note, dosage
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationnotrequested
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, authoredOn.value, id, id.value, meta, status, status.value, statusReason, intent, intent.value, category, priority, priority.value, doNotPerform, doNotPerform.value, reported, medication, medication.extension, subject, encounter, requester, recorder, reasonCode, reasonReference, instantiatesCanonical, instantiatesUri, courseOfTherapyType, dosageInstruction
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: ServiceRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, authoredOn.value, id, id.value, meta, instantiatesCanonical, instantiatesUri, basedOn, replaces, requisition, status, status.value, intent, intent.value, category, priority, priority.value, code, orderDetail, quantity, subject, encounter, occurrence, asNeeded, requester, performerType, performer, locationCode, reasonCode, reasonReference, insurance, bodySite, note, patientInstruction, patientInstruction.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: ServiceRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicenotrequested
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, authoredOn.value, id, id.value, meta, instantiatesCanonical, instantiatesUri, basedOn, replaces, requisition, status, status.value, intent, intent.value, category, priority, priority.value, doNotPerform, doNotPerform.value, code, code.extension, orderDetail, quantity, subject, encounter, occurrence, asNeeded, requester, performerType, performer, locationCode, reasonCode, reasonReference, insurance, bodySite, note, patientInstruction, patientInstruction.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective, id, id.value, meta, extension, partOf, status, status.value, category, code, subject, encounter, issued, issued.value, value, dataAbsentReason, interpretation, bodySite, method, specimen, referenceRange, hasMember, derivedFrom, component
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, extension, identifier, active, active.value, name, telecom, gender, gender.value, birthDate, birthDate.value, deceased, address, maritalStatus, multipleBirth, photo, contact, communication, generalPractitioner, managingOrganization, link
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Medication
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medication
+    <br/>        
+  
+   
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, authoredOn.value, id, id.value, meta, status, status.value, statusReason, intent, intent.value, category, priority, priority.value, reported, medication, subject, encounter, requester, recorder, reasonCode, reasonReference, instantiatesCanonical, instantiatesUri, courseOfTherapyType, dosageInstruction
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationAdministration
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationadministration
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective, id, id.value, meta, instantiates, partOf, status, status.value, statusReason, category, medication, subject, context, supportingInformation, performer, reasonCode, reasonReference, request, device, note, dosage
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-simple-observation
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: category, effective, id, id.value, meta, extension, partOf, status, status.value, code, subject, encounter, issued, issued.value, value, dataAbsentReason, interpretation, bodySite, method, specimen, referenceRange, hasMember, derivedFrom, component
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective, id, id.value, meta, extension, partOf, status, status.value, category, code, subject, encounter, issued, issued.value, value, dataAbsentReason, interpretation, bodySite, method, specimen, referenceRange, hasMember, derivedFrom, component
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: DiagnosticReport
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-diagnosticreport-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: effective
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, clinicalStatus, verificationStatus, category, severity, code, bodySite, subject, encounter, encounter.reference, encounter.reference.value, onset, stage, evidence, note
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, clinicalStatus, verificationStatus, category, severity, code, bodySite, subject, encounter, encounter.reference, encounter.reference.value, onset, stage, evidence, note
+    <br/>
+   
+   
+  </td>
+</tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="parameters"> </a>Parameters</th>
+
+
+</tr>
+  
+  
+  <tr>
+  
+
+<th scope="row" class="row-header"/>
+
+
+  <td class="content-container">
+    <table>
+      <thead>
+        <tr>
+          <td><em>Name</em></td>
+          <td><em>Use</em></td>
+          <td><em>Card.</em></td>
+          <td><em>Type</em></td>
+          <td><em>Documentation</em></td>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <tr>
+          <td>Measurement Period</td>
+          <td>in</td>
+          <td>0..1</td>
+          <td>Period</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>Initial Population</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Coverage</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Encounter</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Procedure</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Device</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Observation Vital Signs Category</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE DiagnosticReport Others</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Specimens</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication Administration Not Done</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication Not Requested</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Service Request</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Observation Survey</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Minimal Patient</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication Request</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE IP Encounters</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Observation Simple</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Observation Lab Category</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Service Not Requested</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication Administration</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication Administration Base</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE DiagnosticReport Lab</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Location</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE DiagnosticReport Note</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Medication Request Base</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Condition Problems HealthConcerns</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Condition Diagnosis</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+        <tr>
+          <td>SDE Service Request Base</td>
+          <td>out</td>
+          <td>0..*</td>
+          <td>Resource</td>
+          <td/>
+        </tr>
+      
+      </tbody>
+    </table>
+  </td>
+</tr>
+
+  
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.5.3 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
