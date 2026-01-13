@@ -1,0 +1,17 @@
+{
+  "resourceType": "Device",
+  "id": "b72031df-6080-4412-9703-f8a1639faa44",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-device" ]
+  },
+  "type": {
+    "coding": [ {
+      "system": "http://snomed.info/sct",
+      "code": "468063009",
+      "display": "Infusion pump"
+    } ]
+  },
+  "patient": {
+    "reference": "Patient/d7aad5bd-638e-402a-92b3-2fb7f3f91151"
+  }
+}
