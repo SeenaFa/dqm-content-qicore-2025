@@ -101,12 +101,17 @@ def validate_numerator(populations: Dict[str, str]):
     denex = populations.get('Denominator Exclusion', 0)
     numer = populations.get('Numerator', 0)
     
+    if not denom and denex:
+        denex = 0
+
     if numer and (denom and denex) or not denom:
         numer = 0
 
     # save updated scoring back to population, but only if the value already existed in the population
     if 'Numerator'in populations:
         populations['Numerator'] = numer
+    if 'Denominator Exclusion'in populations:
+        populations['Denominator Exclusion'] = denex
 
 def load_measure_sections(dir_path: str) -> Generator['MeasureSection', None, None]:
     """Load Measure Sections from VS Code CQL Extension result files
