@@ -87,6 +87,8 @@ def parse_count(result_value: str) -> Union[int, str]:
         return 1
     elif result_value.lower() == "false":
         return 0
+    elif result_value.lower() == "null":
+        return 0
     elif result_value.startswith("[") and result_value.endswith("]"):
         items = [item.strip() for item in result_value[1:-1].split(",") if item.strip()]
         return len(items)
