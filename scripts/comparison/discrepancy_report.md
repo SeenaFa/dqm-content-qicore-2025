@@ -1,22 +1,22 @@
 # Discrepancy Report
 | Details | Value |
 | --- | --- |
-| Generated | 2026-01-15 15:03:45.004131 |
+| Generated | 2026-01-15 15:52:18.125242 |
 | Total Measures | 74 |
 | Total Test Cases | 3964 |
-| Measures with Discrepancies | 40 |
+| Measures with Discrepancies | 41 |
 
 
 | Discrepancy Summary | Measure Count | Test Case Count |
 |---|:---:|:---:|
 | Missing Results | 6 | 508 |
 | Missing Populations | 1 | 816 |
-| Mismatched Test Cases | 37 | 662 |
+| Mismatched Test Cases | 38 | 689 |
 
 
 
 _Note: Measures can have multiple discrepancies, so the Measures with Discrepancies count may not match the summary counts._
-## Measures with No Discrepancies (34)
+## Measures with No Discrepancies (33)
 - CMS22FHIRPCSBPScreeningFollowUp [ [cql] ](../../input/cql/CMS22FHIRPCSBPScreeningFollowUp.cql) [ [test results] ](../../input/tests/results/CMS22FHIRPCSBPScreeningFollowUp.txt)
 - CMS50FHIRReceiptofSpecialistReport [ [cql] ](../../input/cql/CMS50FHIRReceiptofSpecialistReport.cql) [ [test results] ](../../input/tests/results/CMS50FHIRReceiptofSpecialistReport.txt)
 - CMS56FHIRFuncStatHipReplacement [ [cql] ](../../input/cql/CMS56FHIRFuncStatHipReplacement.cql) [ [test results] ](../../input/tests/results/CMS56FHIRFuncStatHipReplacement.txt)
@@ -50,8 +50,7 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 - CMS1157FHIRHIVRetention [ [cql] ](../../input/cql/CMS1157FHIRHIVRetention.cql) [ [test results] ](../../input/tests/results/CMS1157FHIRHIVRetention.txt)
 - CMS1188FHIRHIVSTITesting [ [cql] ](../../input/cql/CMS1188FHIRHIVSTITesting.cql) [ [test results] ](../../input/tests/results/CMS1188FHIRHIVSTITesting.txt)
 - CMS1206FHIRCTOQR [ [cql] ](../../input/cql/CMS1206FHIRCTOQR.cql) [ [test results] ](../../input/tests/results/CMS1206FHIRCTOQR.txt)
-- NHSNAcuteCareHospitalMonthlyInitialPopulation1 [ [cql] ](../../input/cql/NHSNAcuteCareHospitalMonthlyInitialPopulation1.cql) [ [test results] ](../../input/tests/results/NHSNAcuteCareHospitalMonthlyInitialPopulation1.txt)
-## Measures with Discrepancies (40)
+## Measures with Discrepancies (41)
 | Measure | Total Test Cases | Missing Results | Missing Populations | Mismatched Test Cases |
 |---|:---:|:---:|:---:|:---:|
 | [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 0 | 0 | 19.44%   (7) |
@@ -93,6 +92,7 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 | [CMS1218FHIRHHRF](#cms1218fhirhhrf) | 75 | 6 | 0 | 8.00%   (6) |
 | [CMS1244FHIRECATHOQR](#cms1244fhirecathoqr) | 72 | 0 | 0 | 98.61%   (71) |
 | [CMS1264FHIRECATREHQR](#cms1264fhirecatrehqr) | 58 | 0 | 0 | 98.28%   (57) |
+| [NHSNAcuteCareHospitalMonthlyInitialPopulation1](#nhsnacutecarehospitalmonthlyinitialpopulation1) | 27 | 0 | 0 | 100.00%   (27) |
 | [NHSNGlycemicControlHypoglycemiaInitialPopulation](#nhsnglycemiccontrolhypoglycemiainitialpopulation) | 80 | 0 | 0 | 1.25%   (1) |
 
 
@@ -2412,6 +2412,41 @@ Mismatched Test Cases (57 of  of 58)
 | [ 78cbc6ac-f30d-404b-b539-6b903c7cfeba ](../.././input/tests/measure/CMS1264FHIRECATREHQR/78cbc6ac-f30d-404b-b539-6b903c7cfeba/MeasureReport-e78fb83c-b07d-4135-a58d-2c52732af4ff.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
 | [ 63cea3d6-d2e0-4736-a035-87633ca960bd ](../.././input/tests/measure/CMS1264FHIRECATREHQR/63cea3d6-d2e0-4736-a035-87633ca960bd/MeasureReport-4fcd9a1b-054e-449c-a9b0-82241166fb79.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
 | [ 7bee402e-2687-4813-9b39-37d723663d18 ](../.././input/tests/measure/CMS1264FHIRECATREHQR/7bee402e-2687-4813-9b39-37d723663d18/MeasureReport-74472d36-5e68-48e1-a83d-bf876766f3c5.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
+
+
+#### NHSNAcuteCareHospitalMonthlyInitialPopulation1
+[ [cql] ](../../input/cql/NHSNAcuteCareHospitalMonthlyInitialPopulation1.cql) [ [test results] ](../../input/tests/results/NHSNAcuteCareHospitalMonthlyInitialPopulation1.txt)
+
+Mismatched Test Cases (27 of  of 27)
+| Test Case | Group | Population | Expected | Actual |
+|---|---|---|:---:|:---:|
+| [ 98561005-400a-4b9d-8902-f04605b6b168 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/98561005-400a-4b9d-8902-f04605b6b168/MeasureReport-0773d2b8-f1b9-4153-941d-359810657da0.json) | Group_1 | Initial Population | 1 | 0 |
+| [ bf9e53b4-e10c-4a11-a9be-8d5b944c1d51 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/bf9e53b4-e10c-4a11-a9be-8d5b944c1d51/MeasureReport-1684ea45-5f2b-4d52-ada8-8efdcc7288dc.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 5efcd4e7-f71b-48a6-badb-b1b88c02f161 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/5efcd4e7-f71b-48a6-badb-b1b88c02f161/MeasureReport-4f0e2e08-8866-48a3-bbb7-3592848a9c59.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 19feaae6-8985-4444-9182-d3c785698710 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/19feaae6-8985-4444-9182-d3c785698710/MeasureReport-a4e15a58-ea80-48f3-be78-a7f11046fda9.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 16acd0ee-60e7-4573-b433-5a9c335c145b ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/16acd0ee-60e7-4573-b433-5a9c335c145b/MeasureReport-21be7b36-d958-42d8-a0cd-b6f11f52b9e0.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 1c06a652-f116-4307-80b7-342c16d20de1 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/1c06a652-f116-4307-80b7-342c16d20de1/MeasureReport-865f0c20-2d8b-4565-a1df-1d4fb22cded4.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 2ea03a1a-cefe-4eac-9e34-7bf434b30d2b ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/2ea03a1a-cefe-4eac-9e34-7bf434b30d2b/MeasureReport-c39a9dd2-e4cb-4afe-b543-9fc0b7fc6762.json) | Group_1 | Initial Population | 1 | 0 |
+| [ d7aad5bd-638e-402a-92b3-2fb7f3f91151 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/d7aad5bd-638e-402a-92b3-2fb7f3f91151/MeasureReport-7814a289-b823-4ab0-9767-5ef6d17e2368.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 4d192f80-7649-4afd-a842-528ef60fc904 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/4d192f80-7649-4afd-a842-528ef60fc904/MeasureReport-8ab9facd-848c-4fd1-86c3-0db7187c0872.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 09431e3b-b1d9-491a-b6a3-76b3868e6213 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/09431e3b-b1d9-491a-b6a3-76b3868e6213/MeasureReport-46c6e04d-46fb-43bf-8e31-a9c615a68829.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 70306180-c713-4fa4-9c39-ae3b15e15d22 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/70306180-c713-4fa4-9c39-ae3b15e15d22/MeasureReport-344d7bf8-d330-4eea-9bfd-e6f9385e09c7.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 6409f1eb-d338-4bf6-a3df-4da1eb997c48 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/6409f1eb-d338-4bf6-a3df-4da1eb997c48/MeasureReport-03b8ae84-238b-4bb5-a24b-f1fd7b9fadb2.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 7f26eb5a-f877-458b-b960-5de7ffa5b4d0 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/7f26eb5a-f877-458b-b960-5de7ffa5b4d0/MeasureReport-7fd32742-4b47-45e1-ae6e-03639705a987.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 3e86234e-4999-4e8e-a4a2-420d1343b079 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/3e86234e-4999-4e8e-a4a2-420d1343b079/MeasureReport-8d1536f5-dbeb-4a78-bf16-8c98be7d95d5.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 025529dc-5384-4544-acb2-c2b6f7c9a23c ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/025529dc-5384-4544-acb2-c2b6f7c9a23c/MeasureReport-cbc6c29b-2746-4325-846b-4916066f901d.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 4974042e-fff4-4a3d-905e-548c6593ce40 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/4974042e-fff4-4a3d-905e-548c6593ce40/MeasureReport-adbaed86-bc97-426c-91bb-0caa9ddee759.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 36e30d76-0d86-4b72-ba89-4ebaacf48b31 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/36e30d76-0d86-4b72-ba89-4ebaacf48b31/MeasureReport-ab39e948-0969-4f65-95e4-66dd419234f9.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 8ffa77ff-8591-442d-84b1-6c6cb86fd09e ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/8ffa77ff-8591-442d-84b1-6c6cb86fd09e/MeasureReport-38e2d170-52cb-4db9-a4ff-794d8205d788.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 8a407b28-6668-43be-9148-31ed08b8c0c4 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/8a407b28-6668-43be-9148-31ed08b8c0c4/MeasureReport-75636bb8-4f4a-4636-87c9-5687e930b342.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 0353da56-ca21-45d3-8f96-8954167143ae ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/0353da56-ca21-45d3-8f96-8954167143ae/MeasureReport-752163c3-abdc-4bdf-9e38-1863335b89b5.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 2ce50e7f-4e04-4d5b-9d9a-2243958c2a92 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/2ce50e7f-4e04-4d5b-9d9a-2243958c2a92/MeasureReport-dcede416-5737-41d3-9e52-96ecb4e3358a.json) | Group_1 | Initial Population | 1 | 0 |
+| [ ec296057-82c9-41b2-9e32-8ec2ea4f3687 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/ec296057-82c9-41b2-9e32-8ec2ea4f3687/MeasureReport-1de4ec32-e403-4140-95a7-16312f92d593.json) | Group_1 | Initial Population | 1 | 0 |
+| [ c1b0ea0e-73e8-4b74-bbae-4cf2504fa9e4 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/c1b0ea0e-73e8-4b74-bbae-4cf2504fa9e4/MeasureReport-8892d6d4-2213-474d-964f-476b31cdfccf.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 55f7d07e-a8ec-4abf-9bb3-b9b3f81d38d5 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/55f7d07e-a8ec-4abf-9bb3-b9b3f81d38d5/MeasureReport-51440a32-e472-44ba-ad92-71c146103991.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 4c8f4dd1-193e-4239-80ac-63e9ac2bd053 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/4c8f4dd1-193e-4239-80ac-63e9ac2bd053/MeasureReport-724ae436-9840-4319-81c5-d83bfbb7317a.json) | Group_1 | Initial Population | 1 | 0 |
+| [ 24ab1538-bc59-454b-bd24-961288f4eea8 ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/24ab1538-bc59-454b-bd24-961288f4eea8/MeasureReport-f9c6d620-b9f6-45bc-b850-44bc56d270e2.json) | Group_1 | Initial Population | 1 | 0 |
+| [ a1ec5d8e-4926-456a-8523-786a93f2348b ](../.././input/tests/measure/NHSNAcuteCareHospitalMonthlyInitialPopulation1/a1ec5d8e-4926-456a-8523-786a93f2348b/MeasureReport-554c0e95-b93e-42d0-ad24-593cf2d8b97a.json) | Group_1 | Initial Population | 1 | 0 |
 
 
 #### NHSNGlycemicControlHypoglycemiaInitialPopulation
