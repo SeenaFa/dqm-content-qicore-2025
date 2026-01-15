@@ -1110,6 +1110,10 @@
     },
     "relatedArtifact": [ {
       "type": "depends-on",
+      "display": "QICore model information",
+      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    }, {
+      "type": "depends-on",
       "display": "Library FHIRHelpers",
       "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
     }, {
@@ -1775,8 +1779,8 @@
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-          "code": "risk-adjustment-factor",
-          "display": "Risk Adjustment Factor"
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
         } ],
         "text": "Risk Adjustment Variable Guidance"
       }
@@ -1784,11 +1788,6 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
   } ],
   "url": "https://madie.cms.gov/Measure/CMS832FHIRHHAKI",
   "identifier": [ {
@@ -1858,7 +1857,7 @@
   "title": "Hospital Harm - Acute Kidney InjuryFHIR\n",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-07T14:45:49+00:00",
+  "date": "2026-01-15T17:59:34+00:00",
   "publisher": "Centers for Medicare &amp; Medicaid Services (CMS)",
   "contact": [ {
     "telecom": [ {
@@ -2163,7 +2162,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Estimated Glomerular Filtration Rate For Females\n",
@@ -2176,7 +2175,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Estimated Glomerular Filtration Rate For Males\n",
@@ -2189,7 +2188,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable All Encounter Diagnoses With POA Indication\n",
@@ -2202,7 +2201,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Heart Rate In Encounter\n",
@@ -2215,7 +2214,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Respiratory Rate In Encounter\n",
@@ -2228,7 +2227,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Systolic Blood Pressure In Encounter\n",
@@ -2241,7 +2240,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Temperature In Encounter\n",

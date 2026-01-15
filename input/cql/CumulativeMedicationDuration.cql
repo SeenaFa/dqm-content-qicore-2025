@@ -665,3 +665,60 @@ define function Quantity(value Decimal, unit String):
     System.Quantity { value: value, unit: unit }
   else
     null
+
+define TestMedicationRequest: [MedicationRequest]
+define TestMedicationRequestPeriod: TestMedicationRequest.first().medicationRequestPeriod()
+
+define Test:
+  TestMedicationRequest R
+    let 
+      dosage: singleton from R.dosageInstruction,
+      doseAndRate: singleton from dosage.doseAndRate,
+      timing: dosage.timing,
+      frequency: Coalesce(timing.repeat.frequencyMax, timing.repeat.frequency),
+      period: Quantity(timing.repeat.period, timing.repeat.periodUnit),
+      doseRange: doseAndRate.dose,
+      doseQuantity: doseAndRate.dose,
+      dose: Coalesce(end of doseRange, doseQuantity),
+      dosesPerDay: Coalesce(ToDaily(frequency, period), Count(timing.repeat.timeOfDay), 1.0),
+      boundsPeriod: timing.repeat.bounds as Interval<DateTime>,
+      daysSupply: R.dispenseRequest.expectedSupplyDuration.value,
+      //daysSupply: (convert R.dispenseRequest.expectedSupplyDuration to 'd').value,
+      quantity: R.dispenseRequest.quantity,
+      refills: Coalesce(R.dispenseRequest.numberOfRepeatsAllowed, 0),
+      startDate:
+        Coalesce(
+          date from start of boundsPeriod,
+          date from R.authoredOn,
+          date from start of R.dispenseRequest.validityPeriod
+        ),
+      totalDaysSupplied: Coalesce(daysSupply, quantity.value / (dose.value * dosesPerDay)) * (1 + refills)
+
+    return {
+      dosage: dosage,
+      doseAndRate: doseAndRate,
+      timing: timing,
+      frequency: frequency,
+      period: period,
+      doseRange: doseRange,
+      doseQuantity: doseQuantity,
+      dose: dose,
+      dosesPerDay: dosesPerDay,
+      boundsPeriod: boundsPeriod,
+      daysSupply: daysSupply,
+      testDaysSupply: R.dispenseRequest.expectedSupplyDuration,
+      quantity: quantity,
+      refills: refills,
+      startDate: startDate,
+      totalDaysSupplied: totalDaysSupplied,
+      period:
+      if startDate is not null and totalDaysSupplied is not null then
+        Interval[startDate, startDate + Quantity(totalDaysSupplied - 1, 'day') ]
+      else if startDate is not null and boundsPeriod."high" is not null then
+        Interval[startDate, date from end of boundsPeriod]
+      else
+        null
+    }
+/*    
+  return
+*/

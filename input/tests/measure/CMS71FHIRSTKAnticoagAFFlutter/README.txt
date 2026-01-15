@@ -1,5 +1,6 @@
 The purpose of this file is to allow users to view the mapping of test case names to their test case UUIDs. In order to find a specific test case file in the export, first locate the test case name in this document and then use the associated UUID to find the name of the folder in the export.
 
+Case # 89 - 0587a75d-0dcc-4c6b-bfc0-f5727342ec1f = NUMERPass DCANTIcoagHXofABlatENCDX
 Case # 87 - 017a2267-f463-47a6-8b8b-dc91465e0869 = DENEXCEPPass MedDCMedReasonfDuringEncInpTskRjct
 Case # 86 - 9a72ea26-595f-4442-8b00-fc52ed228aa6 = DENEXCEPPass MedDCPatRefDuringEncInpTskRjct
 Case # 85 - c640ff8f-5b2a-448e-85a2-e739af7a8dc4 = DENEXCEPPass MedRsnNoMedisDis
@@ -82,7 +83,3 @@ Case # 4 - b29204ac-96ce-4be0-90ad-ae8ecfa4f245 = DENEXCEPPass MedDCMedReason
 Case # 3 - fb49e13d-3b13-46ae-8862-59033137e1b8 = DENEXCEPFail MedRsnStartTmLTEncAdmTm
 Case # 2 - a0d01348-6938-4d7b-8f26-d4643658de9e = DENEXCEPFail MedReasonAfterEncEnds
 Case # 1 - de03a32b-a1f7-461c-9853-00c2e5586e99 = DENEXPass DENEXPassAMA
-
-The following test cases are invalid and not included in this export:
-
-Case # 89 - 0587a75d-0dcc-4c6b-bfc0-f5727342ec1f = NUMERPass DCANTIcoagHXofABlatENCDX

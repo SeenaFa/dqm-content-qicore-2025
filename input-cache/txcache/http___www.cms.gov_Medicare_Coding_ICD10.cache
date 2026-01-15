@@ -3029,7 +3029,6 @@ v: {
   "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
   "version" : "2.0.1",
   "server" : "https://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -6066,6 +6065,961 @@ v: {
   "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
   "version" : "2.0.1",
   "server" : "https://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
+  "code" : "3E0234Z",
+  "display" : "Introduction of Serum, Toxoid and Vaccine into Muscle, Percutaneous Approach"
+}, "valueSet" :null, "langs":"en", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "manifest",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|07/14/2020"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/CodeSystem/task-code|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/event-timing|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/ratio-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cohort-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/request-intent|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS0334FHIRPCCesareanBirth|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1017FHIRHHFI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1028FHIRPCSevereOBComps|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS104FHIRSTKDCAntithrombotic|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1056FHIRCTClinical|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1074FHIRCTIQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS108FHIRVTEProphylaxis|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1154ScreeningPrediabetesFHIR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1157FHIRHIVRetention|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1173FHIRDiagnosticDelayVTE|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS117FHIRChildImmunStatus|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1188FHIRHIVSTITesting|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1206FHIRCTOQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1218FHIRHHRF|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS122FHIRDiabetesAssessGT9Pct|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1244FHIRECATHOQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS124FHIRCervicalCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS125FHIRBreastCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1264FHIRECATREHQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS128FHIRAntidepressantMgmt|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS129FHIRProstCaBoneScanUse|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS130FHIRColorectalCancerScrn|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS131FHIRDiabetesEyeExam|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS133FHIRCataracts2040BCVA90Days|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS135FHIRACEIorARBorARNIforHF|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS136FHIRChildADHDMedFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS137FHIRSUDTxInitEngagement|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS138FHIRTobaccoScrnCessation|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS139FHIRFallRiskScreening|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS142FHIRCommWithDrManagingDiab|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS143FHIRPOAGOpticNerveEval|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS144FHIRHFBetaBlockerForLVSD|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS145FHIRCADBBlockerTPMIorLVSD|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS146FHIRApproTestPharyngitis|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS149FHIRDementiaCognitiveAssess|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS153FHIRChlamydiaScreening|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS154FHIRAppropriateTxforURI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS155FHIRWgtAssessCounseling|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS156FHIRHighRiskMedsElderly|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS157FHIRPainIntensityQuantified|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS159FHIRDepRemissionat12Months|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS165FHIRControllingHighBP|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS177FHIRChildMDDSuicideAssmt|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS190FHIRVTEProphylaxisICU|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS22FHIRPCSBPScreeningFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS2FHIRPCSDepScreenAndFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS314FHIRHIVViralSuppression|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS347FHIRStatinPreventionTxCVD|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS349FHIRHIVScreening|1.1.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS506FHIRSafeUseofOpioids|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS50FHIRReceiptofSpecialistReport|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS56FHIRFuncStatHipReplacement|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS645FHIRBoneDensityPCADTherapy|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS646FHIRIntravesicalBCGTherapy|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS68FHIRDocumentationCurrentMeds|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS69FHIRPCSBMIScreenAndFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS71FHIRSTKAnticoagAFFlutter|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS72FHIRSTKAntithromboticDay2|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS74FHIRDentalCariesPrevention|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS75FHIRChildrenDentalDecay|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS771FHIRUrinarySymptomScoreBPH|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS816FHIRHHHypo|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS819FHIRHHORAE|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS826FHIRHHPI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS832FHIRHHAKI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS871FHIRHHHyper|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS90FHIRFSAforHeartFailure|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS951FHIRKidneyHealthEval|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS986FHIRMalnutritionScore|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS996FHIRAptTxforSTEMI|2.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMSFHIR529HybridHospitalWideReadmission|0.5.001"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMSFHIR844HybridHospitalWideMortality|0.5.001"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/NHSNGlycemicControlHypoglycemiaInitialPopulation|0.0.003"
+  }]
+}}####
+v: {
+  "display" : "Introduction of Serum, Toxoid and Vaccine into Muscle, Percutaneous Approach",
+  "code" : "3E0234Z",
+  "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
+  "version" : "2.0.1",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, default-to-latest\r\n0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/731000124108\r\n0 0     : 0ms  : Prepare include: \"()\"\r\n0 0     : 0ms  : Validate \"[http://www.cms.gov/Medicare/Coding/ICD10#3E0234Z (\"Introduction of Serum, Toxoid and Vaccine into Muscle, Percutaneous Approach\")]\"\r\n0 0     : 0ms  : Check \"http://www.cms.gov/Medicare/Coding/ICD10#3E0234Z\"\r\n31 31   : 31ms : Using CodeSystem \"http://www.cms.gov/Medicare/Coding/ICD10|2.0.1 (from fhir.tx.support.r4#0.32.0)\" (content = complete)\r\n",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
+  "code" : "3E0234Z",
+  "display" : "Introduction of Serum, Toxoid and Vaccine into Muscle, Percutaneous Approach"
+}, "valueSet" :null, "langs":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "manifest",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-executablelibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-json-library|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/cql/StructureDefinition/elm-xml-library|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/HospitalAcqCond/Coding|07/14/2020"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/CodeSystem/task-code|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-ActCode|9.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/observation-category|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/event-timing|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure|1.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/condition-category|1.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/ratio-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cv-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cohort-measure-cqfm|4.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "http://hl7.org/fhir/StructureDefinition/Location|4.0.1"
+  },
+  {
+    "name" : "system-version",
+    "valueString" : "http://hl7.org/fhir/request-intent|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS0334FHIRPCCesareanBirth|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1017FHIRHHFI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1028FHIRPCSevereOBComps|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS104FHIRSTKDCAntithrombotic|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1056FHIRCTClinical|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1074FHIRCTIQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS108FHIRVTEProphylaxis|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1154ScreeningPrediabetesFHIR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1157FHIRHIVRetention|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1173FHIRDiagnosticDelayVTE|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS117FHIRChildImmunStatus|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1188FHIRHIVSTITesting|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1206FHIRCTOQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1218FHIRHHRF|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS122FHIRDiabetesAssessGT9Pct|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1244FHIRECATHOQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS124FHIRCervicalCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS125FHIRBreastCancerScreen|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS1264FHIRECATREHQR|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS128FHIRAntidepressantMgmt|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS129FHIRProstCaBoneScanUse|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS130FHIRColorectalCancerScrn|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS131FHIRDiabetesEyeExam|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS133FHIRCataracts2040BCVA90Days|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS135FHIRACEIorARBorARNIforHF|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS136FHIRChildADHDMedFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS137FHIRSUDTxInitEngagement|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS138FHIRTobaccoScrnCessation|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS139FHIRFallRiskScreening|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS142FHIRCommWithDrManagingDiab|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS143FHIRPOAGOpticNerveEval|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS144FHIRHFBetaBlockerForLVSD|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS145FHIRCADBBlockerTPMIorLVSD|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS146FHIRApproTestPharyngitis|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS149FHIRDementiaCognitiveAssess|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS153FHIRChlamydiaScreening|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS154FHIRAppropriateTxforURI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS155FHIRWgtAssessCounseling|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS156FHIRHighRiskMedsElderly|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS157FHIRPainIntensityQuantified|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS159FHIRDepRemissionat12Months|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS165FHIRControllingHighBP|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS177FHIRChildMDDSuicideAssmt|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS190FHIRVTEProphylaxisICU|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS22FHIRPCSBPScreeningFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS2FHIRPCSDepScreenAndFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS314FHIRHIVViralSuppression|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS347FHIRStatinPreventionTxCVD|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS349FHIRHIVScreening|1.1.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS506FHIRSafeUseofOpioids|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS50FHIRReceiptofSpecialistReport|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS56FHIRFuncStatHipReplacement|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS645FHIRBoneDensityPCADTherapy|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS646FHIRIntravesicalBCGTherapy|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS68FHIRDocumentationCurrentMeds|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS69FHIRPCSBMIScreenAndFollowUp|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS71FHIRSTKAnticoagAFFlutter|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS72FHIRSTKAntithromboticDay2|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS74FHIRDentalCariesPrevention|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS75FHIRChildrenDentalDecay|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS771FHIRUrinarySymptomScoreBPH|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS816FHIRHHHypo|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS819FHIRHHORAE|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS826FHIRHHPI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS832FHIRHHAKI|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS871FHIRHHHyper|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS90FHIRFSAforHeartFailure|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS951FHIRKidneyHealthEval|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS986FHIRMalnutritionScore|1.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMS996FHIRAptTxforSTEMI|2.0.000"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMSFHIR529HybridHospitalWideReadmission|0.5.001"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/CMSFHIR844HybridHospitalWideMortality|0.5.001"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueString" : "https://madie.cms.gov/Library/NHSNGlycemicControlHypoglycemiaInitialPopulation|0.0.003"
+  }]
+}}####
+v: {
+  "display" : "Introduction of Serum, Toxoid and Vaccine into Muscle, Percutaneous Approach",
+  "code" : "3E0234Z",
+  "system" : "http://www.cms.gov/Medicare/Coding/ICD10",
+  "version" : "2.0.1",
+  "server" : "https://tx.fhir.org/r4",
+  "diagnostics" : "0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Version Rules: system-version:http://snomed.info/sct#http://snomed.info/sct/731000124108\r\n0 0     : 0ms  : Prepare include: \"()\"\r\n0 0     : 0ms  : Validate \"[http://www.cms.gov/Medicare/Coding/ICD10#3E0234Z (\"Introduction of Serum, Toxoid and Vaccine into Muscle, Percutaneous Approach\")]\"\r\n0 0     : 0ms  : Check \"http://www.cms.gov/Medicare/Coding/ICD10#3E0234Z\"\r\n31 31   : 31ms : Using CodeSystem \"http://www.cms.gov/Medicare/Coding/ICD10|2.0.1 (from fhir.tx.support.r4#0.32.0)\" (content = complete)\r\n",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"

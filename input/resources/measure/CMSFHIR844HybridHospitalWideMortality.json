@@ -504,6 +504,10 @@
     },
     "relatedArtifact": [ {
       "type": "depends-on",
+      "display": "QICore model information",
+      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    }, {
+      "type": "depends-on",
       "display": "Library CQMCommon",
       "resource": "https://madie.cms.gov/Library/CQMCommon|4.1.000"
     }, {
@@ -1197,11 +1201,6 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
-  }, {
-    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
-    "valueReference": {
-      "reference": "Device/cqf-tooling"
-    }
   } ],
   "url": "https://madie.cms.gov/Measure/CMSFHIR844HybridHospitalWideMortality",
   "identifier": [ {
@@ -1271,7 +1270,7 @@
   "title": "Core Clinical Data Elements HW Mortality FHIR",
   "status": "draft",
   "experimental": false,
-  "date": "2026-01-07T14:45:49+00:00",
+  "date": "2026-01-15T17:59:35+00:00",
   "publisher": "Centers for Medicare & Medicaid Services (CMS)",
   "contact": [ {
     "telecom": [ {

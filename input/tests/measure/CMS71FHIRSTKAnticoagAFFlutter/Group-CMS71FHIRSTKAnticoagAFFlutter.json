@@ -11,7 +11,7 @@
   "member": [ {
     "entity": {
       "reference": "Patient/0035424c-e3be-4dc2-919a-fd1c665893f6",
-      "display": "Dx=Afib/flutterStart=EncEnd  DENOMPass"
+      "display": "Dx=Afib/flutterStart=EncEnd DENOMPass"
     }
   }, {
     "entity": {
@@ -22,6 +22,11 @@
     "entity": {
       "reference": "Patient/02ee41e8-26d8-4575-a999-32ee2204d745",
       "display": "AMA DENEXPass"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/0587a75d-0dcc-4c6b-bfc0-f5727342ec1f",
+      "display": "DCANTIcoagHXofABlat NUMERPass"
     }
   }, {
     "entity": {
@@ -51,7 +56,7 @@
   }, {
     "entity": {
       "reference": "Patient/18912918-19e8-4d17-8160-71849eaede4b",
-      "display": "EncPrinDxEQAfibOrFlutter IPPFail "
+      "display": "EncPrinDxEQAfibOrFlutter IPPFail"
     }
   }, {
     "entity": {
@@ -126,7 +131,7 @@
   }, {
     "entity": {
       "reference": "Patient/4543f40b-6f71-47e7-8930-0340eede9145",
-      "display": "EncEndsAfterMP  IPPFail "
+      "display": "EncEndsAfterMP IPPFail"
     }
   }, {
     "entity": {
@@ -221,7 +226,7 @@
   }, {
     "entity": {
       "reference": "Patient/96b57130-dda8-481b-b96b-c0d48068384e",
-      "display": "CMOdurEnc_ED<1hrObs<1hrBFEnc DENEXPass "
+      "display": "CMOdurEnc_ED<1hrObs<1hrBFEnc DENEXPass"
     }
   }, {
     "entity": {
@@ -261,7 +266,7 @@
   }, {
     "entity": {
       "reference": "Patient/ad014d1d-6043-4b40-9fd3-0abc1f308a04",
-      "display": "EncDx=IschemicStroke  IPPFail"
+      "display": "EncDx=IschemicStroke IPPFail"
     }
   }, {
     "entity": {
@@ -331,7 +336,7 @@
   }, {
     "entity": {
       "reference": "Patient/d5991213-5237-4eb3-a6e9-61404f836d3b",
-      "display": "EncPrinDx=Afib/Flutter Rank2 IPPFail "
+      "display": "EncPrinDx=Afib/Flutter Rank2 IPPFail"
     }
   }, {
     "entity": {
