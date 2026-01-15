@@ -70,7 +70,8 @@ code "outpatient": 'outpatient' from "MedicationRequest Category" display 'Outpa
 code "Laboratory procedure": '108252007' from "SNOMEDCT" display 'Laboratory procedure'
 code "Imaging": '363679005' from "SNOMEDCT" display 'Imaging'
 
-parameter "Measurement Period" Interval<DateTime>default Interval[@2025-01-01T00:00:00.0, @2025-01-31T23:59:59.0 )
+parameter "Measurement Period" Interval<DateTime>
+  default Interval[@2026-01-01T00:00:00.000Z, @2027-01-01T00:00:00.000Z)
 
 context Patient 
 
