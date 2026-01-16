@@ -15,6 +15,19 @@ ResultDelta = namedtuple('ResultDelta', ['patient_guid', 'group', 'population', 
 Comparison = namedtuple('Comparison', ['expected', 'actual'])
 TestCaseGroupId = namedtuple('TestCaseId', ['patient_guid', 'group'])
 
+# source: https://terminology.hl7.org/CodeSystem-measure-population.html
+ValidMeasurePopulationTypes = [
+    'Initial Population',
+    'Numerator',
+    'Numerator Exclusion',
+    'Denominator',
+    'Denominator-exclusion',
+    'Denominator-exception',
+    'Measure Population',
+    'Measure Population Exclusion',
+    'Measure Observation'
+]
+
 class MissingPopulation(NamedTuple):
     result_key: ResultKey
     population: List[str]
@@ -46,6 +59,9 @@ def capture_results(file: str) -> Results:
             rows[key] = row["count"]
 
             group_and_population = row["population"].split(':')
+            if group_and_population[1] not in ValidMeasurePopulationTypes:
+                continue
+
             result_key = ResultKey(row["measure_name"], row["guid"], group_and_population[0])
             result = results.setdefault(result_key, {})
             result[group_and_population[1]] = row["count"]
@@ -59,6 +75,12 @@ def generate_output(file: str, expected_rows: Dict, actual_rows: Dict) -> Tuple[
     fail_count = 0
 
     for key, expected_result in expected_rows.items():
+        # key fields: [ 'measure_name', 'patient_guid', 'group' ]
+        # verify the population
+        if key[2].split(':')[1] not in ValidMeasurePopulationTypes:
+            # TODO: include 'bad' population in report so user know why population wasn't used in report
+            continue
+
         actual_result = actual_rows.get(key)
         if actual_result is None or str(expected_result) != str(actual_result):
             output.append(["FAIL", key[0], key[1], key[2], expected_result, actual_result if actual_result is not None else "MISSING"])
