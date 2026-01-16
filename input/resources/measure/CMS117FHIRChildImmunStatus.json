@@ -1393,10 +1393,6 @@
     },
     "relatedArtifact": [ {
       "type": "depends-on",
-      "display": "QICore model information",
-      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
-    }, {
-      "type": "depends-on",
       "display": "Library SDE",
       "resource": "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000"
     }, {
@@ -3283,6 +3279,11 @@
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
     "valueCanonical": "#effective-data-requirements"
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
+    "valueReference": {
+      "reference": "Device/cqf-tooling"
+    }
   } ],
   "url": "https://madie.cms.gov/Measure/CMS117FHIRChildImmunStatus",
   "identifier": [ {
@@ -3338,7 +3339,7 @@
   "title": "Childhood Immunization StatusFHIR",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-15T17:59:32+00:00",
+  "date": "2026-01-16T18:18:12+00:00",
   "publisher": "National Committee for Quality Assurance",
   "contact": [ {
     "telecom": [ {
