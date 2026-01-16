@@ -2,7 +2,7 @@
 #DO NOT EDIT WITH WINDOWS
 tooling_jar=tooling-cli-3.9.1.jar
 input_cache_path=./input-cache
-mat_bundle=input/tests/measure/CMS1056CTClinicalFHIR
+mat_bundle=input/tests/measure/CMS71FHIRSTKAnticoagAFFlutter
 
 
 set -e
