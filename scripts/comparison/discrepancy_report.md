@@ -1,22 +1,22 @@
 # Discrepancy Report
 | Details | Value |
 | --- | --- |
-| Generated | 2026-01-16 09:56:38.794721 |
+| Generated | 2026-01-16 12:24:30.787942 |
 | Total Measures | 74 |
 | Total Test Cases | 3964 |
-| Measures with Discrepancies | 31 |
+| Measures with Discrepancies | 30 |
 
 
 | Discrepancy Summary | Measure Count | Test Case Count |
 |---|:---:|:---:|
 | Missing Results | 6 | 508 |
 | Missing Populations | 0 | 0 |
-| Mismatched Test Cases | 28 | 547 |
+| Mismatched Test Cases | 27 | 476 |
 
 
 
 _Note: Measures can have multiple discrepancies, so the Measures with Discrepancies count may not match the summary counts._
-## Measures with No Discrepancies (43)
+## Measures with No Discrepancies (44)
 - CMS22FHIRPCSBPScreeningFollowUp [ [cql] ](../../input/cql/CMS22FHIRPCSBPScreeningFollowUp.cql) [ [test results] ](../../input/tests/results/CMS22FHIRPCSBPScreeningFollowUp.txt)
 - CMS50FHIRReceiptofSpecialistReport [ [cql] ](../../input/cql/CMS50FHIRReceiptofSpecialistReport.cql) [ [test results] ](../../input/tests/results/CMS50FHIRReceiptofSpecialistReport.txt)
 - CMS56FHIRFuncStatHipReplacement [ [cql] ](../../input/cql/CMS56FHIRFuncStatHipReplacement.cql) [ [test results] ](../../input/tests/results/CMS56FHIRFuncStatHipReplacement.txt)
@@ -60,7 +60,8 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 - CMS1157FHIRHIVRetention [ [cql] ](../../input/cql/CMS1157FHIRHIVRetention.cql) [ [test results] ](../../input/tests/results/CMS1157FHIRHIVRetention.txt)
 - CMS1188FHIRHIVSTITesting [ [cql] ](../../input/cql/CMS1188FHIRHIVSTITesting.cql) [ [test results] ](../../input/tests/results/CMS1188FHIRHIVSTITesting.txt)
 - CMS1206FHIRCTOQR [ [cql] ](../../input/cql/CMS1206FHIRCTOQR.cql) [ [test results] ](../../input/tests/results/CMS1206FHIRCTOQR.txt)
-## Measures with Discrepancies (31)
+- CMS1244FHIRECATHOQR [ [cql] ](../../input/cql/CMS1244FHIRECATHOQR.cql) [ [test results] ](../../input/tests/results/CMS1244FHIRECATHOQR.txt)
+## Measures with Discrepancies (30)
 | Measure | Total Test Cases | Missing Results | Missing Populations | Mismatched Test Cases |
 |---|:---:|:---:|:---:|:---:|
 | [CMS2FHIRPCSDepScreenAndFollowUp](#cms2fhirpcsdepscreenandfollowup) | 36 | 0 | 0 | 19.44%   (7) |
@@ -90,7 +91,6 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 | [CMS1028FHIRPCSevereOBComps](#cms1028fhirpcsevereobcomps) | 282 | 0 | 0 | 1.42%   (4) |
 | [CMS1173FHIRDiagnosticDelayVTE](#cms1173fhirdiagnosticdelayvte) | 65 | 0 | 0 | 3.08%   (2) |
 | [CMS1218FHIRHHRF](#cms1218fhirhhrf) | 75 | 6 | 0 | 8.00%   (6) |
-| [CMS1244FHIRECATHOQR](#cms1244fhirecathoqr) | 72 | 0 | 0 | 98.61%   (71) |
 | [CMS1264FHIRECATREHQR](#cms1264fhirecatrehqr) | 58 | 0 | 0 | 98.28%   (57) |
 | [NHSNAcuteCareHospitalMonthlyInitialPopulation1](#nhsnacutecarehospitalmonthlyinitialpopulation1) | 27 | 0 | 0 | 100.00%   (27) |
 | [NHSNGlycemicControlHypoglycemiaInitialPopulation](#nhsnglycemiccontrolhypoglycemiainitialpopulation) | 80 | 0 | 0 | 1.25%   (1) |
@@ -1225,85 +1225,6 @@ Mismatched Test Cases (6 of  of 75)
 | [ a65e5180-3578-4013-bdc2-925e1af1e627 ](../.././input/tests/measure/CMS1218FHIRHHRF/a65e5180-3578-4013-bdc2-925e1af1e627/MeasureReport-47fbe4f0-7321-4817-a305-ff963f73399b.json) | Group_1 | Numerator | 1 | 0 |
 | [ 8942da50-6322-4df7-bd03-21aecbc427a4 ](../.././input/tests/measure/CMS1218FHIRHHRF/8942da50-6322-4df7-bd03-21aecbc427a4/MeasureReport-290e5b8b-f5dc-4ca4-ad73-93505abc87bd.json) | Group_1 | Numerator | 1 | 0 |
 | [ b203d4af-3937-4fb3-a7c0-6014d18f433d ](../.././input/tests/measure/CMS1218FHIRHHRF/b203d4af-3937-4fb3-a7c0-6014d18f433d/MeasureReport-a77dc373-6599-4e6b-95a1-4d1ef767a22f.json) | Group_1 | Numerator | 1 | 0 |
-
-
-#### CMS1244FHIRECATHOQR
-[ [cql] ](../../input/cql/CMS1244FHIRECATHOQR.cql) [ [test results] ](../../input/tests/results/CMS1244FHIRECATHOQR.txt)
-
-Mismatched Test Cases (71 of  of 72)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ c3284314-fe9b-408a-9b26-a21830f84432 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/c3284314-fe9b-408a-9b26-a21830f84432/MeasureReport-f64e0411-d013-4b13-a8ef-1c7ba8a9aefe.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ a11dce52-c6b3-46e5-bc01-8994b0c8f471 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/a11dce52-c6b3-46e5-bc01-8994b0c8f471/MeasureReport-5c4a87ea-ee22-4827-9c1b-e23eca8dd60b.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 37016a05-807e-44a9-83cd-fad3ff37cb07 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/37016a05-807e-44a9-83cd-fad3ff37cb07/MeasureReport-3b9ff68f-9067-4824-a770-40bae54bd562.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 74855a5c-bb3b-438a-9eb9-7fdc1994d06d ](../.././input/tests/measure/CMS1244FHIRECATHOQR/74855a5c-bb3b-438a-9eb9-7fdc1994d06d/MeasureReport-81662d39-256f-46d4-b23b-6e2ed42640d0.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ cc00e728-de5f-4df8-abcb-1e610496be66 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/cc00e728-de5f-4df8-abcb-1e610496be66/MeasureReport-2ba5bcdc-2406-426f-84c0-c1b330e8313b.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 9b5e4d84-366b-4082-8409-b7e18e0a3c45 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9b5e4d84-366b-4082-8409-b7e18e0a3c45/MeasureReport-0f685fc5-daa1-4a8a-bc1f-b3677e7c0482.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 9ec1a135-fb47-4c1c-8f6b-98afab15274e ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9ec1a135-fb47-4c1c-8f6b-98afab15274e/MeasureReport-5455ed83-2ab4-4cc7-982d-1d34b372af85.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ dfd5dc6b-3299-4e4f-ae02-45f251e1f75b ](../.././input/tests/measure/CMS1244FHIRECATHOQR/dfd5dc6b-3299-4e4f-ae02-45f251e1f75b/MeasureReport-34081345-5970-424b-b647-9d7531b1b7d8.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 5ae9589c-1301-45a0-af30-ac7b679b649f ](../.././input/tests/measure/CMS1244FHIRECATHOQR/5ae9589c-1301-45a0-af30-ac7b679b649f/MeasureReport-66bf33ee-b790-4a44-980a-b2c417ea8a55.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ e37040f5-da02-49eb-98a8-60d5235f8e1f ](../.././input/tests/measure/CMS1244FHIRECATHOQR/e37040f5-da02-49eb-98a8-60d5235f8e1f/MeasureReport-d5d9012e-39d3-424f-8ac6-04230ac99406.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 2c2a7958-4d1a-4142-9360-8045067a1c5b ](../.././input/tests/measure/CMS1244FHIRECATHOQR/2c2a7958-4d1a-4142-9360-8045067a1c5b/MeasureReport-f9458b00-38de-4bdd-b183-05f0cea356b2.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 82c3fbd5-6025-4dfd-9a90-881f3df1f97b ](../.././input/tests/measure/CMS1244FHIRECATHOQR/82c3fbd5-6025-4dfd-9a90-881f3df1f97b/MeasureReport-81d4708e-6d32-49f4-89b7-aec62835bf84.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ dad5b672-1e5b-437c-91fe-1f69b5d58c70 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/dad5b672-1e5b-437c-91fe-1f69b5d58c70/MeasureReport-5c0bc11b-1c63-4893-9db9-122f97e65ea3.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ a8c8b95f-b734-4a56-8a62-2cba1e9ffc77 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/a8c8b95f-b734-4a56-8a62-2cba1e9ffc77/MeasureReport-d90054b8-e1bb-4bed-99e1-df8e5f138a8f.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 30bd1c93-a76f-46ac-9c74-b4499428cf94 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/30bd1c93-a76f-46ac-9c74-b4499428cf94/MeasureReport-0ec95046-aedf-44fb-b9ba-28d47d43806a.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 77bbd0e5-2a32-49f7-bddc-f079dfeadbb4 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/77bbd0e5-2a32-49f7-bddc-f079dfeadbb4/MeasureReport-4be3e903-c064-4ff9-92c2-37563326b349.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 16cffb87-15ea-48b7-bd68-f211f48d6f19 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/16cffb87-15ea-48b7-bd68-f211f48d6f19/MeasureReport-cddad5be-1db4-43d0-bf99-21f7fbbc8f92.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ aeb81393-d181-487a-9bc5-923c7082104e ](../.././input/tests/measure/CMS1244FHIRECATHOQR/aeb81393-d181-487a-9bc5-923c7082104e/MeasureReport-1379a3aa-e1ed-4f5c-af21-b58b396a0d2e.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 9b2d612d-b677-4559-870d-b36cc6404ece ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9b2d612d-b677-4559-870d-b36cc6404ece/MeasureReport-971d9dda-e621-4837-bdc3-15fe107554cf.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ b277c659-6048-4465-a508-1cf5466833dc ](../.././input/tests/measure/CMS1244FHIRECATHOQR/b277c659-6048-4465-a508-1cf5466833dc/MeasureReport-05e52304-8f86-43be-8f8b-81abeec1ab33.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 690efbf3-6087-4c90-a1c7-be572ca734e0 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/690efbf3-6087-4c90-a1c7-be572ca734e0/MeasureReport-039cd001-73f8-45e4-bd72-863139994297.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 01959faf-5ea5-41cb-b960-b74da18cca85 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/01959faf-5ea5-41cb-b960-b74da18cca85/MeasureReport-54894cc5-9ffb-4230-a18a-d80f0c9a94f0.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 50270eff-f1ed-4cb3-b22b-467d89937c3a ](../.././input/tests/measure/CMS1244FHIRECATHOQR/50270eff-f1ed-4cb3-b22b-467d89937c3a/MeasureReport-6d5e1bec-5537-4b08-bf19-7a1d93d139ee.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ e0423a32-d2c0-437a-bb6e-aef7977a1e2c ](../.././input/tests/measure/CMS1244FHIRECATHOQR/e0423a32-d2c0-437a-bb6e-aef7977a1e2c/MeasureReport-c66c5fdf-4c9f-485c-b3ab-7e8e7277ba38.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 8f5243aa-b111-4019-b5d0-d6889315af38 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/8f5243aa-b111-4019-b5d0-d6889315af38/MeasureReport-e09e1a51-4240-41dd-9841-95155a7288d1.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 7bcd79b7-7898-437d-b563-cfb9068df210 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/7bcd79b7-7898-437d-b563-cfb9068df210/MeasureReport-c19de722-1d59-4182-9080-3b57a745a791.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 040dc7b1-27f9-43a3-82c9-b1a514db3071 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/040dc7b1-27f9-43a3-82c9-b1a514db3071/MeasureReport-5abe681d-83f1-416b-b924-2c8f9925ad67.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ ee13a2d8-61d9-4d2f-8f13-1423bd271950 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/ee13a2d8-61d9-4d2f-8f13-1423bd271950/MeasureReport-222840fe-e1e3-45ef-a5d4-b55657b5ae6e.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ cee26b56-54cf-444e-8944-6edfbd6d2b93 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/cee26b56-54cf-444e-8944-6edfbd6d2b93/MeasureReport-ba7c7943-bc48-40ae-8b97-8a7d67c4b747.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 35fd427f-1233-4f3c-b8b3-9e400755da8f ](../.././input/tests/measure/CMS1244FHIRECATHOQR/35fd427f-1233-4f3c-b8b3-9e400755da8f/MeasureReport-19b7e7e7-7c57-41cc-b09e-0c37e3e605f4.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 9dc75857-bf5a-492d-81b5-edd5aee29a66 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9dc75857-bf5a-492d-81b5-edd5aee29a66/MeasureReport-0c0a19b1-301f-4ba9-926e-d64fdc1b5de2.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 8e43bc64-4242-494d-b47f-fdbbd3372bbe ](../.././input/tests/measure/CMS1244FHIRECATHOQR/8e43bc64-4242-494d-b47f-fdbbd3372bbe/MeasureReport-c2d38900-c2ca-40ff-9a6d-4f3bf2f7a50a.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ b312fbc9-083f-4832-8d7c-d3e64df4145b ](../.././input/tests/measure/CMS1244FHIRECATHOQR/b312fbc9-083f-4832-8d7c-d3e64df4145b/MeasureReport-6629c685-67a7-4033-ab63-9e94769e1e06.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 16f81b70-aabb-4ef8-9f5c-5c484aa1fa40 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/16f81b70-aabb-4ef8-9f5c-5c484aa1fa40/MeasureReport-0cc96025-d3d3-4282-9ef6-de407f695461.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ d8832769-c838-4f1b-9c1e-fa4ed3a3efb9 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/d8832769-c838-4f1b-9c1e-fa4ed3a3efb9/MeasureReport-b8f362ae-832e-4dd7-a661-e8f0f80dd295.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 540b665b-e89c-466a-9ef8-758b3883a37c ](../.././input/tests/measure/CMS1244FHIRECATHOQR/540b665b-e89c-466a-9ef8-758b3883a37c/MeasureReport-543cabd4-58a7-4820-b8e5-604576d2c7bf.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 9bac5045-01af-4350-b54f-63ab17f3ba9f ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9bac5045-01af-4350-b54f-63ab17f3ba9f/MeasureReport-24f2404e-f41e-4bd6-9759-07d79ee20a5b.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 0<br>0<br>0 | 1<br>1<br>1 |
-| [ eabe386d-5bca-4fdd-acb0-8228b4df83c0 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/eabe386d-5bca-4fdd-acb0-8228b4df83c0/MeasureReport-4c996eea-3dce-4f61-84e0-33f182ada412.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 93588ee6-6a57-48f3-9cbe-7ea819acfb26 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/93588ee6-6a57-48f3-9cbe-7ea819acfb26/MeasureReport-64c0332b-a8ef-4d0b-b6ce-d4a6cb37c1af.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ ed5fa616-8b70-4016-b40d-6f87983e2776 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/ed5fa616-8b70-4016-b40d-6f87983e2776/MeasureReport-0b1fd2dc-a587-4a82-8db6-d462cb0fbb4c.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 666528ac-0d94-4b09-8e6c-c5930b7dd17c ](../.././input/tests/measure/CMS1244FHIRECATHOQR/666528ac-0d94-4b09-8e6c-c5930b7dd17c/MeasureReport-a896a6bf-5b6c-45ea-a544-b67f4e8db58e.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 7fbb7e37-228b-4b3b-8974-871a3e798720 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/7fbb7e37-228b-4b3b-8974-871a3e798720/MeasureReport-5f9cf516-d717-45fc-b1bb-a545640df80f.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 5fb0b78c-ffd3-47c3-91a3-252bc4a70177 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/5fb0b78c-ffd3-47c3-91a3-252bc4a70177/MeasureReport-82e14e28-3004-4f03-98f8-50809fc34bd4.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ c15c97ea-1631-468d-b2d0-420230f6c6d8 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/c15c97ea-1631-468d-b2d0-420230f6c6d8/MeasureReport-ac72028c-ae3b-4890-807b-5b1b6d89b30b.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 1a53b1ca-90dc-4fac-97c1-b0b51d3e092c ](../.././input/tests/measure/CMS1244FHIRECATHOQR/1a53b1ca-90dc-4fac-97c1-b0b51d3e092c/MeasureReport-7a41601e-0250-47c5-be7b-b8d98d7ec378.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 2<br>2<br>1 | 0<br>0<br>0 |
-| [ 11703274-1218-440d-bb98-08502a794179 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/11703274-1218-440d-bb98-08502a794179/MeasureReport-fd735b38-a544-4d06-aa52-1ae657eb181f.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 9fe769bc-bd23-4799-9bc6-9945eda0d0cf ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9fe769bc-bd23-4799-9bc6-9945eda0d0cf/MeasureReport-d533bcfb-2a4f-4c9c-add6-02510a9a4835.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 9f77830b-ff7c-4060-bf38-295b215ab56d ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9f77830b-ff7c-4060-bf38-295b215ab56d/MeasureReport-8faf14e6-cee9-415d-9146-24273479cf94.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 42be9d46-4c2f-4493-8299-d33dcbb7170e ](../.././input/tests/measure/CMS1244FHIRECATHOQR/42be9d46-4c2f-4493-8299-d33dcbb7170e/MeasureReport-9ebe9a87-2fd1-48da-80c7-3e1a008e4a07.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 7dd19e80-23c6-4e31-86a9-bb833cfc676b ](../.././input/tests/measure/CMS1244FHIRECATHOQR/7dd19e80-23c6-4e31-86a9-bb833cfc676b/MeasureReport-2933318f-955e-4842-a3a3-c22ff9747fc8.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 024c02ed-8819-45da-a027-ed5fa4369c90 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/024c02ed-8819-45da-a027-ed5fa4369c90/MeasureReport-02f8640c-10ba-4c1a-8648-137985919579.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 7fd4f9cd-8fbb-4935-9bfd-959c538166b2 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/7fd4f9cd-8fbb-4935-9bfd-959c538166b2/MeasureReport-aa7eb2c0-6f6e-45c6-a39e-fc87bb1146dd.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 4c95d881-2e7e-4e81-bb4c-b1ae680ff286 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/4c95d881-2e7e-4e81-bb4c-b1ae680ff286/MeasureReport-56be3e63-3649-42b5-9f49-ed53e2fd23c0.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 6252a858-2362-4c63-8d7d-6db0b7ac9299 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/6252a858-2362-4c63-8d7d-6db0b7ac9299/MeasureReport-5303f3e5-c1c3-4bf4-9300-23de5f04476b.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ cc01e29c-7ebb-4876-b63a-29de550c62f9 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/cc01e29c-7ebb-4876-b63a-29de550c62f9/MeasureReport-f322cfef-4f5e-4513-868b-70a09c2083a3.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 21b841f6-b863-4c1d-8798-41c527b04a92 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/21b841f6-b863-4c1d-8798-41c527b04a92/MeasureReport-6b6abc9e-4e24-428e-8faf-1cb8dde2c515.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ e982ec87-76b0-4fe2-b437-ac0503cf2159 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/e982ec87-76b0-4fe2-b437-ac0503cf2159/MeasureReport-bcce6e21-45e3-4e0b-9b6c-f4731d2cb7be.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 66803f75-5dc5-43fb-9844-f18d765a64ec ](../.././input/tests/measure/CMS1244FHIRECATHOQR/66803f75-5dc5-43fb-9844-f18d765a64ec/MeasureReport-7b07e416-6a35-4dc4-85c6-457bc4efff75.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 3ee1e306-f3db-4d13-b6ab-b1388a23b378 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/3ee1e306-f3db-4d13-b6ab-b1388a23b378/MeasureReport-59b44581-152f-4ba4-947b-40649eb23be4.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 9fed66ec-d314-4a2e-a6d5-056ec2f702c2 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/9fed66ec-d314-4a2e-a6d5-056ec2f702c2/MeasureReport-2a4da676-810a-4e2c-a474-555fc278240a.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ d5fe6f9c-6036-4004-9993-290f3a2be34a ](../.././input/tests/measure/CMS1244FHIRECATHOQR/d5fe6f9c-6036-4004-9993-290f3a2be34a/MeasureReport-fe749f0a-431a-4ca8-885a-561e04e71d70.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 8aa551b0-bb5a-435d-909c-9503d7c984d6 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/8aa551b0-bb5a-435d-909c-9503d7c984d6/MeasureReport-5104ca88-b924-4ee8-8392-3461514ae235.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 2<br>2<br>1 | 0<br>0<br>0 |
-| [ a42d4cc2-24ca-4637-889f-276bcdd1e7cf ](../.././input/tests/measure/CMS1244FHIRECATHOQR/a42d4cc2-24ca-4637-889f-276bcdd1e7cf/MeasureReport-6a19ae18-0a66-49d2-9bba-59437f2fea72.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 404c928b-a752-4792-91c4-8a1fd0656759 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/404c928b-a752-4792-91c4-8a1fd0656759/MeasureReport-75d6e81c-ba83-4fef-ac57-35666764716f.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 8e96f973-9e5d-4c85-9466-83c562f5a2ee ](../.././input/tests/measure/CMS1244FHIRECATHOQR/8e96f973-9e5d-4c85-9466-83c562f5a2ee/MeasureReport-8c09ecdf-4a79-45c8-aa61-72cfadd4813b.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ c8b6fa9c-0072-45ab-90dc-0b8be521fae4 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/c8b6fa9c-0072-45ab-90dc-0b8be521fae4/MeasureReport-a50a0d3a-a886-4738-beef-b3cd7a5eff38.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ af1a0a53-0d60-4bfa-9ca9-ddf2b8250edc ](../.././input/tests/measure/CMS1244FHIRECATHOQR/af1a0a53-0d60-4bfa-9ca9-ddf2b8250edc/MeasureReport-5cc6b6dd-f183-4a07-82a8-dfd65504c1d1.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 3<br>3<br>2 | 0<br>0<br>0 |
-| [ 78cbc6ac-f30d-404b-b539-6b903c7cfeba ](../.././input/tests/measure/CMS1244FHIRECATHOQR/78cbc6ac-f30d-404b-b539-6b903c7cfeba/MeasureReport-a36ca27d-92f8-4c16-a52e-672bb9f9c75c.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
-| [ 63cea3d6-d2e0-4736-a035-87633ca960bd ](../.././input/tests/measure/CMS1244FHIRECATHOQR/63cea3d6-d2e0-4736-a035-87633ca960bd/MeasureReport-cb6209dd-50ca-4e51-a76d-ef60f8d5c0c8.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 7bee402e-2687-4813-9b39-37d723663d18 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/7bee402e-2687-4813-9b39-37d723663d18/MeasureReport-cdcb01a6-cf27-452b-ba00-aaf3309d7ef2.json) | Group_1 | Initial Population<br>Denominator | 1<br>1 | 0<br>0 |
-| [ 6fc94c60-6eae-44a4-b1f7-c4f3369b4e47 ](../.././input/tests/measure/CMS1244FHIRECATHOQR/6fc94c60-6eae-44a4-b1f7-c4f3369b4e47/MeasureReport-6904d935-3c8f-46ba-b41c-d4ec813e1b72.json) | Group_1 | Initial Population<br>Denominator<br>Numerator | 1<br>1<br>1 | 0<br>0<br>0 |
 
 
 #### CMS1264FHIRECATREHQR
