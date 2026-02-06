@@ -61,14 +61,13 @@ _Note: Measures can have multiple discrepancies, so the Measures with Discrepanc
 - CMS1188FHIRHIVSTITesting [ [cql] ](../../input/cql/CMS1188FHIRHIVSTITesting.cql) [ [test results] ](../../input/tests/results/CMS1188FHIRHIVSTITesting.txt)
 - CMS1206FHIRCTOQR [ [cql] ](../../input/cql/CMS1206FHIRCTOQR.cql) [ [test results] ](../../input/tests/results/CMS1206FHIRCTOQR.txt)
 - CMS1244FHIRECATHOQR [ [cql] ](../../input/cql/CMS1244FHIRECATHOQR.cql) [ [test results] ](../../input/tests/results/CMS1244FHIRECATHOQR.txt)
-## Measures with Discrepancies (29)
+## Measures with Discrepancies (28)
 | Measure | Total Test Cases | Missing Results | Missing Populations | Mismatched Test Cases |
 |---|:---:|:---:|:---:|:---:|
 | [CMS71FHIRSTKAnticoagAFFlutter](#cms71fhirstkanticoagafflutter) | 83 | 0 | 0 | 2.41%   (2) |
 | [CMS72FHIRSTKAntithromboticDay2](#cms72fhirstkantithromboticday2) | 158 | 0 | 0 | 61.39%   (97) |
 | [CMS104FHIRSTKDCAntithrombotic](#cms104fhirstkdcantithrombotic) | 82 | 0 | 0 | 84.15%   (69) |
 | [CMS108FHIRVTEProphylaxis](#cms108fhirvteprophylaxis) | 140 | 0 | 0 | 10.00%   (14) |
-| [CMS122FHIRDiabetesAssessGT9Pct](#cms122fhirdiabetesassessgt9pct) | 55 | 0 | 0 | 10.91%   (6) |
 | [CMS135FHIRACEIorARBorARNIforHF](#cms135fhiraceiorarborarniforhf) | 40 | 14 | 0 | 0.00%   (0) |
 | [CMS136FHIRChildADHDMedFollowUp](#cms136fhirchildadhdmedfollowup) | 128 | 0 | 0 | 1.56%   (2) |
 | [CMS153FHIRChlamydiaScreening](#cms153fhirchlamydiascreening) | 32 | 0 | 0 | 3.12%   (1) |
@@ -308,20 +307,6 @@ Mismatched Test Cases (14 of  of 140)
 | [ ff814452-be6d-4e4b-905b-c1ae2a551645 ](../.././input/tests/measure/CMS108FHIRVTEProphylaxis/ff814452-be6d-4e4b-905b-c1ae2a551645/MeasureReport-8f09729a-45b0-45dc-bfdd-047cf0d896ef.json) | Group_1 | Numerator | 1 | 0 |
 | [ 068814f1-4270-4e10-b470-9a5433bceb3e ](../.././input/tests/measure/CMS108FHIRVTEProphylaxis/068814f1-4270-4e10-b470-9a5433bceb3e/MeasureReport-22ae9d87-29d1-42c3-9908-93eff318d7b1.json) | Group_1 | Numerator | 1 | 0 |
 | [ 182103c1-0a38-4d85-819c-148e4e105716 ](../.././input/tests/measure/CMS108FHIRVTEProphylaxis/182103c1-0a38-4d85-819c-148e4e105716/MeasureReport-ccb6ece2-ea74-4377-b826-2118740d1eee.json) | Group_1 | Numerator | 1 | 0 |
-
-
-#### CMS122FHIRDiabetesAssessGT9Pct
-[ [cql] ](../../input/cql/CMS122FHIRDiabetesAssessGT9Pct.cql) [ [test results] ](../../input/tests/results/CMS122FHIRDiabetesAssessGT9Pct.txt)
-
-Mismatched Test Cases (6 of  of 55)
-| Test Case | Group | Population | Expected | Actual |
-|---|---|---|:---:|:---:|
-| [ ede0ee7a-18ab-4ba7-934c-23618f1270ea ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/ede0ee7a-18ab-4ba7-934c-23618f1270ea/MeasureReport-ac90199a-d913-470f-85f0-801ea59d5f06.json) | Group_1 | Numerator | 0 | 1 |
-| [ e61be907-af68-493f-a6bc-3d93ef8b6c6e ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/e61be907-af68-493f-a6bc-3d93ef8b6c6e/MeasureReport-a4a3ee93-9b96-4259-9158-e9a1f4929c1f.json) | Group_1 | Numerator | 0 | 1 |
-| [ cade5021-b1bf-43e9-a0a4-659c05b386d0 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/cade5021-b1bf-43e9-a0a4-659c05b386d0/MeasureReport-373f8db2-50fb-450e-8e83-c2b1ef94aa93.json) | Group_1 | Numerator | 0 | 1 |
-| [ 3b62b0a8-44f2-4365-bcb9-7cadef5bab2e ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/3b62b0a8-44f2-4365-bcb9-7cadef5bab2e/MeasureReport-e85cf7dc-dcfc-4e0b-b68a-4f8ed1b9ddd4.json) | Group_1 | Numerator | 0 | 1 |
-| [ 9cba6cfa-9671-4850-803d-e286c7d59ee7 ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/9cba6cfa-9671-4850-803d-e286c7d59ee7/MeasureReport-4cf88428-9d18-4c27-a59f-189dc83cf084.json) | Group_1 | Numerator | 0 | 1 |
-| [ f5771b74-a7de-439a-a51f-49a3863e086b ](../.././input/tests/measure/CMS122FHIRDiabetesAssessGT9Pct/f5771b74-a7de-439a-a51f-49a3863e086b/MeasureReport-50f84e99-bb0e-4b7c-bc0b-b81dfb59c503.json) | Group_1 | Numerator | 0 | 1 |
 
 
 
